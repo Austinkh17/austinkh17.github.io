@@ -8,13 +8,13 @@ subtitle: ""
 description: "Austinkh's blog"
 keywords: vue javascript html css scss git hexo next
 author: Austinkh
-language: zh-Hans
+language: zh-CN
 timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://austinkh17.github.io/
-permalink: :year-month-day/:title/
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -97,7 +97,8 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+# theme: next
+theme: next-reloaded
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -105,11 +106,23 @@ deploy:
   type: git
   repository: https://github.com/austinkh17/austinkh17.github.io.git
   branch: master
-# 自定义站点内容搜索
-# 需要先安装插件：
-# npm i hexo-generator-search --save
+
+# 设置站内搜索
 search:
   path: search.xml
-  field: post # 只索引文章
+  field: post
   format: html
   limit: 10000
+# symbols_count_time:
+#   symbols: true #是否统计字数
+#   time: true #是否统计阅读时长
+#   total_symbols: true #是否统计总字数
+#   total_time: true #是否统计总阅读时长
+
+# Plugins:
+#   - hexo-generator-baidu-sitemap
+#   - hexo-generator-sitemap
+# baidusitemap:
+#   path: baidusitemap.xml
+# sitemap:
+#   path: sitemap.xml
