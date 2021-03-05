@@ -4,9 +4,9 @@
 
 # Site
 title: Austinkh's blog
-subtitle: ""
+subtitle: "人生没有四季，只有两季。努力就是旺季，不努力就是淡季。"
 description: "Austinkh's blog"
-keywords: vue javascript html css scss git hexo next
+keywords: vue javascript html css scss node element git hexo next
 author: Austinkh
 language: zh-CN
 timezone: ""
@@ -14,7 +14,8 @@ timezone: ""
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://austinkh17.github.io/
-permalink: :year/:month/:day/:title/
+root: /
+permalink: :year-:month-:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -29,6 +30,8 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - nav/**
+  - item/**
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -113,11 +116,12 @@ search:
   field: post
   format: html
   limit: 10000
-# symbols_count_time:
-#   symbols: true #是否统计字数
-#   time: true #是否统计阅读时长
-#   total_symbols: true #是否统计总字数
-#   total_time: true #是否统计总阅读时长
+
+symbols_count_time:
+   symbols: true #是否统计字数
+   time: true #是否统计阅读时长
+   total_symbols: true #是否统计总字数
+   total_time: true #是否统计总阅读时长
 
 # Plugins:
 #   - hexo-generator-baidu-sitemap
@@ -126,3 +130,31 @@ search:
 #   path: baidusitemap.xml
 # sitemap:
 #   path: sitemap.xml
+
+# 文章加密
+encrypt:
+  enable: true
+  default_abstract: 这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你非常好奇，请与我联系。
+  default_message: 输入密码，查看文章。
+
+# 外部链接优化
+nofollow:
+  enable: true
+  field: site
+  exclude:
+    - 'exclude1.com'
+    - 'exclude2.com'
+
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:

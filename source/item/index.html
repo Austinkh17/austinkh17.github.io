@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<title>item</title>
+    <style>
+    html {
+        font-size: 16px;
+        -webkit-tap-highlight-color: transparent;
+        color: #435b71;
+        margin: 0;
+        background-color: #f8f8f8;
+    }
+    .brick-container{
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+		width:960px;
+		height:2000px;
+    }
+    .brick-same {
+        float: left;
+		width: 33.33333333%;
+		height:335.656px;
+		padding-left:25px;
+		padding-right:25px;
+		margin-bottom:50px;
+		box-sizing:border-box;
+    }
+    .brick-inner{
+        border-radius: 20px;
+        width: 100%;
+        overflow: hidden;
+        -webkit-transition: all .2s ease-out;
+        transition: all .2s ease-out;
+        -webkit-box-shadow: 0 2px 43px -4px rgba(0,0,0,.19);
+        box-shadow: 0 2px 43px -4px rgba(0,0,0,.19);
+        background-color: #fff;
+    }
+    .brick-image {
+        overflow: hidden;
+        cursor: pointer;
+        padding-top: 66.17647059%;
+        position: relative;
+    }
+    .brick-image-inner{
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: cover;
+        background-size: 100% auto;
+        background-image:url(http://58pic.ooopic.com/58pic/21/59/71/40B58PICzv6.jpg!/format/webp);
+    }
+    .brick-caption-upper {
+        padding: 19px 20px 13px;
+        height: 110px;
+    }
+    .brick-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 27px;
+        color: #435b71;
+        display: inline-block;
+        margin-bottom: 17px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .brick-tagline {
+        display: block;
+        line-height: 22px;
+    }
+    .brick-caption-lower {
+        border-top: 1px solid rgba(67,91,113,.1);
+        padding: 11px 20px 13px;
+        height: 22px;
+    }
+    .brick-caption-lower a {
+        font-size: 14px;
+        line-height: 14px;
+        color: rgba(67,91,113,.5);
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .pull-left {
+        float: left;
+        float: left!important;
+    }
+    .pull-right {
+        float: right;
+        float: right!important;
+    }
+    .brick__views {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 700;
+        color: #435b71;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    </style>
+</head>
+<body>
+    <div class="brick-container">
+        <div class="brick-same">
+            <div class="brick-inner">
+                <div class="brick-image">
+                    <div class="brick-image-inner" style="background-image:url(https://austinkh17.github.io/pic/blog/vue-note.jpg)"></div>
+                </div>
+                <div class="brick-caption">
+                    <div class="brick-caption-upper">
+                        <a class="brick-title" href="https://austinkh17.github.io/note/">记事本</a>
+                        <span class="brick-tagline">基于vue和bootstrap构建的记事本单页面应用</span>
+                    </div>
+                    <div class="brick-caption-lower">
+                        <div class="pull-left">
+                            <a href="#">#vue #bootstrap</a>
+                        </div>
+                        <div class="pull-right">
+                            <div class="brick-views">
+                                <span>200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brick-same">
+            <div class="brick-inner">
+                <div class="brick-image">
+                    <div class="brick-image-inner"></div>
+                </div>
+                <div class="brick-caption">
+                    <div class="brick-caption-upper">
+                        <a class="brick-title" href="#">vue</a>
+                        <span class="brick-tagline">vue hello</span>
+                    </div>
+                    <div class="brick-caption-lower">
+                        <div class="pull-left">
+                            <a href="#">标签</a>
+                        </div>
+                        <div class="pull-right">
+                            <div class="brick-views">
+                                <span>200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brick-same">
+            <div class="brick-inner">
+                <div class="brick-image">
+                    <div class="brick-image-inner"></div>
+                </div>
+                <div class="brick-caption">
+                    <div class="brick-caption-upper">
+                        <a class="brick-title" href="#">vue</a>
+                        <span class="brick-tagline">vue hello</span>
+                    </div>
+                    <div class="brick-caption-lower">
+                        <div class="pull-left">
+                            <a href="#">标签</a>
+                        </div>
+                        <div class="pull-right">
+                            <div class="brick-views">
+                                <span>200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brick-same">
+            <div class="brick-inner">
+                <div class="brick-image">
+                    <div class="brick-image-inner"></div>
+                </div>
+                <div class="brick-caption">
+                    <div class="brick-caption-upper">
+                        <a class="brick-title" href="#">vue</a>
+                        <span class="brick-tagline">vue hello</span>
+                    </div>
+                    <div class="brick-caption-lower">
+                        <div class="pull-left">
+                            <a href="#">标签</a>
+                        </div>
+                        <div class="pull-right">
+                            <div class="brick-views">
+                                <span>200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
