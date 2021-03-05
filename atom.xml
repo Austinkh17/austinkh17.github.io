@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Austinkh&#39;s blog</title>
   <icon>https://austinkh17.github.io/icon.png</icon>
-  
+  <subtitle>人生没有四季，只有两季。努力就是旺季，不努力就是淡季。</subtitle>
   <link href="https://austinkh17.github.io/atom.xml" rel="self"/>
   
   <link href="https://austinkh17.github.io/"/>
@@ -34,7 +34,7 @@
     <link href="https://austinkh17.github.io/2021-03-03/article-title/"/>
     <id>https://austinkh17.github.io/2021-03-03/article-title/</id>
     <published>2021-03-03T08:24:34.000Z</published>
-    <updated>2021-03-05T06:45:43.784Z</updated>
+    <updated>2021-03-05T07:12:33.270Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;一、站点配置&quot;&gt;&lt;a href=&quot;#一、站点配置&quot; class=&quot;headerlink&quot; title=&quot;一、站点配置&quot;&gt;&lt;/a&gt;一、站点配置&lt;/h2&gt;&lt;h3 id=&quot;1、设置-hexo-的-next-主题&quot;&gt;&lt;a href=&quot;#1、设置-hexo-的-next-主题&quot; class=&quot;headerlink&quot; title=&quot;1、设置 hexo 的 next 主题&quot;&gt;&lt;/a&gt;1、设置 hexo 的 next 主题&lt;/h3&gt;&lt;p&gt;安装next主题，在个人博客目录下，&lt;code&gt;git clone https://github.com/theme-next/hexo-theme-next themes/next&lt;/code&gt;&lt;/p&gt;
