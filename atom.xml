@@ -6,7 +6,7 @@
   <link href="https://austinkh17.github.io/atom.xml" rel="self"/>
   
   <link href="https://austinkh17.github.io/"/>
-  <updated>2021-03-03T10:09:25.610Z</updated>
+  <updated>2021-03-05T09:48:32.114Z</updated>
   <id>https://austinkh17.github.io/</id>
   
   <author>
@@ -15,6 +15,57 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>多台设备共享hexo</title>
+    <link href="https://austinkh17.github.io/2021-03-05/%E5%A4%9A%E5%8F%B0%E8%AE%BE%E5%A4%87%E5%85%B1%E4%BA%ABhexo/"/>
+    <id>https://austinkh17.github.io/2021-03-05/%E5%A4%9A%E5%8F%B0%E8%AE%BE%E5%A4%87%E5%85%B1%E4%BA%ABhexo/</id>
+    <published>2021-03-05T09:39:29.000Z</published>
+    <updated>2021-03-05T09:48:32.114Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;因为更换电脑，之前的hexo本地项目未保存，而github仓库上仅有发布后的文件，因此，还是需要把本地项目也及时的更新到github上去，防止丢失。&lt;/p&gt;
+&lt;h2 id=&quot;流程&quot;&gt;&lt;a href=&quot;#流程&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="https://austinkh17.github.io/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://austinkh17.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>github请求超时</title>
+    <link href="https://austinkh17.github.io/2021-03-05/git%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6/"/>
+    <id>https://austinkh17.github.io/2021-03-05/git%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6/</id>
+    <published>2021-03-05T09:08:16.000Z</published>
+    <updated>2021-03-05T09:48:36.709Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;github请求超时&quot;&gt;&lt;a href=&quot;#github请求超时&quot; class=&quot;headerlink&quot; title=&quot;github请求超时&quot;&gt;&lt;/a&gt;github请求超时&lt;/h3&gt;&lt;h4 id=&quot;一、修改DNS&quot;&gt;&lt;a href=&quot;#一、修改DNS&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="git" scheme="https://austinkh17.github.io/categories/git/"/>
+    
+    
+    <category term="git" scheme="https://austinkh17.github.io/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>categories</title>
@@ -34,7 +85,7 @@
     <link href="https://austinkh17.github.io/2021-03-03/article-title/"/>
     <id>https://austinkh17.github.io/2021-03-03/article-title/</id>
     <published>2021-03-03T08:24:34.000Z</published>
-    <updated>2021-03-05T07:12:33.270Z</updated>
+    <updated>2021-03-05T09:48:43.869Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;一、站点配置&quot;&gt;&lt;a href=&quot;#一、站点配置&quot; class=&quot;headerlink&quot; title=&quot;一、站点配置&quot;&gt;&lt;/a&gt;一、站点配置&lt;/h2&gt;&lt;h3 id=&quot;1、设置-hexo-的-next-主题&quot;&gt;&lt;a href=&quot;#1、设置-hexo-的-next-主题&quot; class=&quot;headerlink&quot; title=&quot;1、设置 hexo 的 next 主题&quot;&gt;&lt;/a&gt;1、设置 hexo 的 next 主题&lt;/h3&gt;&lt;p&gt;安装next主题，在个人博客目录下，&lt;code&gt;git clone https://github.com/theme-next/hexo-theme-next themes/next&lt;/code&gt;&lt;/p&gt;
@@ -64,7 +115,7 @@
     <link href="https://austinkh17.github.io/2021-03-02/hello-world/"/>
     <id>https://austinkh17.github.io/2021-03-02/hello-world/</id>
     <published>2021-03-02T08:24:34.000Z</published>
-    <updated>2021-03-05T05:39:46.481Z</updated>
+    <updated>2021-03-05T08:04:22.462Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;Github-Pages&quot;&gt;&lt;a href=&quot;#Github-Pages&quot; class=&quot;headerlink&quot; title=&quot;Github Pages&quot;&gt;&lt;/a&gt;Github Pages&lt;/h3&gt;&lt;blockquote&gt;

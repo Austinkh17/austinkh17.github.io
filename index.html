@@ -126,27 +126,27 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">1</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">3</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">5</span></a>
 
   </li>
-        <li class="menu-item menu-item-nav">
+        <li class="menu-item menu-item-网站导航">
 
-    <a href="/nav/" rel="section"><i class="fa fa-th fa-fw"></i>nav</a>
+    <a href="/nav/" rel="section"><i class="fa fa-th fa-fw"></i>网站导航</a>
 
   </li>
-        <li class="menu-item menu-item-item">
+        <li class="menu-item menu-item-实验室">
 
-    <a href="/item/" rel="section"><i class="fa fa-archive fa-fw"></i>item</a>
+    <a href="/item/" rel="section"><i class="fa fa-archive fa-fw"></i>实验室</a>
 
   </li>
         <li class="menu-item menu-item-sitemap">
@@ -208,6 +208,200 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-03-05/%E5%A4%9A%E5%8F%B0%E8%AE%BE%E5%A4%87%E5%85%B1%E4%BA%ABhexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/boy.jpg">
+      <meta itemprop="name" content="Austinkh">
+      <meta itemprop="description" content="Austinkh's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Austinkh's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021-03-05/%E5%A4%9A%E5%8F%B0%E8%AE%BE%E5%A4%87%E5%85%B1%E4%BA%ABhexo/" class="post-title-link" itemprop="url">多台设备共享hexo</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-03-05 17:39:29 / 修改时间：17:48:32" itemprop="dateCreated datePublished" datetime="2021-03-05T17:39:29+08:00">2021-03-05</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>928</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>因为更换电脑，之前的hexo本地项目未保存，而github仓库上仅有发布后的文件，因此，还是需要把本地项目也及时的更新到github上去，防止丢失。</p>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><h3 id="1-电脑A（已经配置好blog的设备）"><a href="#1-电脑A（已经配置好blog的设备）" class="headerlink" title="1.电脑A（已经配置好blog的设备）"></a>1.电脑A（已经配置好blog的设备）</h3><ol>
+<li>在github上，对应的blog仓库，创建新分支<code>hexo</code> ，并设置为默认分支，github仓库切换到该分支，<strong>注意本地_config.yml文件的deploy配置的分支应该为master</strong></li>
+<li>打开gitbash，使用<code>git clone git@github.com:YourBlogResposity</code> ，克隆<code>hexo</code> 分支的内容到一个任意空文件夹中，例如<code>hexo</code></li>
+<li>显示所有隐藏文件和文件夹，进入刚才 clone 到本地的仓库，删掉除了 .git 文件夹以外的所有内容</li>
+<li>命令行 cd 到 clone 的仓库，git add -A ，git commit -m “共享hexo”，git push origin hexo，把刚才删除操作引起的本地仓库变化更新到远程，此时刷新下 github 端博客hexo分支，应该已经被清空</li>
+<li>将上述 .git 文件夹复制到本机本地博客根目录下（即含有 themes、source 等文件夹的那个目录），现在可以把上述 clone 的本地仓库删掉了，因为它已经没有用了，本机博客目录已经变成可以和 hexo 分支相连的仓库了<strong>（以上即是使用clone的目的）</strong></li>
+<li>将博客目录下 themes 文件夹下每个主题文件夹里面的 .git .gitignore 删掉。 cd 到博客目录，git add -A ，git commit -m “–”，git push origin hexo，将博客目录下所有文件更新到 hexo 分支。<strong>如果上一步没有删掉 .git .gitignore，主题文件夹下内容将传不上去。</strong></li>
+<li>完成以上步骤后，github上hexo分支应该已经存放了blog的配置文件，mater分支仍然为静态blog文件</li>
+</ol>
+<h3 id="2-电脑B（添加的设备）"><a href="#2-电脑B（添加的设备）" class="headerlink" title="2.电脑B（添加的设备）"></a>2.电脑B（添加的设备）</h3><ol>
+<li>同样<code>git clone</code> 远程仓库到本地</li>
+<li><code>cd</code> 到本地仓库，<code>npm i hexo -g</code> 安装hexo，<code>hexo s -g</code>测试电脑B能否启动blog</li>
+<li>成功添加完毕</li>
+</ol>
+<h2 id="更新、提交blog的操作"><a href="#更新、提交blog的操作" class="headerlink" title="更新、提交blog的操作"></a>更新、提交blog的操作</h2><p>依次执行：</p>
+<ul>
+<li>git pull</li>
+<li>更新blog内容</li>
+<li>hexo clean</li>
+<li>hexo s -g</li>
+<li>hexo d</li>
+<li>git add -A</li>
+<li>git commit -m “…”</li>
+<li>git push origin hexo</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-03-05/git%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/boy.jpg">
+      <meta itemprop="name" content="Austinkh">
+      <meta itemprop="description" content="Austinkh's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Austinkh's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021-03-05/git%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6/" class="post-title-link" itemprop="url">github请求超时</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-03-05 17:08:16 / 修改时间：17:48:36" itemprop="dateCreated datePublished" datetime="2021-03-05T17:08:16+08:00">2021-03-05</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>297</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="github请求超时"><a href="#github请求超时" class="headerlink" title="github请求超时"></a>github请求超时</h3><h4 id="一、修改DNS"><a href="#一、修改DNS" class="headerlink" title="一、修改DNS"></a>一、修改DNS</h4><p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://tool.chinaz.com/dns/">站长工具1</a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://ping.chinaz.com/github.githubassets.com">站长工具2</a></p>
+<p>在上面的网站中寻找<code>github.com</code>对应的IP地址，复制后进入hosts文件（C/Windows/System32/drivers/etc/hosts），写下<code>ip  github.com</code>，并刷新dns缓存（ipconfig /flushdns）</p>
+<p>适当的时候可以打开<code>chrome://net-internals/#dns</code>刷新一下google浏览器的dns</p>
+<h4 id="二、配置git的最低速度和最低速度时间"><a href="#二、配置git的最低速度和最低速度时间" class="headerlink" title="二、配置git的最低速度和最低速度时间"></a>二、配置git的最低速度和最低速度时间</h4><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">config</span> <span class="comment">--global http.lowSpeedLimit 0</span></span><br><span class="line">git <span class="built_in">config</span> <span class="comment">--global http.LowSpeedTime 999999</span></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -315,7 +509,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-05 15:12:33" itemprop="dateModified" datetime="2021-03-05T15:12:33+08:00">2021-03-05</time>
+                <time title="修改时间：2021-03-05 17:48:43" itemprop="dateModified" datetime="2021-03-05T17:48:43+08:00">2021-03-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -332,7 +526,7 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
-              <span>7.5k</span>
+              <span>7.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -417,7 +611,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-05 13:39:46" itemprop="dateModified" datetime="2021-03-05T13:39:46+08:00">2021-03-05</time>
+                <time title="修改时间：2021-03-05 16:04:22" itemprop="dateModified" datetime="2021-03-05T16:04:22+08:00">2021-03-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -556,20 +750,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -627,15 +821,35 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">9k</span>
+    <span title="站点总字数">10k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">8 分钟</span>
+    <span title="站点阅读时长">10 分钟</span>
 </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
