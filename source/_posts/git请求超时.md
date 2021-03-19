@@ -24,3 +24,6 @@ git config --global http.lowSpeedLimit 0
 git config --global http.LowSpeedTime 999999
 ```
 
+### 三、github1s查看仓库速度快
+
+这个项目名为 github1s，它的使用方法非常简单，**只需要在浏览器地址栏 GitHub 网址链接中的「github 」后面添加 1s ，然后 Enter 键，即可在 VS Code 界面访问该项目的 Repo 代码**。
