@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"austinkh17.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="github请求超时一、修改DNS站长工具1 站长工具2 在上面的网站中寻找github.com对应的IP地址，复制后进入hosts文件（C&#x2F;Windows&#x2F;System32&#x2F;drivers&#x2F;etc&#x2F;hosts），写下ip  github.com，并刷新dns缓存（ipconfig &#x2F;flushdns） 适当的时候可以打开chrome:&#x2F;&#x2F;net-internals&#x2F;#dns刷新一下google浏">
+  <meta name="description" content="一、安装：官网下载mongoDB：https:&#x2F;&#x2F;www.mongodb.com&#x2F;try&#x2F;download&#x2F;community?jmp&#x3D;nav，选择“Custom”自定义 安装路径修改下：D:\mongodb 二、先创建数据库文件的存放位置在MongoDB下创建data，在data下再创建db：D:\mongodb\data\db因为启动mongodb服务之前需要必须创建数据库文件的存放文件夹，否">
 <meta property="og:type" content="article">
-<meta property="og:title" content="github请求超时">
-<meta property="og:url" content="https://austinkh17.github.io/2021-03-05/git%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6/index.html">
+<meta property="og:title" content="mongodb知识点">
+<meta property="og:url" content="https://austinkh17.github.io/2021-04-07/mongodb%E7%9F%A5%E8%AF%86%E7%82%B9/index.html">
 <meta property="og:site_name" content="Austinkh&#39;s blog">
-<meta property="og:description" content="github请求超时一、修改DNS站长工具1 站长工具2 在上面的网站中寻找github.com对应的IP地址，复制后进入hosts文件（C&#x2F;Windows&#x2F;System32&#x2F;drivers&#x2F;etc&#x2F;hosts），写下ip  github.com，并刷新dns缓存（ipconfig &#x2F;flushdns） 适当的时候可以打开chrome:&#x2F;&#x2F;net-internals&#x2F;#dns刷新一下google浏">
+<meta property="og:description" content="一、安装：官网下载mongoDB：https:&#x2F;&#x2F;www.mongodb.com&#x2F;try&#x2F;download&#x2F;community?jmp&#x3D;nav，选择“Custom”自定义 安装路径修改下：D:\mongodb 二、先创建数据库文件的存放位置在MongoDB下创建data，在data下再创建db：D:\mongodb\data\db因为启动mongodb服务之前需要必须创建数据库文件的存放文件夹，否">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-03-05T09:08:16.000Z">
-<meta property="article:modified_time" content="2021-04-07T06:18:18.745Z">
+<meta property="article:published_time" content="2021-04-07T07:14:16.000Z">
+<meta property="article:modified_time" content="2021-04-07T07:39:01.396Z">
 <meta property="article:author" content="Austinkh">
-<meta property="article:tag" content="git">
+<meta property="article:tag" content="mongodb">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://austinkh17.github.io/2021-03-05/git%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6/">
+<link rel="canonical" href="https://austinkh17.github.io/2021-04-07/mongodb%E7%9F%A5%E8%AF%86%E7%82%B9/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>github请求超时 | Austinkh's blog</title>
+  <title>mongodb知识点 | Austinkh's blog</title>
   
 
 
@@ -219,7 +219,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-03-05/git%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6/">
+    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-04-07/mongodb%E7%9F%A5%E8%AF%86%E7%82%B9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/boy.jpg">
@@ -232,7 +232,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          github请求超时
+          mongodb知识点
         </h1>
 
         <div class="post-meta">
@@ -241,23 +241,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-03-05 17:08:16" itemprop="dateCreated datePublished" datetime="2021-03-05T17:08:16+08:00">2021-03-05</time>
+              <time title="创建时间：2021-04-07 15:14:16 / 修改时间：15:39:01" itemprop="dateCreated datePublished" datetime="2021-04-07T15:14:16+08:00">2021-04-07</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-07 14:18:18" itemprop="dateModified" datetime="2021-04-07T14:18:18+08:00">2021-04-07</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a>
+                  <a href="/categories/mongodb/" itemprop="url" rel="index"><span itemprop="name">mongodb</span></a>
                 </span>
             </span>
 
@@ -273,13 +267,13 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
-              <span>410</span>
+              <span>2.7k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -291,15 +285,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="github请求超时"><a href="#github请求超时" class="headerlink" title="github请求超时"></a>github请求超时</h3><h4 id="一、修改DNS"><a href="#一、修改DNS" class="headerlink" title="一、修改DNS"></a>一、修改DNS</h4><p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://tool.chinaz.com/dns/">站长工具1</a></p>
-<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://ping.chinaz.com/github.githubassets.com">站长工具2</a></p>
-<p>在上面的网站中寻找<code>github.com</code>对应的IP地址，复制后进入hosts文件（C/Windows/System32/drivers/etc/hosts），写下<code>ip  github.com</code>，并刷新dns缓存（ipconfig /flushdns）</p>
-<p>适当的时候可以打开<code>chrome://net-internals/#dns</code>刷新一下google浏览器的dns</p>
+        <h3 id="一、安装："><a href="#一、安装：" class="headerlink" title="一、安装："></a>一、安装：</h3><p>官网下载mongoDB：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.mongodb.com/try/download/community?jmp=nav%EF%BC%8C%E9%80%89%E6%8B%A9%E2%80%9CCustom%E2%80%9D%E8%87%AA%E5%AE%9A%E4%B9%89">https://www.mongodb.com/try/download/community?jmp=nav，选择“Custom”自定义</a> 安装路径修改下：D:\mongodb</p>
+<h3 id="二、先创建数据库文件的存放位置"><a href="#二、先创建数据库文件的存放位置" class="headerlink" title="二、先创建数据库文件的存放位置"></a>二、先创建数据库文件的存放位置</h3><p>在MongoDB下创建data，在data下再创建db：D:\mongodb\data\db<br>因为启动mongodb服务之前需要必须创建数据库文件的存放文件夹，否则命令不会自动创建，而且不能启动成功。</p>
+<h3 id="三、启动MongoDB服务"><a href="#三、启动MongoDB服务" class="headerlink" title="三、启动MongoDB服务"></a>三、启动MongoDB服务</h3><p>1.打开cmd命令行<br>2.进入D:\mongodb\bin目录（注意：先输入d:进入d盘，然后输入cd mongodb\bin）<br>3.输入如下的命令启动mongodb服务：mongod –dbpath D:\mongodb\data\db<br>4.在浏览器输入<a target="_blank" rel="noopener external nofollow noreferrer" href="http://localhost:27017/">http://localhost:27017</a> （27017是mongodb的端口号）查看<br>但是在本地windows“服务”中，是没有配置上mongodb 服务的，可以打开“服务”看下<br>注：改为mongod –storageEngine=mmapv1 –dbpath D:\mongodb\data\db<br>原因是：wiredTiger是数据库引擎，当前版本默认的数据库引擎，它不支持32位系统，命令–storageEngine=mmapv1，<br>将wiredTiger引擎切换成mmapv1引擎</p>
 <span id="more"></span>
 
-<h4 id="二、配置git的最低速度和最低速度时间"><a href="#二、配置git的最低速度和最低速度时间" class="headerlink" title="二、配置git的最低速度和最低速度时间"></a>二、配置git的最低速度和最低速度时间</h4><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">config</span> <span class="comment">--global http.lowSpeedLimit 0</span></span><br><span class="line">git <span class="built_in">config</span> <span class="comment">--global http.LowSpeedTime 999999</span></span><br></pre></td></tr></table></figure>
+<h3 id="四、配置本地windows-mongodb-服务"><a href="#四、配置本地windows-mongodb-服务" class="headerlink" title="四、配置本地windows mongodb 服务"></a>四、配置本地windows mongodb 服务</h3><p>这样可设置为 开机自启动，可直接手动启动关闭，可通过命令行net start MongoDB 启动。该配置会大大方便。<br>1.先在data文件下创建一个新文件夹log（用来存放日志文件）<br>2.在Mongodb新建配置文件mongo.config<br>用记事本打开mongo.config ，并输入：<br>dbpath=D:\software\MongoDB\data\db<br>logpath=D:\software\MongoDB\data\log\mongo.log<br>3.用管理员身份打开cmd:<br>C:\windows\system32\cmd.exe<br>然后右键，以管理员身份运行。打开后发现在顶端比普通打开的多了”管理员“三个字<br>4.配置windows服务：<br>cmd先跳转到 D:\mongodb\bin目录下。<br>输入：mongod –config “D:\software\Mongodb\mongo.config” –install –serviceName “MongoDB”<br>即根据刚创建的mongo.config配置文件安装服务，名称为MongoDB。<br>完成后，再次查看本地的服务。<br>如果成功的话，会发现本地服务多了”MongoDB”服务。<br>可以通过：“开机自启动，可直接手动启动关闭，命令行net start MongoDB 启动”。<br>停止MongoDB：net stop MongoDB<br>删除MongoDB：sc delete MongoDB</p>
+<p>发生服务特定错误: 100<br>data文件中有两个文件一个mongod.lock和storage.bson，一般删除mongod.lock就可以了，如果服务错误代码100还不能解决，<br>就把storage.bson一起删掉再启动就可以了！</p>
+<p>启动mongodb:<br>另开一个cmd输入:mongo<br>前提是你已经将mongodb添加到环境变量中(path–&gt;D:\mongodb\lib)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="comment">//player.youku.com/player.php/sid/XMzE3NjAwNTIwOA==/v.swf</span></span><br><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">&#x27;path&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> favicon = <span class="built_in">require</span>(<span class="string">&#x27;serve-favicon&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> logger = <span class="built_in">require</span>(<span class="string">&#x27;morgan&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> cookieParser = <span class="built_in">require</span>(<span class="string">&#x27;cookie-parser&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> bodyParser = <span class="built_in">require</span>(<span class="string">&#x27;body-parser&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> mongoose = <span class="built_in">require</span>(<span class="string">&#x27;mongoose&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> movieModel = <span class="built_in">require</span>(<span class="string">&#x27;./mongoose/model/movieModel&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> _ = <span class="built_in">require</span>(<span class="string">&#x27;underscore&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// mongoose </span></span><br><span class="line">mongoose.connect(<span class="string">&#x27;mongodb://127.0.0.1:27017/movie-website&#x27;</span>, &#123; <span class="attr">useMongoClient</span>: <span class="literal">true</span> &#125;)</span><br><span class="line">mongoose.Promise = <span class="built_in">global</span>.Promise;</span><br><span class="line"><span class="keyword">let</span> db = mongoose.connection;</span><br><span class="line">db.on(<span class="string">&#x27;error&#x27;</span>, <span class="built_in">console</span>.error.bind(<span class="built_in">console</span>, <span class="string">&#x27;Mongodb connect error !&#x27;</span>))</span><br><span class="line">db.once(<span class="string">&#x27;open&#x27;</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;Mongodb started !&#x27;</span>)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> app = express();</span><br></pre></td></tr></table></figure>
 
-<h3 id="三、github1s查看仓库速度快"><a href="#三、github1s查看仓库速度快" class="headerlink" title="三、github1s查看仓库速度快"></a>三、github1s查看仓库速度快</h3><p>这个项目名为 github1s，它的使用方法非常简单，<strong>只需要在浏览器地址栏 GitHub 网址链接中的「github 」后面添加 1s ，然后 Enter 键，即可在 VS Code 界面访问该项目的 Repo 代码</strong>。</p>
+<p>use imooc,切换到你的项目的数据库下<br>查询所有数据命令：db.movies.find({}).pretty(),<br>删除所有命令是：db.movies.remove()<br>db.users.update({“_id”:XXXX},{$set:{role:50}})<br>show tables</p>
+<p>populate()方法：<br>因为MongoDB是文档型数据库，所以它没有关系型数据库[joins]，Mongoose封装了一个Population功能。使用Population可以实现在一个<br>document 中填充其他 collection(s) 的 document(s)。在定义Schema的时候，如果设置某个 field 关联另一个Schema，那么在获取<br>document 的时候就可以使用 Population 功能通过关联Schema的 field 找到关联的另一个 document，并且用被关联 document 的内容<br>替换掉原来关联字段(field)的内容。</p>
+<p>SET DEBUG=myapp:* &amp; npm run devstart</p>
 
     </div>
 
@@ -332,7 +330,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://austinkh17.github.io/2021-03-05/git%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6/" title="github请求超时">https://austinkh17.github.io/2021-03-05/git请求超时/</a>
+    <a href="https://austinkh17.github.io/2021-04-07/mongodb%E7%9F%A5%E8%AF%86%E7%82%B9/" title="mongodb知识点">https://austinkh17.github.io/2021-04-07/mongodb知识点/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -344,7 +342,7 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
+              <a href="/tags/mongodb/" rel="tag"><i class="fa fa-tag"></i> mongodb</a>
           </div>
 
         
@@ -353,13 +351,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021-03-03/%E7%A5%9E%E7%A7%98%E6%96%87%E7%AB%A0/" rel="prev" title="神秘文章">
-      <i class="fa fa-chevron-left"></i> 神秘文章
+    <a href="/2021-04-07/node%E7%9F%A5%E8%AF%86%E7%82%B9/" rel="prev" title="node知识点">
+      <i class="fa fa-chevron-left"></i> node知识点
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021-03-05/%E5%A4%9A%E5%8F%B0%E8%AE%BE%E5%A4%87%E5%85%B1%E4%BA%ABhexo/" rel="next" title="多台设备共享hexo">
-      多台设备共享hexo <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -418,7 +413,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#github%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6"><span class="nav-number">1.</span> <span class="nav-text">github请求超时</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E4%BF%AE%E6%94%B9DNS"><span class="nav-number">1.1.</span> <span class="nav-text">一、修改DNS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E9%85%8D%E7%BD%AEgit%E7%9A%84%E6%9C%80%E4%BD%8E%E9%80%9F%E5%BA%A6%E5%92%8C%E6%9C%80%E4%BD%8E%E9%80%9F%E5%BA%A6%E6%97%B6%E9%97%B4"><span class="nav-number">1.2.</span> <span class="nav-text">二、配置git的最低速度和最低速度时间</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81github1s%E6%9F%A5%E7%9C%8B%E4%BB%93%E5%BA%93%E9%80%9F%E5%BA%A6%E5%BF%AB"><span class="nav-number">2.</span> <span class="nav-text">三、github1s查看仓库速度快</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%AE%89%E8%A3%85%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">一、安装：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%85%88%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93%E6%96%87%E4%BB%B6%E7%9A%84%E5%AD%98%E6%94%BE%E4%BD%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">二、先创建数据库文件的存放位置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%90%AF%E5%8A%A8MongoDB%E6%9C%8D%E5%8A%A1"><span class="nav-number">3.</span> <span class="nav-text">三、启动MongoDB服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E9%85%8D%E7%BD%AE%E6%9C%AC%E5%9C%B0windows-mongodb-%E6%9C%8D%E5%8A%A1"><span class="nav-number">4.</span> <span class="nav-text">四、配置本地windows mongodb 服务</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

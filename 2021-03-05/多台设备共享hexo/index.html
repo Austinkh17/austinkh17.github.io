@@ -12,23 +12,23 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"austinkh17.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"austinkh17.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="因为更换电脑，之前的hexo本地项目未保存，而github仓库上仅有发布后的文件，因此，还是需要把本地项目也及时的更新到github上去，防止丢失。 流程1.电脑A（已经配置好blog的设备） 在github上，对应的blog仓库，创建新分支hexo ，并设置为默认分支，github仓库切换到该分支，注意本地_config.yml文件的deploy配置的分支应该为master 打开gitbash，">
+  <meta name="description" content="因为更换电脑，之前的 hexo 本地项目未保存，而 github 仓库上仅有发布后的文件，因此，还是需要把本地项目也及时的更新到 github 上去，防止丢失。 流程1.电脑 A（已经配置好 blog 的设备） 在 github 上，对应的 blog 仓库，创建新分支hexo ，并设置为默认分支，github 仓库切换到该分支，注意本地_config.yml 文件的 deploy 配置的分支应该为">
 <meta property="og:type" content="article">
 <meta property="og:title" content="多台设备共享hexo">
 <meta property="og:url" content="https://austinkh17.github.io/2021-03-05/%E5%A4%9A%E5%8F%B0%E8%AE%BE%E5%A4%87%E5%85%B1%E4%BA%ABhexo/index.html">
 <meta property="og:site_name" content="Austinkh&#39;s blog">
-<meta property="og:description" content="因为更换电脑，之前的hexo本地项目未保存，而github仓库上仅有发布后的文件，因此，还是需要把本地项目也及时的更新到github上去，防止丢失。 流程1.电脑A（已经配置好blog的设备） 在github上，对应的blog仓库，创建新分支hexo ，并设置为默认分支，github仓库切换到该分支，注意本地_config.yml文件的deploy配置的分支应该为master 打开gitbash，">
+<meta property="og:description" content="因为更换电脑，之前的 hexo 本地项目未保存，而 github 仓库上仅有发布后的文件，因此，还是需要把本地项目也及时的更新到 github 上去，防止丢失。 流程1.电脑 A（已经配置好 blog 的设备） 在 github 上，对应的 blog 仓库，创建新分支hexo ，并设置为默认分支，github 仓库切换到该分支，注意本地_config.yml 文件的 deploy 配置的分支应该为">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-03-05T09:39:29.000Z">
-<meta property="article:modified_time" content="2021-03-05T09:48:32.114Z">
+<meta property="article:modified_time" content="2021-04-07T06:19:07.130Z">
 <meta property="article:author" content="Austinkh">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
@@ -128,17 +128,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">8</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">6</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">5</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">11</span></a>
 
   </li>
         <li class="menu-item menu-item-网站导航">
@@ -198,6 +198,10 @@
     </header>
 
     
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
   <div class="reading-progress-bar"></div>
 
   <a href="https://github.com/austinkh17" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener external nofollow noreferrer" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
@@ -237,10 +241,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-03-05 17:39:29 / 修改时间：17:48:32" itemprop="dateCreated datePublished" datetime="2021-03-05T17:39:29+08:00">2021-03-05</time>
+              <time title="创建时间：2021-03-05 17:39:29" itemprop="dateCreated datePublished" datetime="2021-03-05T17:39:29+08:00">2021-03-05</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-07 14:19:07" itemprop="dateModified" datetime="2021-04-07T14:19:07+08:00">2021-04-07</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -259,6 +269,11 @@
               <span class="post-meta-item-text">阅读次数：</span>
               <span id="busuanzi_value_page_pv"></span>
             </span>
+    <span class="post-meta-divider">|</span>
+    <i class="fa fa-thumb-tack"></i>
+    <font color=7D26CD>置顶</font>
+    <span class="post-meta-divider">|</span>
+
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
@@ -281,25 +296,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>因为更换电脑，之前的hexo本地项目未保存，而github仓库上仅有发布后的文件，因此，还是需要把本地项目也及时的更新到github上去，防止丢失。</p>
-<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><h3 id="1-电脑A（已经配置好blog的设备）"><a href="#1-电脑A（已经配置好blog的设备）" class="headerlink" title="1.电脑A（已经配置好blog的设备）"></a>1.电脑A（已经配置好blog的设备）</h3><ol>
-<li>在github上，对应的blog仓库，创建新分支<code>hexo</code> ，并设置为默认分支，github仓库切换到该分支，<strong>注意本地_config.yml文件的deploy配置的分支应该为master</strong></li>
-<li>打开gitbash，使用<code>git clone git@github.com:YourBlogResposity</code> ，克隆<code>hexo</code> 分支的内容到一个任意空文件夹中，例如<code>hexo</code></li>
+        <p>因为更换电脑，之前的 hexo 本地项目未保存，而 github 仓库上仅有发布后的文件，因此，还是需要把本地项目也及时的更新到 github 上去，防止丢失。</p>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><h3 id="1-电脑-A（已经配置好-blog-的设备）"><a href="#1-电脑-A（已经配置好-blog-的设备）" class="headerlink" title="1.电脑 A（已经配置好 blog 的设备）"></a>1.电脑 A（已经配置好 blog 的设备）</h3><ol>
+<li>在 github 上，对应的 blog 仓库，创建新分支<code>hexo</code> ，并设置为默认分支，github 仓库切换到该分支，<strong>注意本地_config.yml 文件的 deploy 配置的分支应该为 master</strong></li>
+<li>打开 gitbash，使用<code>git clone git@github.com:YourBlogResposity</code> ，克隆<code>hexo</code> 分支的内容到一个任意空文件夹中，例如<code>hexo</code></li>
 <li>显示所有隐藏文件和文件夹，进入刚才 clone 到本地的仓库，删掉除了 .git 文件夹以外的所有内容</li>
-<li>命令行 cd 到 clone 的仓库，git add -A ，git commit -m “共享hexo”，git push origin hexo，把刚才删除操作引起的本地仓库变化更新到远程，此时刷新下 github 端博客hexo分支，应该已经被清空</li>
-<li>将上述 .git 文件夹复制到本机本地博客根目录下（即含有 themes、source 等文件夹的那个目录），现在可以把上述 clone 的本地仓库删掉了，因为它已经没有用了，本机博客目录已经变成可以和 hexo 分支相连的仓库了<strong>（以上即是使用clone的目的）</strong></li>
+<li>命令行 cd 到 clone 的仓库，git add -A ，git commit -m “共享 hexo”，git push origin hexo，把刚才删除操作引起的本地仓库变化更新到远程，此时刷新下 github 端博客 hexo 分支，应该已经被清空</li>
+<li>将上述 .git 文件夹复制到本机本地博客根目录下（即含有 themes、source 等文件夹的那个目录），现在可以把上述 clone 的本地仓库删掉了，因为它已经没有用了，本机博客目录已经变成可以和 hexo 分支相连的仓库了<strong>（以上即是使用 clone 的目的）</strong></li>
 <li>将博客目录下 themes 文件夹下每个主题文件夹里面的 .git .gitignore 删掉。 cd 到博客目录，git add -A ，git commit -m “–”，git push origin hexo，将博客目录下所有文件更新到 hexo 分支。<strong>如果上一步没有删掉 .git .gitignore，主题文件夹下内容将传不上去。</strong></li>
-<li>完成以上步骤后，github上hexo分支应该已经存放了blog的配置文件，mater分支仍然为静态blog文件</li>
+<li>完成以上步骤后，github 上 hexo 分支应该已经存放了 blog 的配置文件，mater 分支仍然为静态 blog 文件</li>
 </ol>
-<h3 id="2-电脑B（添加的设备）"><a href="#2-电脑B（添加的设备）" class="headerlink" title="2.电脑B（添加的设备）"></a>2.电脑B（添加的设备）</h3><ol>
+<h3 id="2-电脑-B（添加的设备）"><a href="#2-电脑-B（添加的设备）" class="headerlink" title="2.电脑 B（添加的设备）"></a>2.电脑 B（添加的设备）</h3><ol>
 <li>同样<code>git clone</code> 远程仓库到本地</li>
-<li><code>cd</code> 到本地仓库，<code>npm i hexo -g</code> 安装hexo，<code>hexo s -g</code>测试电脑B能否启动blog</li>
+<li><code>cd</code> 到本地仓库，<code>npm i hexo -g</code> 安装 hexo，<code>hexo s -g</code>测试电脑 B 能否启动 blog</li>
 <li>成功添加完毕</li>
 </ol>
-<h2 id="更新、提交blog的操作"><a href="#更新、提交blog的操作" class="headerlink" title="更新、提交blog的操作"></a>更新、提交blog的操作</h2><p>依次执行：</p>
+<h2 id="更新、提交-blog-的操作"><a href="#更新、提交-blog-的操作" class="headerlink" title="更新、提交 blog 的操作"></a>更新、提交 blog 的操作</h2><p>依次执行：</p>
 <ul>
 <li>git pull</li>
-<li>更新blog内容</li>
+<li>更新 blog 内容</li>
 <li>hexo clean</li>
 <li>hexo s -g</li>
 <li>hexo d</li>
@@ -317,10 +332,13 @@
   <div class="popular-posts-header">相关文章推荐</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="\2021-03-02\hello-world\" rel="bookmark">hexo搭建个人博客系列（一） - 绑定到github pages</a></div>
+      <div class="popular-posts-title"><a href="\2021-03-22\hexo搭建个人博客系列（三） - 插件总结\" rel="bookmark">hexo搭建个人博客系列（三） - 插件总结</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="\2021-03-03\article-title\" rel="bookmark">hexo搭建个人博客系列（二） - 站点配置和主题配置（next7.8版本）</a></div>
+      <div class="popular-posts-title"><a href="\2021-03-03\hexo搭建个人博客系列（二） - 站点配置和主题配置（next7.8版本）\" rel="bookmark">hexo搭建个人博客系列（二） - 站点配置和主题配置（next7.8版本）</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2021-03-02\hexo搭建个人博客系列（一） - 绑定到github pages\" rel="bookmark">hexo搭建个人博客系列（一） - 绑定到github pages</a></div>
     </li>
   </ul>
 
@@ -372,7 +390,10 @@
     <a href="/2021-03-05/git%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6/" rel="prev" title="github请求超时">
       <i class="fa fa-chevron-left"></i> github请求超时
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2021-03-22/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%20-%20%E6%8F%92%E4%BB%B6%E6%80%BB%E7%BB%93/" rel="next" title="hexo搭建个人博客系列（三） - 插件总结">
+      hexo搭建个人博客系列（三） - 插件总结 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -431,7 +452,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%81%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%94%B5%E8%84%91A%EF%BC%88%E5%B7%B2%E7%BB%8F%E9%85%8D%E7%BD%AE%E5%A5%BDblog%E7%9A%84%E8%AE%BE%E5%A4%87%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">1.电脑A（已经配置好blog的设备）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%94%B5%E8%84%91B%EF%BC%88%E6%B7%BB%E5%8A%A0%E7%9A%84%E8%AE%BE%E5%A4%87%EF%BC%89"><span class="nav-number">1.2.</span> <span class="nav-text">2.电脑B（添加的设备）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0%E3%80%81%E6%8F%90%E4%BA%A4blog%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="nav-number">2.</span> <span class="nav-text">更新、提交blog的操作</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%81%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%94%B5%E8%84%91-A%EF%BC%88%E5%B7%B2%E7%BB%8F%E9%85%8D%E7%BD%AE%E5%A5%BD-blog-%E7%9A%84%E8%AE%BE%E5%A4%87%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">1.电脑 A（已经配置好 blog 的设备）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%94%B5%E8%84%91-B%EF%BC%88%E6%B7%BB%E5%8A%A0%E7%9A%84%E8%AE%BE%E5%A4%87%EF%BC%89"><span class="nav-number">1.2.</span> <span class="nav-text">2.电脑 B（添加的设备）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0%E3%80%81%E6%8F%90%E4%BA%A4-blog-%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="nav-number">2.</span> <span class="nav-text">更新、提交 blog 的操作</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -447,20 +468,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -486,11 +507,40 @@
     </ul>
   </div>
 
+    <div class="links-of-blogroll motion-element links-of-blogroll-block">
+      <div class="links-of-blogroll-title">
+        <!-- modify icon to fire by szw -->
+        <i class="fa fa-history fa-" aria-hidden="true"></i>
+        近期文章
       </div>
-        <div class="back-to-top motion-element">
-          <i class="fa fa-arrow-up"></i>
-          <span>0%</span>
-        </div>
+      <ul class="links-of-blogroll-list">
+        
+        
+        
+          <li>
+            <a href="/2021-04-07/mongodb%E7%9F%A5%E8%AF%86%E7%82%B9/" title="mongodb知识点" target="_blank">mongodb知识点</a>
+          </li>
+        
+          <li>
+            <a href="/2021-04-07/node%E7%9F%A5%E8%AF%86%E7%82%B9/" title="node知识点" target="_blank">node知识点</a>
+          </li>
+        
+          <li>
+            <a href="/2021-04-07/mpvue%E7%9F%A5%E8%AF%86%E7%82%B9/" title="mpvue知识点" target="_blank">mpvue知识点</a>
+          </li>
+        
+          <li>
+            <a href="/2021-04-07/webstorm%E5%B8%B8%E7%94%A8/" title="webstorm常用" target="_blank">webstorm常用</a>
+          </li>
+        
+          <li>
+            <a href="/2021-04-07/%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/" title="常用快捷键" target="_blank">常用快捷键</a>
+          </li>
+        
+      </ul>
+    </div>
+
+      </div>
 
     </div>
   </aside>
@@ -518,12 +568,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">10k</span>
+    <span title="站点总字数">29k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">10 分钟</span>
+    <span title="站点阅读时长">26 分钟</span>
 </div>
 
         
@@ -600,6 +650,19 @@
   
 
   
+
+
+  <script async src="/js/cursor/fireworks.js"></script>
+
+
+
+
+  <script src="/js/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = true;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
 
 </body>
 </html>

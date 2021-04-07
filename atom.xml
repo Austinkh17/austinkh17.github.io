@@ -6,7 +6,7 @@
   <link href="https://austinkh17.github.io/atom.xml" rel="self"/>
   
   <link href="https://austinkh17.github.io/"/>
-  <updated>2021-03-05T09:48:32.114Z</updated>
+  <updated>2021-04-07T07:39:01.396Z</updated>
   <id>https://austinkh17.github.io/</id>
   
   <author>
@@ -17,18 +17,272 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>mongodb知识点</title>
+    <link href="https://austinkh17.github.io/2021-04-07/mongodb%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    <id>https://austinkh17.github.io/2021-04-07/mongodb%E7%9F%A5%E8%AF%86%E7%82%B9/</id>
+    <published>2021-04-07T07:14:16.000Z</published>
+    <updated>2021-04-07T07:39:01.396Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;一、安装：&quot;&gt;&lt;a href=&quot;#一、安装：&quot; class=&quot;headerlink&quot; title=&quot;一、安装：&quot;&gt;&lt;/a&gt;一、安装：&lt;/h3&gt;&lt;p&gt;官网下载mongoDB：&lt;a href=&quot;https://www.mongodb.com/try/download/community?jmp=nav%EF%BC%8C%E9%80%89%E6%8B%A9%E2%80%9CCustom%E2%80%9D%E8%87%AA%E5%AE%9A%E4%B9%89&quot;&gt;https://www.mongodb.com/try/download/community?jmp=nav，选择“Custom”自定义&lt;/a&gt; 安装路径修改下：D:\mongodb&lt;/p&gt;
+&lt;h3 id=&quot;二、先创建数据库文件的存放位置&quot;&gt;&lt;a href=&quot;#二、先创建数据库文件的存放位置&quot; class=&quot;headerlink&quot; title=&quot;二、先创建数据库文件的存放位置&quot;&gt;&lt;/a&gt;二、先创建数据库文件的存放位置&lt;/h3&gt;&lt;p&gt;在MongoDB下创建data，在data下再创建db：D:\mongodb\data\db&lt;br&gt;因为启动mongodb服务之前需要必须创建数据库文件的存放文件夹，否则命令不会自动创建，而且不能启动成功。&lt;/p&gt;
+&lt;h3 id=&quot;三、启动MongoDB服务&quot;&gt;&lt;a href=&quot;#三、启动MongoDB服务&quot; class=&quot;headerlink&quot; title=&quot;三、启动MongoDB服务&quot;&gt;&lt;/a&gt;三、启动MongoDB服务&lt;/h3&gt;&lt;p&gt;1.打开cmd命令行&lt;br&gt;2.进入D:\mongodb\bin目录（注意：先输入d:进入d盘，然后输入cd mongodb\bin）&lt;br&gt;3.输入如下的命令启动mongodb服务：mongod –dbpath D:\mongodb\data\db&lt;br&gt;4.在浏览器输入&lt;a href=&quot;http://localhost:27017/&quot;&gt;http://localhost:27017&lt;/a&gt; （27017是mongodb的端口号）查看&lt;br&gt;但是在本地windows“服务”中，是没有配置上mongodb 服务的，可以打开“服务”看下&lt;br&gt;注：改为mongod –storageEngine=mmapv1 –dbpath D:\mongodb\data\db&lt;br&gt;原因是：wiredTiger是数据库引擎，当前版本默认的数据库引擎，它不支持32位系统，命令–storageEngine=mmapv1，&lt;br&gt;将wiredTiger引擎切换成mmapv1引擎&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="mongodb" scheme="https://austinkh17.github.io/categories/mongodb/"/>
+    
+    
+    <category term="mongodb" scheme="https://austinkh17.github.io/tags/mongodb/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>node知识点</title>
+    <link href="https://austinkh17.github.io/2021-04-07/node%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    <id>https://austinkh17.github.io/2021-04-07/node%E7%9F%A5%E8%AF%86%E7%82%B9/</id>
+    <published>2021-04-07T07:12:16.000Z</published>
+    <updated>2021-04-07T07:37:28.651Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;node知识点系列一&quot;&gt;&lt;a href=&quot;#node知识点系列一&quot; class=&quot;headerlink&quot; title=&quot;node知识点系列一&quot;&gt;&lt;/a&gt;node知识点系列一&lt;/h2&gt;&lt;p&gt;nodejs是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。npm和bower都是web包管理器。&lt;br&gt;nodejs 本身自带的框架有限，通过 bower 或者 npm 可以直接调用一些发布到网上的著名的开源模块包。&lt;br&gt;简而言之：nodejs已经集成了npm，通过npm包管理可以安装bower这些前端包管理工具。通过bower关联安装bootstrap这些前端框架。&lt;/p&gt;
+&lt;h3 id=&quot;node安装&quot;&gt;&lt;a href=&quot;#node安装&quot; class=&quot;headerlink&quot; title=&quot;node安装&quot;&gt;&lt;/a&gt;node安装&lt;/h3&gt;&lt;p&gt;配置npm全局模块的存放路径和cache的路径。&lt;br&gt;如果你希望将以上两个文件夹放在nodejs的主目录下，就在nodejs下建立“node_global”及“node_cache”两个文件夹。&lt;br&gt;然后我们就在cmd中分别键入两行命令，设置路径：&lt;br&gt;npm config set prefix “D:\nodejs\node_global”&lt;br&gt;npm config set cache “D:\nodejs\node_cache”&lt;/p&gt;
+&lt;p&gt;C:\Users\Administrator\AppData\Roaming\npm\node_modules(未设置默认路径)&lt;/p&gt;
+&lt;p&gt;在系统环境变量添加系统变量NODE_PATH，输入路径D:\nodejs\node_global\node_modules&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="node" scheme="https://austinkh17.github.io/categories/node/"/>
+    
+    
+    <category term="node" scheme="https://austinkh17.github.io/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mpvue知识点</title>
+    <link href="https://austinkh17.github.io/2021-04-07/mpvue%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    <id>https://austinkh17.github.io/2021-04-07/mpvue%E7%9F%A5%E8%AF%86%E7%82%B9/</id>
+    <published>2021-04-07T06:49:16.000Z</published>
+    <updated>2021-04-07T07:17:20.899Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;1-第一次进入时的生命周期执行顺序&quot;&gt;&lt;a href=&quot;#1-第一次进入时的生命周期执行顺序&quot; class=&quot;headerlink&quot; title=&quot;1.第一次进入时的生命周期执行顺序&quot;&gt;&lt;/a&gt;1.第一次进入时的生命周期执行顺序&lt;/h3&gt;&lt;p&gt;(1).created&lt;br&gt;(2).onload(option)，option作为页面路径中的参数，一个页面只会调用一次，接收页面参数，监听页面加载&lt;br&gt;(3).onshow&lt;br&gt;(4).onready，页面初次渲染完成，一个页面只会调用一次，代表页面已经准备妥当，可以和视图层进行交互&lt;br&gt;(5).mounted&lt;/p&gt;
+&lt;p&gt;在所有 页面 的组件内可以通过 this.$root.$mp.query 进行获取小程序在 page onLoad 时候传递的 options。要注意：写到created报错。&lt;/p&gt;
+&lt;p&gt;在所有的组件内可以通过 this.$root.$mp进行获取小程序在 app onLaunch/onShow 时候传递的 options。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="mpvue 微信小程序" scheme="https://austinkh17.github.io/categories/mpvue-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+    <category term="mpvue 微信小程序" scheme="https://austinkh17.github.io/tags/mpvue-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webstorm常用</title>
+    <link href="https://austinkh17.github.io/2021-04-07/webstorm%E5%B8%B8%E7%94%A8/"/>
+    <id>https://austinkh17.github.io/2021-04-07/webstorm%E5%B8%B8%E7%94%A8/</id>
+    <published>2021-04-07T06:48:16.000Z</published>
+    <updated>2021-04-07T07:08:04.932Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;webstorm-快捷键&quot;&gt;&lt;a href=&quot;#webstorm-快捷键&quot; class=&quot;headerlink&quot; title=&quot;webstorm 快捷键&quot;&gt;&lt;/a&gt;webstorm 快捷键&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;ctrl+f3&lt;/td&gt;
+&lt;td&gt;跳到光标处单词其他处，跳到最后处用 f3 来跳（必记）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+alt+左右箭头&lt;/td&gt;
+&lt;td&gt;后退/前进（必记）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+shift+N&lt;/td&gt;
+&lt;td&gt;通过文件名快速查找工程内的文件（必记）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;alt+箭头&lt;/td&gt;
+&lt;td&gt;切换代码选项卡（必记）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;alt+up/down&lt;/td&gt;
+&lt;td&gt;上一个/下一个方法（必记）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;alt+鼠标选中一列&lt;/td&gt;
+&lt;td&gt;同时多行编辑（必记）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;alt + shift + 上/下&lt;/td&gt;
+&lt;td&gt;可以移动整行代码&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;shift+上下左右箭头&lt;/td&gt;
+&lt;td&gt;选中区域&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;backspace&lt;/td&gt;
+&lt;td&gt;删除前面的&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;delete&lt;/td&gt;
+&lt;td&gt;删除后面的&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+[/]&lt;/td&gt;
+&lt;td&gt;跳到对应标签的前后&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+shift+[/]&lt;/td&gt;
+&lt;td&gt;选中对应标签前后区域&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;左箭头&lt;/td&gt;
+&lt;td&gt;按字母向左移动&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+左箭头&lt;/td&gt;
+&lt;td&gt;按单词向左移动&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;shift+左箭头&lt;/td&gt;
+&lt;td&gt;选中左边区域&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+shift+z&lt;/td&gt;
+&lt;td&gt;撤销 ctrl+z 的操作&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+shift+alt+N&lt;/td&gt;
+&lt;td&gt;通过一个字符快速查找位置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+shift+A&lt;/td&gt;
+&lt;td&gt;快速查找并使用编辑器所有功能&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+shift+F12&lt;/td&gt;
+&lt;td&gt;最大区域显示代码（会隐藏其他的功能界面模块）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+alt+s&lt;/td&gt;
+&lt;td&gt;打开配置窗口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+tab&lt;/td&gt;
+&lt;td&gt;切换代码选项卡（还要进行此选择，效率差些）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+F4&lt;/td&gt;
+&lt;td&gt;关闭当前代码选项卡&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+alt+L&lt;/td&gt;
+&lt;td&gt;格式化代码&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;shift+enter&lt;/td&gt;
+&lt;td&gt;重新开始一行（无论光标在哪个位置）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+G&lt;/td&gt;
+&lt;td&gt;到指定行的代码&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;alt+f12&lt;/td&gt;
+&lt;td&gt;打开终端&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ctrl+shift+i&lt;/td&gt;
+&lt;td&gt;快速查看方法定义处&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    <category term="工具" scheme="https://austinkh17.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="工具" scheme="https://austinkh17.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用快捷键</title>
+    <link href="https://austinkh17.github.io/2021-04-07/%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>https://austinkh17.github.io/2021-04-07/%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</id>
+    <published>2021-04-07T06:08:16.000Z</published>
+    <updated>2021-04-07T07:27:22.106Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;一、git-常用命令&quot;&gt;&lt;a href=&quot;#一、git-常用命令&quot; class=&quot;headerlink&quot; title=&quot;一、git 常用命令&quot;&gt;&lt;/a&gt;一、git 常用命令&lt;/h3&gt;&lt;h4 id=&quot;1-git-将本地项目添加至-github-步骤&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="工具" scheme="https://austinkh17.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="工具" scheme="https://austinkh17.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo搭建个人博客系列（三） - 插件总结</title>
+    <link href="https://austinkh17.github.io/2021-03-22/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%20-%20%E6%8F%92%E4%BB%B6%E6%80%BB%E7%BB%93/"/>
+    <id>https://austinkh17.github.io/2021-03-22/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%20-%20%E6%8F%92%E4%BB%B6%E6%80%BB%E7%BB%93/</id>
+    <published>2021-03-22T10:24:34.000Z</published>
+    <updated>2021-04-07T06:26:38.311Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;一、文章加密&quot;&gt;&lt;a href=&quot;#一、文章加密&quot; class=&quot;headerlink&quot; title=&quot;一、文章加密&quot;&gt;&lt;/a&gt;一、文章加密&lt;/h2&gt;&lt;h3 id=&quot;1、安装插件&quot;&gt;&lt;a href=&quot;#1、安装插件&quot; class=&quot;headerlink&quot; title=&quot;1、安装插件&quot;&gt;&lt;/a&gt;1、安装插件&lt;/h3&gt;&lt;figure class=&quot;highlight livecodeserver&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-blog-&lt;span class=&quot;built_in&quot;&gt;encrypt&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;--save&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;2、hexo-配置文件-config-yml-文末添加：&quot;&gt;&lt;a href=&quot;#2、hexo-配置文件-config-yml-文末添加：&quot; class=&quot;headerlink&quot; title=&quot;2、hexo 配置文件_config.yml 文末添加：&quot;&gt;&lt;/a&gt;2、hexo 配置文件_config.yml 文末添加：&lt;/h3&gt;&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 文章加密&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;encrypt:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;attr&quot;&gt;enable:&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;attr&quot;&gt;abstract:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你非常好奇，请与我联系。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;attr&quot;&gt;message:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;输入密码，查看文章。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;3、文章头部加上-password-123456-即可：&quot;&gt;&lt;a href=&quot;#3、文章头部加上-password-123456-即可：&quot; class=&quot;headerlink&quot; title=&quot;3、文章头部加上 password: 123456 即可：&quot;&gt;&lt;/a&gt;3、文章头部加上 password: 123456 即可：&lt;/h3&gt;&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;title:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;Hello&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;World&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;password:&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;123456&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;其中：&lt;br&gt;1.password: 是该博客加密使用的密码&lt;br&gt;2.abstract: 是该博客的摘要，会显示在博客的列表页&lt;br&gt;3.message: 这个是博客查看时，密码输入框上面的描述性文字&lt;br&gt;效果：（此页面是不支持复制功能的 o！）&lt;br&gt;如果你开启了 字数统计功能 的话，那么本文的统计也会失效。&lt;/p&gt;
+&lt;h3 id=&quot;4、加密文章，需要额外隐藏浏览数、评论、作者信息等&quot;&gt;&lt;a href=&quot;#4、加密文章，需要额外隐藏浏览数、评论、作者信息等&quot; class=&quot;headerlink&quot; title=&quot;4、加密文章，需要额外隐藏浏览数、评论、作者信息等&quot;&gt;&lt;/a&gt;4、加密文章，需要额外隐藏浏览数、评论、作者信息等&lt;/h3&gt;&lt;p&gt;在任何需要加密的地方加上一句：&lt;/p&gt;
+&lt;figure class=&quot;highlight gcode&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;&lt;span class=&quot;meta&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;(post.encrypt == true)&lt;/span&gt; &amp;#123; &lt;span class=&quot;meta&quot;&gt;%&lt;/span&gt;&amp;gt;style=&lt;span class=&quot;string&quot;&gt;&amp;quot;display:none&amp;quot;&lt;/span&gt; &amp;lt;&lt;span class=&quot;meta&quot;&gt;%&lt;/span&gt; &amp;#125; &lt;span class=&quot;meta&quot;&gt;%&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="hexo" scheme="https://austinkh17.github.io/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://austinkh17.github.io/tags/hexo/"/>
+    
+    <category term="next主题" scheme="https://austinkh17.github.io/tags/next%E4%B8%BB%E9%A2%98/"/>
+    
+    <category term="个人博客" scheme="https://austinkh17.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>多台设备共享hexo</title>
     <link href="https://austinkh17.github.io/2021-03-05/%E5%A4%9A%E5%8F%B0%E8%AE%BE%E5%A4%87%E5%85%B1%E4%BA%ABhexo/"/>
     <id>https://austinkh17.github.io/2021-03-05/%E5%A4%9A%E5%8F%B0%E8%AE%BE%E5%A4%87%E5%85%B1%E4%BA%ABhexo/</id>
     <published>2021-03-05T09:39:29.000Z</published>
-    <updated>2021-03-05T09:48:32.114Z</updated>
+    <updated>2021-04-07T06:19:07.130Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;因为更换电脑，之前的hexo本地项目未保存，而github仓库上仅有发布后的文件，因此，还是需要把本地项目也及时的更新到github上去，防止丢失。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;因为更换电脑，之前的 hexo 本地项目未保存，而 github 仓库上仅有发布后的文件，因此，还是需要把本地项目也及时的更新到 github 上去，防止丢失。&lt;/p&gt;
 &lt;h2 id=&quot;流程&quot;&gt;&lt;a href=&quot;#流程&quot; class=&quot;headerlink&quot;</summary>
         
       
@@ -47,16 +301,13 @@
     <link href="https://austinkh17.github.io/2021-03-05/git%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6/"/>
     <id>https://austinkh17.github.io/2021-03-05/git%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6/</id>
     <published>2021-03-05T09:08:16.000Z</published>
-    <updated>2021-03-05T09:48:36.709Z</updated>
+    <updated>2021-04-07T06:18:18.745Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;github请求超时&quot;&gt;&lt;a href=&quot;#github请求超时&quot; class=&quot;headerlink&quot; title=&quot;github请求超时&quot;&gt;&lt;/a&gt;github请求超时&lt;/h3&gt;&lt;h4 id=&quot;一、修改DNS&quot;&gt;&lt;a href=&quot;#一、修改DNS&quot;</summary>
-        
-      
+    <summary type="html">&lt;h3 id=&quot;github请求超时&quot;&gt;&lt;a href=&quot;#github请求超时&quot; class=&quot;headerlink&quot; title=&quot;github请求超时&quot;&gt;&lt;/a&gt;github请求超时&lt;/h3&gt;&lt;h4 id=&quot;一、修改DNS&quot;&gt;&lt;a href=&quot;#一、修改DNS&quot; class=&quot;headerlink&quot; title=&quot;一、修改DNS&quot;&gt;&lt;/a&gt;一、修改DNS&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;http://tool.chinaz.com/dns/&quot;&gt;站长工具1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://ping.chinaz.com/github.githubassets.com&quot;&gt;站长工具2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在上面的网站中寻找&lt;code&gt;github.com&lt;/code&gt;对应的IP地址，复制后进入hosts文件（C/Windows/System32/drivers/etc/hosts），写下&lt;code&gt;ip  github.com&lt;/code&gt;，并刷新dns缓存（ipconfig /flushdns）&lt;/p&gt;
+&lt;p&gt;适当的时候可以打开&lt;code&gt;chrome://net-internals/#dns&lt;/code&gt;刷新一下google浏览器的dns&lt;/p&gt;</summary>
     
     
     
@@ -68,12 +319,14 @@
   </entry>
   
   <entry>
-    <title>categories</title>
-    <link href="https://austinkh17.github.io/2021-03-03/categories/"/>
-    <id>https://austinkh17.github.io/2021-03-03/categories/</id>
+    <title>神秘文章</title>
+    <link href="https://austinkh17.github.io/2021-03-03/%E7%A5%9E%E7%A7%98%E6%96%87%E7%AB%A0/"/>
+    <id>https://austinkh17.github.io/2021-03-03/%E7%A5%9E%E7%A7%98%E6%96%87%E7%AB%A0/</id>
     <published>2021-03-03T10:07:34.000Z</published>
-    <updated>2021-03-03T10:09:25.610Z</updated>
+    <updated>2021-04-07T06:16:13.956Z</updated>
     
+    
+    <summary type="html">这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你非常好奇，请与我联系。</summary>
     
     
     
@@ -82,10 +335,10 @@
   
   <entry>
     <title>hexo搭建个人博客系列（二） - 站点配置和主题配置（next7.8版本）</title>
-    <link href="https://austinkh17.github.io/2021-03-03/article-title/"/>
-    <id>https://austinkh17.github.io/2021-03-03/article-title/</id>
+    <link href="https://austinkh17.github.io/2021-03-03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%20-%20%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E5%92%8C%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%EF%BC%88next7.8%E7%89%88%E6%9C%AC%EF%BC%89/"/>
+    <id>https://austinkh17.github.io/2021-03-03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%20-%20%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E5%92%8C%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%EF%BC%88next7.8%E7%89%88%E6%9C%AC%EF%BC%89/</id>
     <published>2021-03-03T08:24:34.000Z</published>
-    <updated>2021-03-05T09:48:43.869Z</updated>
+    <updated>2021-03-19T09:45:09.240Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;一、站点配置&quot;&gt;&lt;a href=&quot;#一、站点配置&quot; class=&quot;headerlink&quot; title=&quot;一、站点配置&quot;&gt;&lt;/a&gt;一、站点配置&lt;/h2&gt;&lt;h3 id=&quot;1、设置-hexo-的-next-主题&quot;&gt;&lt;a href=&quot;#1、设置-hexo-的-next-主题&quot; class=&quot;headerlink&quot; title=&quot;1、设置 hexo 的 next 主题&quot;&gt;&lt;/a&gt;1、设置 hexo 的 next 主题&lt;/h3&gt;&lt;p&gt;安装next主题，在个人博客目录下，&lt;code&gt;git clone https://github.com/theme-next/hexo-theme-next themes/next&lt;/code&gt;&lt;/p&gt;
@@ -112,10 +365,10 @@
   
   <entry>
     <title>hexo搭建个人博客系列（一） - 绑定到github pages</title>
-    <link href="https://austinkh17.github.io/2021-03-02/hello-world/"/>
-    <id>https://austinkh17.github.io/2021-03-02/hello-world/</id>
+    <link href="https://austinkh17.github.io/2021-03-02/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%20-%20%E7%BB%91%E5%AE%9A%E5%88%B0github%20pages/"/>
+    <id>https://austinkh17.github.io/2021-03-02/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%20-%20%E7%BB%91%E5%AE%9A%E5%88%B0github%20pages/</id>
     <published>2021-03-02T08:24:34.000Z</published>
-    <updated>2021-03-05T08:04:22.462Z</updated>
+    <updated>2021-03-19T09:45:20.802Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;Github-Pages&quot;&gt;&lt;a href=&quot;#Github-Pages&quot; class=&quot;headerlink&quot; title=&quot;Github Pages&quot;&gt;&lt;/a&gt;Github Pages&lt;/h3&gt;&lt;blockquote&gt;

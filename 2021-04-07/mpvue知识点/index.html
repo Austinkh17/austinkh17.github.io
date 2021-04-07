@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"austinkh17.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="github请求超时一、修改DNS站长工具1 站长工具2 在上面的网站中寻找github.com对应的IP地址，复制后进入hosts文件（C&#x2F;Windows&#x2F;System32&#x2F;drivers&#x2F;etc&#x2F;hosts），写下ip  github.com，并刷新dns缓存（ipconfig &#x2F;flushdns） 适当的时候可以打开chrome:&#x2F;&#x2F;net-internals&#x2F;#dns刷新一下google浏">
+  <meta name="description" content="1.第一次进入时的生命周期执行顺序(1).created(2).onload(option)，option作为页面路径中的参数，一个页面只会调用一次，接收页面参数，监听页面加载(3).onshow(4).onready，页面初次渲染完成，一个页面只会调用一次，代表页面已经准备妥当，可以和视图层进行交互(5).mounted 在所有 页面 的组件内可以通过 this.$root.$mp.query">
 <meta property="og:type" content="article">
-<meta property="og:title" content="github请求超时">
-<meta property="og:url" content="https://austinkh17.github.io/2021-03-05/git%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6/index.html">
+<meta property="og:title" content="mpvue知识点">
+<meta property="og:url" content="https://austinkh17.github.io/2021-04-07/mpvue%E7%9F%A5%E8%AF%86%E7%82%B9/index.html">
 <meta property="og:site_name" content="Austinkh&#39;s blog">
-<meta property="og:description" content="github请求超时一、修改DNS站长工具1 站长工具2 在上面的网站中寻找github.com对应的IP地址，复制后进入hosts文件（C&#x2F;Windows&#x2F;System32&#x2F;drivers&#x2F;etc&#x2F;hosts），写下ip  github.com，并刷新dns缓存（ipconfig &#x2F;flushdns） 适当的时候可以打开chrome:&#x2F;&#x2F;net-internals&#x2F;#dns刷新一下google浏">
+<meta property="og:description" content="1.第一次进入时的生命周期执行顺序(1).created(2).onload(option)，option作为页面路径中的参数，一个页面只会调用一次，接收页面参数，监听页面加载(3).onshow(4).onready，页面初次渲染完成，一个页面只会调用一次，代表页面已经准备妥当，可以和视图层进行交互(5).mounted 在所有 页面 的组件内可以通过 this.$root.$mp.query">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-03-05T09:08:16.000Z">
-<meta property="article:modified_time" content="2021-04-07T06:18:18.745Z">
+<meta property="article:published_time" content="2021-04-07T06:49:16.000Z">
+<meta property="article:modified_time" content="2021-04-07T07:17:20.899Z">
 <meta property="article:author" content="Austinkh">
-<meta property="article:tag" content="git">
+<meta property="article:tag" content="mpvue 微信小程序">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://austinkh17.github.io/2021-03-05/git%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6/">
+<link rel="canonical" href="https://austinkh17.github.io/2021-04-07/mpvue%E7%9F%A5%E8%AF%86%E7%82%B9/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>github请求超时 | Austinkh's blog</title>
+  <title>mpvue知识点 | Austinkh's blog</title>
   
 
 
@@ -219,7 +219,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-03-05/git%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6/">
+    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-04-07/mpvue%E7%9F%A5%E8%AF%86%E7%82%B9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/boy.jpg">
@@ -232,7 +232,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          github请求超时
+          mpvue知识点
         </h1>
 
         <div class="post-meta">
@@ -241,23 +241,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-03-05 17:08:16" itemprop="dateCreated datePublished" datetime="2021-03-05T17:08:16+08:00">2021-03-05</time>
+              <time title="创建时间：2021-04-07 14:49:16 / 修改时间：15:17:20" itemprop="dateCreated datePublished" datetime="2021-04-07T14:49:16+08:00">2021-04-07</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-07 14:18:18" itemprop="dateModified" datetime="2021-04-07T14:18:18+08:00">2021-04-07</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a>
+                  <a href="/categories/mpvue-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" itemprop="url" rel="index"><span itemprop="name">mpvue 微信小程序</span></a>
                 </span>
             </span>
 
@@ -273,13 +267,13 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
-              <span>410</span>
+              <span>1.7k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -291,15 +285,40 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="github请求超时"><a href="#github请求超时" class="headerlink" title="github请求超时"></a>github请求超时</h3><h4 id="一、修改DNS"><a href="#一、修改DNS" class="headerlink" title="一、修改DNS"></a>一、修改DNS</h4><p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://tool.chinaz.com/dns/">站长工具1</a></p>
-<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://ping.chinaz.com/github.githubassets.com">站长工具2</a></p>
-<p>在上面的网站中寻找<code>github.com</code>对应的IP地址，复制后进入hosts文件（C/Windows/System32/drivers/etc/hosts），写下<code>ip  github.com</code>，并刷新dns缓存（ipconfig /flushdns）</p>
-<p>适当的时候可以打开<code>chrome://net-internals/#dns</code>刷新一下google浏览器的dns</p>
+        <h3 id="1-第一次进入时的生命周期执行顺序"><a href="#1-第一次进入时的生命周期执行顺序" class="headerlink" title="1.第一次进入时的生命周期执行顺序"></a>1.第一次进入时的生命周期执行顺序</h3><p>(1).created<br>(2).onload(option)，option作为页面路径中的参数，一个页面只会调用一次，接收页面参数，监听页面加载<br>(3).onshow<br>(4).onready，页面初次渲染完成，一个页面只会调用一次，代表页面已经准备妥当，可以和视图层进行交互<br>(5).mounted</p>
+<p>在所有 页面 的组件内可以通过 this.$root.$mp.query 进行获取小程序在 page onLoad 时候传递的 options。要注意：写到created报错。</p>
+<p>在所有的组件内可以通过 this.$root.$mp进行获取小程序在 app onLaunch/onShow 时候传递的 options。</p>
 <span id="more"></span>
 
-<h4 id="二、配置git的最低速度和最低速度时间"><a href="#二、配置git的最低速度和最低速度时间" class="headerlink" title="二、配置git的最低速度和最低速度时间"></a>二、配置git的最低速度和最低速度时间</h4><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">config</span> <span class="comment">--global http.lowSpeedLimit 0</span></span><br><span class="line">git <span class="built_in">config</span> <span class="comment">--global http.LowSpeedTime 999999</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="三、github1s查看仓库速度快"><a href="#三、github1s查看仓库速度快" class="headerlink" title="三、github1s查看仓库速度快"></a>三、github1s查看仓库速度快</h3><p>这个项目名为 github1s，它的使用方法非常简单，<strong>只需要在浏览器地址栏 GitHub 网址链接中的「github 」后面添加 1s ，然后 Enter 键，即可在 VS Code 界面访问该项目的 Repo 代码</strong>。</p>
+<h3 id="2-onload和onshow的区别"><a href="#2-onload和onshow的区别" class="headerlink" title="2.onload和onshow的区别"></a>2.onload和onshow的区别</h3><p>onLoad是在当前页面第一次加载的时候调用的，一个页面只会调用一次，而此时onShow也会调用的，所以执行onload一定会执行onshow,但执行onshow不一定就执行onload</p>
+<h3 id="3-关于后台销毁等情况的生命周期钩子函数执行"><a href="#3-关于后台销毁等情况的生命周期钩子函数执行" class="headerlink" title="3.关于后台销毁等情况的生命周期钩子函数执行"></a>3.关于后台销毁等情况的生命周期钩子函数执行</h3><p>当 后台运行小程序然后再打开小程序，执行onhide和onshow；<br>当 杀死小程序再打开小程序，执行onunload和onload,以及onhide和onshow；<br>当 小程序onunload后，vue实例并没有被销毁，但是小程序的page实例被销毁了，所以vue内部的状态会被保存</p>
+<h3 id="4-常用的全局事件"><a href="#4-常用的全局事件" class="headerlink" title="4.常用的全局事件"></a>4.常用的全局事件</h3><p>onPullDownRefresh监听用户下拉动作<br>onReachBottom页面上拉触底事件的处理函数<br>onPageScroll 监听页面滚动事件<br>onShareAppMessage 用户点击右上角分享事件</p>
+<h3 id="5-view-scroll必须给固定的高度，不可以flex-1"><a href="#5-view-scroll必须给固定的高度，不可以flex-1" class="headerlink" title="5.view-scroll必须给固定的高度，不可以flex:1"></a>5.view-scroll必须给固定的高度，不可以flex:1</h3><h3 id="6-拥有slot的组件无法自动编译成功"><a href="#6-拥有slot的组件无法自动编译成功" class="headerlink" title="6.拥有slot的组件无法自动编译成功"></a>6.拥有slot的组件无法自动编译成功</h3><h3 id="7-mpvue快速搭建项目"><a href="#7-mpvue快速搭建项目" class="headerlink" title="7.mpvue快速搭建项目"></a>7.mpvue快速搭建项目</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 全局安装 vue-cli</span></span><br><span class="line"><span class="variable">$</span> npm install -<span class="literal">-global</span> vue<span class="literal">-cli</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个基于 mpvue-quickstart 模板的新项目</span></span><br><span class="line"><span class="variable">$</span> vue init mpvue/mpvue<span class="literal">-quickstart</span> my<span class="literal">-project</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装依赖</span></span><br><span class="line"><span class="variable">$</span> <span class="built_in">cd</span> my<span class="literal">-project</span></span><br><span class="line"><span class="variable">$</span> npm install</span><br><span class="line"><span class="comment"># 启动构建</span></span><br><span class="line"><span class="variable">$</span> npm run dev</span><br><span class="line"><span class="comment"># 打包</span></span><br><span class="line"><span class="variable">$</span> npm run build</span><br><span class="line"><span class="comment"># 生成分析报告</span></span><br><span class="line"><span class="variable">$</span> npm run build -<span class="literal">-report</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>将dist/wx导入微信开发者工具</li>
+</ul>
+<h3 id="8-改造vuex，flyio"><a href="#8-改造vuex，flyio" class="headerlink" title="8.改造vuex，flyio"></a>8.改造vuex，flyio</h3><ul>
+<li><p>src下新建store/index.js</p>
+<figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">import Vue <span class="keyword">from</span> &#x27;vue&#x27;</span><br><span class="line">import Vuex <span class="keyword">from</span> &#x27;vuex&#x27;</span><br><span class="line"></span><br><span class="line">Vue.use(Vuex)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> store = new Vuex.Store(&#123;</span><br><span class="line">  <span class="keyword">state</span>: &#123;</span><br><span class="line">    count: <span class="number">0</span></span><br><span class="line">  &#125;,</span><br><span class="line">  mutations: &#123;</span><br><span class="line">    increment: (<span class="keyword">state</span>) =&gt; &#123;</span><br><span class="line">      <span class="keyword">const</span> obj = <span class="keyword">state</span></span><br><span class="line">      obj.count += <span class="number">1</span></span><br><span class="line">    &#125;,</span><br><span class="line">    decrement: (<span class="keyword">state</span>) =&gt; &#123;</span><br><span class="line">      <span class="keyword">const</span> obj = <span class="keyword">state</span></span><br><span class="line">      obj.count -= <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">export <span class="keyword">default</span> store</span><br></pre></td></tr></table></figure></li>
+<li><p>main.js下挂载到全局</p>
+<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import <span class="keyword">store</span> from &#x27;./<span class="keyword">store</span>&#x27;</span><br><span class="line">// App.<span class="keyword">store</span> <span class="operator">=</span> <span class="keyword">store</span>新版本不可用</span><br><span class="line">Vue.prototype.$<span class="keyword">store</span> <span class="operator">=</span> <span class="keyword">store</span></span><br></pre></td></tr></table></figure></li>
+<li><p>使用less语法<br>npm i less less-loader -D</p>
+</li>
+<li><p>mpvue-entry: 集中式页面配置，自动生成各页面的入口文件，优化目录结构，支持新增页面热更新</p>
+</li>
+<li><p>mpvue-router-patch: 在 mpvue 中使用 vue-router 兼容的路由写法<br>npm i mpvue-entry mpvue-router-patch -D</p>
+</li>
+<li><p>npm i vant-weapp -S</p>
+</li>
+<li><p>使用flyio进行数据交互<br>npm i -S flyio</p>
+</li>
+<li><p>this.$route.query获取的参数为字符串，当传递数组或对象时，需要用JSON.parse解析出来</p>
+</li>
+<li><p>小程序进入后台会清空vuex</p>
+</li>
+<li><p>路由文件修改需要npm run dev</p>
+</li>
+</ul>
 
     </div>
 
@@ -332,7 +351,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://austinkh17.github.io/2021-03-05/git%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6/" title="github请求超时">https://austinkh17.github.io/2021-03-05/git请求超时/</a>
+    <a href="https://austinkh17.github.io/2021-04-07/mpvue%E7%9F%A5%E8%AF%86%E7%82%B9/" title="mpvue知识点">https://austinkh17.github.io/2021-04-07/mpvue知识点/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -344,7 +363,7 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/git/" rel="tag"><i class="fa fa-tag"></i> git</a>
+              <a href="/tags/mpvue-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" rel="tag"><i class="fa fa-tag"></i> mpvue 微信小程序</a>
           </div>
 
         
@@ -353,12 +372,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021-03-03/%E7%A5%9E%E7%A7%98%E6%96%87%E7%AB%A0/" rel="prev" title="神秘文章">
-      <i class="fa fa-chevron-left"></i> 神秘文章
+    <a href="/2021-04-07/webstorm%E5%B8%B8%E7%94%A8/" rel="prev" title="webstorm常用">
+      <i class="fa fa-chevron-left"></i> webstorm常用
     </a></div>
       <div class="post-nav-item">
-    <a href="/2021-03-05/%E5%A4%9A%E5%8F%B0%E8%AE%BE%E5%A4%87%E5%85%B1%E4%BA%ABhexo/" rel="next" title="多台设备共享hexo">
-      多台设备共享hexo <i class="fa fa-chevron-right"></i>
+    <a href="/2021-04-07/node%E7%9F%A5%E8%AF%86%E7%82%B9/" rel="next" title="node知识点">
+      node知识点 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -418,7 +437,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#github%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6"><span class="nav-number">1.</span> <span class="nav-text">github请求超时</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E4%BF%AE%E6%94%B9DNS"><span class="nav-number">1.1.</span> <span class="nav-text">一、修改DNS</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E9%85%8D%E7%BD%AEgit%E7%9A%84%E6%9C%80%E4%BD%8E%E9%80%9F%E5%BA%A6%E5%92%8C%E6%9C%80%E4%BD%8E%E9%80%9F%E5%BA%A6%E6%97%B6%E9%97%B4"><span class="nav-number">1.2.</span> <span class="nav-text">二、配置git的最低速度和最低速度时间</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81github1s%E6%9F%A5%E7%9C%8B%E4%BB%93%E5%BA%93%E9%80%9F%E5%BA%A6%E5%BF%AB"><span class="nav-number">2.</span> <span class="nav-text">三、github1s查看仓库速度快</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%BF%9B%E5%85%A5%E6%97%B6%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F"><span class="nav-number">1.</span> <span class="nav-text">1.第一次进入时的生命周期执行顺序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-onload%E5%92%8Conshow%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">2.</span> <span class="nav-text">2.onload和onshow的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%85%B3%E4%BA%8E%E5%90%8E%E5%8F%B0%E9%94%80%E6%AF%81%E7%AD%89%E6%83%85%E5%86%B5%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0%E6%89%A7%E8%A1%8C"><span class="nav-number">3.</span> <span class="nav-text">3.关于后台销毁等情况的生命周期钩子函数执行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%B8%B8%E7%94%A8%E7%9A%84%E5%85%A8%E5%B1%80%E4%BA%8B%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">4.常用的全局事件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-view-scroll%E5%BF%85%E9%A1%BB%E7%BB%99%E5%9B%BA%E5%AE%9A%E7%9A%84%E9%AB%98%E5%BA%A6%EF%BC%8C%E4%B8%8D%E5%8F%AF%E4%BB%A5flex-1"><span class="nav-number">5.</span> <span class="nav-text">5.view-scroll必须给固定的高度，不可以flex:1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E6%8B%A5%E6%9C%89slot%E7%9A%84%E7%BB%84%E4%BB%B6%E6%97%A0%E6%B3%95%E8%87%AA%E5%8A%A8%E7%BC%96%E8%AF%91%E6%88%90%E5%8A%9F"><span class="nav-number">6.</span> <span class="nav-text">6.拥有slot的组件无法自动编译成功</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-mpvue%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="nav-number">7.</span> <span class="nav-text">7.mpvue快速搭建项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-%E6%94%B9%E9%80%A0vuex%EF%BC%8Cflyio"><span class="nav-number">8.</span> <span class="nav-text">8.改造vuex，flyio</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
