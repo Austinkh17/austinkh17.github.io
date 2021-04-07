@@ -17,6 +17,8 @@ categories: git
 
 适当的时候可以打开`chrome://net-internals/#dns`刷新一下google浏览器的dns
 
+<!--more-->
+
 #### 二、配置git的最低速度和最低速度时间
 
 ```
