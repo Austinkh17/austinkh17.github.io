@@ -1,5 +1,5 @@
 ---
-title: hexo搭建个人博客系列（一） - 绑定到github pages
+title: hexo搭建个人博客系列（一） -  绑定到github pages
 date: 2021-03-02 16:24:34
 tags: 
 - hexo 
