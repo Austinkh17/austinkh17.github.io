@@ -6,7 +6,7 @@
   <link href="https://austinkh17.github.io/atom.xml" rel="self"/>
   
   <link href="https://austinkh17.github.io/"/>
-  <updated>2021-04-07T07:39:01.396Z</updated>
+  <updated>2021-04-08T07:35:17.156Z</updated>
   <id>https://austinkh17.github.io/</id>
   
   <author>
@@ -15,6 +15,108 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue知识点</title>
+    <link href="https://austinkh17.github.io/2021-04-08/vue%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    <id>https://austinkh17.github.io/2021-04-08/vue%E7%9F%A5%E8%AF%86%E7%82%B9/</id>
+    <published>2021-04-08T07:30:32.000Z</published>
+    <updated>2021-04-08T07:35:17.156Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;prop&quot;&gt;&lt;a href=&quot;#prop&quot; class=&quot;headerlink&quot; title=&quot;prop&quot;&gt;&lt;/a&gt;prop&lt;/h3&gt;&lt;h4 id=&quot;传入一个对象的所有-property&quot;&gt;&lt;a href=&quot;#传入一个对象的所有-property&quot; class=&quot;headerlink&quot; title=&quot;传入一个对象的所有 property&quot;&gt;&lt;/a&gt;传入一个对象的所有 property&lt;/h4&gt;&lt;p&gt;如果你想要将一个对象的所有 property 都作为 prop 传入，你可以使用不带参数的 v-bind (取代 v-bind:prop-name)。例如，对于一个给定的对象 post：&lt;/p&gt;
+&lt;figure class=&quot;highlight dust&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;xml&quot;&gt;post: &lt;/span&gt;&lt;span class=&quot;template-variable&quot;&gt;&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;template-variable&quot;&gt;  id: 1,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;template-variable&quot;&gt;  title: &amp;#x27;My Journey with Vue&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;template-variable&quot;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;xml&quot;&gt;下面的模板：&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;blog-post&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;v-bind&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;quot;post&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;blog-post&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;xml&quot;&gt;等价于：&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;xml&quot;&gt;&amp;lt;blog-post&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;xml&quot;&gt;  v-bind:id=&amp;quot;post.id&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;xml&quot;&gt;  v-bind:title=&amp;quot;post.title&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;xml&quot;&gt;&amp;gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;blog-post&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="vue" scheme="https://austinkh17.github.io/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://austinkh17.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>经典面试题：请问computed和watch分别什么场景使用？</title>
+    <link href="https://austinkh17.github.io/2021-04-08/%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E8%AF%B7%E9%97%AEcomputed%E5%92%8Cwatch%E5%88%86%E5%88%AB%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%BD%BF%E7%94%A8%EF%BC%9F/"/>
+    <id>https://austinkh17.github.io/2021-04-08/%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E8%AF%B7%E9%97%AEcomputed%E5%92%8Cwatch%E5%88%86%E5%88%AB%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%BD%BF%E7%94%A8%EF%BC%9F/</id>
+    <published>2021-04-08T06:11:06.000Z</published>
+    <updated>2021-04-08T06:33:22.853Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;回答：当模板中的某个值需要通过一个或多个数据计算得到时，就可以使用计算属性；监听属性主要是监听某个值发生变化后，对新值去进行逻辑处理。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="vue" scheme="https://austinkh17.github.io/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://austinkh17.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端常用工具类方法</title>
+    <link href="https://austinkh17.github.io/2021-04-08/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E6%96%B9%E6%B3%95/"/>
+    <id>https://austinkh17.github.io/2021-04-08/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E6%96%B9%E6%B3%95/</id>
+    <published>2021-04-08T05:50:19.000Z</published>
+    <updated>2021-04-08T05:59:40.914Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;lodash常用方法&quot;&gt;&lt;a href=&quot;#lodash常用方法&quot; class=&quot;headerlink&quot; title=&quot;lodash常用方法&quot;&gt;&lt;/a&gt;lodash常用方法&lt;/h3&gt;&lt;h4 id=&quot;capitalize-string-’’&quot;&gt;&lt;a href=&quot;#capitalize-string-’’&quot; class=&quot;headerlink&quot; title=&quot;_.capitalize([string=’’])&quot;&gt;&lt;/a&gt;_.capitalize([string=’’])&lt;/h4&gt;&lt;p&gt;转换字符串首字母为大写，剩下为小写。&lt;/p&gt;
+&lt;figure class=&quot;highlight awk&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;_.capitalize(&lt;span class=&quot;string&quot;&gt;&amp;#x27;FRED&amp;#x27;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;regexp&quot;&gt;//&lt;/span&gt; =&amp;gt; &lt;span class=&quot;string&quot;&gt;&amp;#x27;Fred&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;debounce-func-wait-0-options&quot;&gt;&lt;a href=&quot;#debounce-func-wait-0-options&quot; class=&quot;headerlink&quot; title=&quot;_.debounce(func, [wait=0], [options=])&quot;&gt;&lt;/a&gt;_.debounce(func, [wait=0], [options=])&lt;/h4&gt;&lt;p&gt;创建一个 debounced（防抖动）函数，该函数会从上一次被调用后，延迟 wait 毫秒后调用 func 方法。 debounced（防抖动）函数提供一个 cancel 方法取消延迟的函数调用以及 flush 方法立即调用。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="lodash moment" scheme="https://austinkh17.github.io/categories/lodash-moment/"/>
+    
+    
+    <category term="lodash moment" scheme="https://austinkh17.github.io/tags/lodash-moment/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo搭建个人博客系列（三） -  设置总结</title>
+    <link href="https://austinkh17.github.io/2021-04-07/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%20-%20%20%E8%AE%BE%E7%BD%AE%E6%80%BB%E7%BB%93/"/>
+    <id>https://austinkh17.github.io/2021-04-07/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%20-%20%20%E8%AE%BE%E7%BD%AE%E6%80%BB%E7%BB%93/</id>
+    <published>2021-04-07T09:18:07.000Z</published>
+    <updated>2021-04-07T09:23:23.524Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;修改默认文章的模板&quot;&gt;&lt;a href=&quot;#修改默认文章的模板&quot; class=&quot;headerlink&quot; title=&quot;修改默认文章的模板&quot;&gt;&lt;/a&gt;修改默认文章的模板&lt;/h3&gt;&lt;p&gt;每次使用&lt;code&gt;hexo new &amp;quot;post-name&amp;quot;&lt;/code&gt;新建一篇文章时，只有title date tags，要手动增加categories。&lt;/p&gt;
+&lt;p&gt;为了偷懒，修改了scaffolds中的post.md。&lt;/p&gt;
+&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;title:&lt;/span&gt; &amp;#123;&amp;#123; &lt;span class=&quot;string&quot;&gt;title&lt;/span&gt; &amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;date:&lt;/span&gt; &amp;#123;&amp;#123; &lt;span class=&quot;string&quot;&gt;date&lt;/span&gt; &amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;tags:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;categories:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&amp;lt;!--more--&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vscode新建快捷片段</title>
+    <link href="https://austinkh17.github.io/2021-04-07/vscode%E6%96%B0%E5%BB%BA%E5%BF%AB%E6%8D%B7%E7%89%87%E6%AE%B5/"/>
+    <id>https://austinkh17.github.io/2021-04-07/vscode%E6%96%B0%E5%BB%BA%E5%BF%AB%E6%8D%B7%E7%89%87%E6%AE%B5/</id>
+    <published>2021-04-07T09:10:57.000Z</published>
+    <updated>2021-04-07T09:14:18.272Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;vsocde-新建快捷片段-snippets&quot;&gt;&lt;a href=&quot;#vsocde-新建快捷片段-snippets&quot; class=&quot;headerlink&quot; title=&quot;vsocde 新建快捷片段 snippets&quot;&gt;&lt;/a&gt;vsocde 新建快捷片段</summary>
+        
+      
+    
+    
+    
+    <category term="vscode 工具" scheme="https://austinkh17.github.io/categories/vscode-%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="vscode 工具" scheme="https://austinkh17.github.io/tags/vscode-%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>mongodb知识点</title>
@@ -240,11 +342,11 @@
   </entry>
   
   <entry>
-    <title>hexo搭建个人博客系列（三） - 插件总结</title>
-    <link href="https://austinkh17.github.io/2021-03-22/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%20-%20%E6%8F%92%E4%BB%B6%E6%80%BB%E7%BB%93/"/>
-    <id>https://austinkh17.github.io/2021-03-22/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%20-%20%E6%8F%92%E4%BB%B6%E6%80%BB%E7%BB%93/</id>
+    <title>hexo搭建个人博客系列（三） -  插件总结</title>
+    <link href="https://austinkh17.github.io/2021-03-22/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%20-%20%20%E6%8F%92%E4%BB%B6%E6%80%BB%E7%BB%93/"/>
+    <id>https://austinkh17.github.io/2021-03-22/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%20-%20%20%E6%8F%92%E4%BB%B6%E6%80%BB%E7%BB%93/</id>
     <published>2021-03-22T10:24:34.000Z</published>
-    <updated>2021-04-07T06:26:38.311Z</updated>
+    <updated>2021-04-07T09:20:21.168Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;一、文章加密&quot;&gt;&lt;a href=&quot;#一、文章加密&quot; class=&quot;headerlink&quot; title=&quot;一、文章加密&quot;&gt;&lt;/a&gt;一、文章加密&lt;/h2&gt;&lt;h3 id=&quot;1、安装插件&quot;&gt;&lt;a href=&quot;#1、安装插件&quot; class=&quot;headerlink&quot; title=&quot;1、安装插件&quot;&gt;&lt;/a&gt;1、安装插件&lt;/h3&gt;&lt;figure class=&quot;highlight livecodeserver&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-blog-&lt;span class=&quot;built_in&quot;&gt;encrypt&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;--save&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -334,11 +436,11 @@
   </entry>
   
   <entry>
-    <title>hexo搭建个人博客系列（二） - 站点配置和主题配置（next7.8版本）</title>
-    <link href="https://austinkh17.github.io/2021-03-03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%20-%20%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E5%92%8C%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%EF%BC%88next7.8%E7%89%88%E6%9C%AC%EF%BC%89/"/>
-    <id>https://austinkh17.github.io/2021-03-03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%20-%20%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E5%92%8C%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%EF%BC%88next7.8%E7%89%88%E6%9C%AC%EF%BC%89/</id>
+    <title>hexo搭建个人博客系列（二） -  站点配置和主题配置（next7.8版本）</title>
+    <link href="https://austinkh17.github.io/2021-03-03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%20-%20%20%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E5%92%8C%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%EF%BC%88next7.8%E7%89%88%E6%9C%AC%EF%BC%89/"/>
+    <id>https://austinkh17.github.io/2021-03-03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%20-%20%20%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E5%92%8C%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%EF%BC%88next7.8%E7%89%88%E6%9C%AC%EF%BC%89/</id>
     <published>2021-03-03T08:24:34.000Z</published>
-    <updated>2021-03-19T09:45:09.240Z</updated>
+    <updated>2021-04-07T09:20:17.419Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;一、站点配置&quot;&gt;&lt;a href=&quot;#一、站点配置&quot; class=&quot;headerlink&quot; title=&quot;一、站点配置&quot;&gt;&lt;/a&gt;一、站点配置&lt;/h2&gt;&lt;h3 id=&quot;1、设置-hexo-的-next-主题&quot;&gt;&lt;a href=&quot;#1、设置-hexo-的-next-主题&quot; class=&quot;headerlink&quot; title=&quot;1、设置 hexo 的 next 主题&quot;&gt;&lt;/a&gt;1、设置 hexo 的 next 主题&lt;/h3&gt;&lt;p&gt;安装next主题，在个人博客目录下，&lt;code&gt;git clone https://github.com/theme-next/hexo-theme-next themes/next&lt;/code&gt;&lt;/p&gt;
@@ -364,11 +466,11 @@
   </entry>
   
   <entry>
-    <title>hexo搭建个人博客系列（一） - 绑定到github pages</title>
-    <link href="https://austinkh17.github.io/2021-03-02/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%20-%20%E7%BB%91%E5%AE%9A%E5%88%B0github%20pages/"/>
-    <id>https://austinkh17.github.io/2021-03-02/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%20-%20%E7%BB%91%E5%AE%9A%E5%88%B0github%20pages/</id>
+    <title>hexo搭建个人博客系列（一） -  绑定到github pages</title>
+    <link href="https://austinkh17.github.io/2021-03-02/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%20-%20%20%E7%BB%91%E5%AE%9A%E5%88%B0github%20pages/"/>
+    <id>https://austinkh17.github.io/2021-03-02/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%20-%20%20%E7%BB%91%E5%AE%9A%E5%88%B0github%20pages/</id>
     <published>2021-03-02T08:24:34.000Z</published>
-    <updated>2021-03-19T09:45:20.802Z</updated>
+    <updated>2021-04-07T09:20:27.077Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;Github-Pages&quot;&gt;&lt;a href=&quot;#Github-Pages&quot; class=&quot;headerlink&quot; title=&quot;Github Pages&quot;&gt;&lt;/a&gt;Github Pages&lt;/h3&gt;&lt;blockquote&gt;
