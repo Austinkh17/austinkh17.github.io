@@ -126,17 +126,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">11</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">12</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">9</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">10</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">16</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">17</span></a>
 
   </li>
         <li class="menu-item menu-item-网站导航">
@@ -453,6 +453,321 @@
 <li>git push origin hexo</li>
 </ul>
 
+      
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-03-05/github%E6%8F%90%E9%80%9F%E6%96%B9%E6%A1%88%E6%B1%87%E6%80%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/boy.jpg">
+      <meta itemprop="name" content="Austinkh">
+      <meta itemprop="description" content="Austinkh's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Austinkh's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021-03-05/github%E6%8F%90%E9%80%9F%E6%96%B9%E6%A1%88%E6%B1%87%E6%80%BB/" class="post-title-link" itemprop="url">github提速方案汇总</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-03-05 17:08:16" itemprop="dateCreated datePublished" datetime="2021-03-05T17:08:16+08:00">2021-03-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-14 11:02:01" itemprop="dateModified" datetime="2021-04-14T11:02:01+08:00">2021-04-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/github/" itemprop="url" rel="index"><span itemprop="name">github</span></a>
+                </span>
+            </span>
+
+          
+    <span class="post-meta-divider">|</span>
+    <i class="fa fa-thumb-tack"></i>
+    <font color=7D26CD>置顶</font>
+    <span class="post-meta-divider">|</span>
+
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>2.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="一、修改Hosts"><a href="#一、修改Hosts" class="headerlink" title="一、修改Hosts"></a>一、修改Hosts</h3><h4 id="通过-SwitchHosts-自动更新-推荐"><a href="#通过-SwitchHosts-自动更新-推荐" class="headerlink" title="通过 SwitchHosts! 自动更新(推荐)"></a>通过 SwitchHosts! 自动更新(推荐)</h4><p>这里推荐使用 SwitchHosts! 配置hosts，操作很简单，支持跨平台，下载地址(<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/oldj/SwitchHosts/releases">https://github.com/oldj/SwitchHosts/releases</a>)</p>
+<h5 id="手动配置"><a href="#手动配置" class="headerlink" title="手动配置"></a>手动配置</h5><p>添加一条hosts规则并启用，然后复制前文hosts内容即可。<br>如果你想保持和云端最新规则同步，可以用下面的配置方式。</p>
+<h5 id="定时同步"><a href="#定时同步" class="headerlink" title="定时同步"></a>定时同步</h5><p>添加一条规则：</p>
+<p>方案名：GitHub（可以自行命名）<br>类型：远程<br>URL 地址：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/gh/ineo6/hosts/hosts">https://cdn.jsdelivr.net/gh/ineo6/hosts/hosts</a><br>自动更新：1个小时<br>这样就可以和最新的hosts保持同步。</p>
+<h5 id="自定义命令"><a href="#自定义命令" class="headerlink" title="自定义命令"></a>自定义命令</h5><p>SwitchHosts!还支持保存后执行自定义命令的功能，点击设置 =&gt; 选项 =&gt; 命令即可找到。</p>
+<p>Windows命令不需要管理员权限，所以直接粘贴<code>ipconfig /flushdns</code>内容即可。</p>
+<h4 id="手动把-cdn-和-ip-地址绑定"><a href="#手动把-cdn-和-ip-地址绑定" class="headerlink" title="手动把 cdn 和 ip 地址绑定"></a>手动把 cdn 和 ip 地址绑定</h4><p>第一步：获取 github 的 global.ssl.fastly</p>
+<p>访问地址：<a target="_blank" rel="noopener external nofollow noreferrer" href="http://github.global.ssl.fastly.net.ipaddress.com/#ipinfo">http://github.global.ssl.fastly.net.ipaddress.com/#ipinfo</a> 获取 cdn 和 ip 域名<br>得到：<code>199.232.69.194 https://github.global.ssl.fastly.net</code></p>
+<p>第二步：获取 github.com 地址</p>
+<p>访问地址：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com.ipaddress.com/#ipinfo">https://github.com.ipaddress.com/#ipinfo</a> 获取 cdn 和 ip<br>得到：<code>140.82.114.4 http://github.com</code></p>
+<p>第三步：修改 host 文件映射上面查找到的 IP</p>
+<p>windows系统：</p>
+<p>1、修改 C:\Windows\System32\drivers\etc\hosts 文件的权限，指定可写入</p>
+<p>右击-&gt;hosts-&gt;属性-&gt;安全-&gt;编辑-&gt;点击Users-&gt;在 Users 的权限 “写入” 后面打勾</p>
+<p>2、右击-&gt;hosts-&gt;打开方式-&gt;选定记事本（或者你喜欢的编辑器）-&gt;在末尾处添加以下内容：</p>
+<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">199.232.69.194</span> github.global.ssl.fastly.net</span><br><span class="line"><span class="number">140.82.114.4</span> github.com</span><br></pre></td></tr></table></figure>
+
+<h4 id="其他获取-ip-地址网站"><a href="#其他获取-ip-地址网站" class="headerlink" title="其他获取 ip 地址网站"></a>其他获取 ip 地址网站</h4><p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://tool.chinaz.com/dns/">站长工具1</a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="http://ping.chinaz.com/github.githubassets.com">站长工具2</a></p>
+<p>在上面的网站中寻找<code>github.com</code>对应的IP地址，复制后进入hosts文件（C/Windows/System32/drivers/etc/hosts），写下<code>ip  github.com</code></p>
+<h4 id="修改hosts后刷新dns缓存"><a href="#修改hosts后刷新dns缓存" class="headerlink" title="修改hosts后刷新dns缓存"></a>修改hosts后刷新dns缓存</h4><p>修改hosts后，刷新本机dns缓存<code>ipconfig /flushdns</code>，刷新google浏览器的dns缓存<code>chrome://net-internals/#dns</code></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021-03-05/github%E6%8F%90%E9%80%9F%E6%96%B9%E6%A1%88%E6%B1%87%E6%80%BB/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-04-14/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/boy.jpg">
+      <meta itemprop="name" content="Austinkh">
+      <meta itemprop="description" content="Austinkh's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Austinkh's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021-04-14/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB/" class="post-title-link" itemprop="url">前端面试题汇总</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-14 16:31:51" itemprop="dateCreated datePublished" datetime="2021-04-14T16:31:51+08:00">2021-04-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-16 18:43:22" itemprop="dateModified" datetime="2021-04-16T18:43:22+08:00">2021-04-16</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">面试题</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>3.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="笔试题"><a href="#笔试题" class="headerlink" title="笔试题"></a>笔试题</h3><h4 id="a为何值时下述表达式成立："><a href="#a为何值时下述表达式成立：" class="headerlink" title="a为何值时下述表达式成立："></a>a为何值时下述表达式成立：</h4><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var a = ?</span><br><span class="line"><span class="keyword">if</span> (<span class="attribute">a</span>==1 &amp;&amp; <span class="attribute">a</span>==2 &amp;&amp; <span class="attribute">a</span>==3) &#123;</span><br><span class="line">    console.log(1)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">a + 0.9 &lt; a</span><br></pre></td></tr></table></figure>
+<details>
+<summary>展开查看答案</summary>
+
+<blockquote>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a = &#123;i:<span class="number">1</span>, valueOf: <span class="function"><span class="params">()</span> =&gt;</span> a.i++&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+</details>
+
+<h4 id="有什么方法可以保证b的值不可修改？"><a href="#有什么方法可以保证b的值不可修改？" class="headerlink" title="有什么方法可以保证b的值不可修改？"></a>有什么方法可以保证b的值不可修改？</h4><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const <span class="selector-tag">a</span> = &#123;<span class="selector-tag">b</span>:<span class="number">1</span>&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-class">.b</span> = <span class="number">2</span></span><br><span class="line">console<span class="selector-class">.log</span>(a)</span><br><span class="line"><span class="comment">// &#123;b:2&#125;</span></span><br></pre></td></tr></table></figure>
+<details>
+<summary>展开查看答案</summary>
+
+<blockquote>
+<p><code>object.freeze()</code></p>
+</blockquote>
+</details>
+
+<h4 id="打印结果"><a href="#打印结果" class="headerlink" title="打印结果"></a>打印结果</h4><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</span><br><span class="line">(<span class="function"><span class="keyword">function</span> <span class="params">()</span> <span class="comment">&#123;</span></span></span><br><span class="line"><span class="function"><span class="comment">    console.log(a);</span></span></span><br><span class="line"><span class="function"><span class="comment">    a = 5;</span></span></span><br><span class="line"><span class="function"><span class="comment">    console.log(window.a);</span></span></span><br><span class="line"><span class="function"><span class="comment">    console.log(a);</span></span></span><br><span class="line"><span class="function"><span class="comment">    var a = 20;</span></span></span><br><span class="line"><span class="function"><span class="comment">    console.log(a);</span></span></span><br><span class="line"><span class="function"><span class="comment">&#125;</span>)<span class="params">()</span></span></span><br></pre></td></tr></table></figure>
+<details>
+<summary>展开查看答案</summary>
+
+<blockquote>
+<p>考察变量提升 undefined 10 5  20</p>
+</blockquote>
+</details>
+
+<h4 id="事件循环"><a href="#事件循环" class="headerlink" title="事件循环"></a>事件循环</h4><p>请分析输出顺序：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// define</span></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">async1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;async1 start&#x27;</span>);</span><br><span class="line">    <span class="keyword">await</span> async2();</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;async1 end&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">async2</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;async2&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// execute</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;script start&#x27;</span>);</span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;setTimeout&#x27;</span>);</span><br><span class="line">&#125;, <span class="number">0</span>);</span><br><span class="line">async1();</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">&#x27;script end&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<details>
+<summary>展开查看答案</summary>
+
+<blockquote>
+<p>script start -&gt; async1 start -&gt; async2 -&gt; script end -&gt; async1 end -&gt; setTimeout</p>
+</blockquote>
+</details>
+
+<p>浏览器会进行几次DOM更新</p>
+<figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for(<span class="keyword">let</span> <span class="attr">i=0;</span> i&lt;<span class="number">100</span>; i++)&#123;</span><br><span class="line">    dom.style.<span class="attr">left</span> = i + &#x27;px&#x27;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<details>
+<summary>展开查看答案</summary>
+
+<blockquote>
+<p>浏览器会进行100次DOM更新吗？显然不是的，这样太耗性能了。事实上，这100次for循环同属一个task，浏览器只在该task执行完后进行一次DOM更新。</p>
+</blockquote>
+</details>
+
+<p><a href="%5Bhttps://juejin.cn/post/6844904000542736398#heading-0">推荐阅读</a>(Vue.nextTick()原理,事件循环)</p>
+<h4 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h4><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">const</span> obj<span class="number">0</span> = &#123; x: <span class="number">0</span>, y: <span class="number">0</span> &#125;;</span><br><span class="line"><span class="attribute">const</span> obj<span class="number">1</span> = Object.create(obj<span class="number">0</span>);</span><br><span class="line"><span class="attribute">const</span> obj<span class="number">2</span> = Object.create(obj<span class="number">1</span>);</span><br><span class="line"><span class="attribute">obj1</span>.x = <span class="number">1</span>;</span><br><span class="line"><span class="attribute">console</span>.log(obj<span class="number">0</span>.x);</span><br><span class="line"><span class="attribute">console</span>.log(obj<span class="number">2</span>.x);</span><br><span class="line"><span class="attribute">console</span>.log(obj<span class="number">2</span>.y);</span><br><span class="line"><span class="attribute">console</span>.log(obj<span class="number">2</span>.z);</span><br></pre></td></tr></table></figure>
+<details>
+<summary>展开查看答案</summary>
+
+<blockquote>
+<p>0 -&gt; 1 -&gt; 0 -&gt; undefined<br>技术要点：<code>Object.create(proto, [propertiesObject])</code>方法创建一个新对象，使用现有的对象来作为新创建的对象的proto（原型对象）</p>
+</blockquote>
+</details>
+
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">   <span class="keyword">function</span> <span class="constructor">Foo()</span> &#123;</span><br><span class="line">	getName = <span class="keyword">function</span> <span class="literal">()</span> &#123; </span><br><span class="line">		console.log (<span class="number">1</span>); </span><br><span class="line">	&#125;;</span><br><span class="line">	console.log(&#x27;this is&#x27;+this)</span><br><span class="line">    return this;</span><br><span class="line">&#125;</span><br><span class="line"><span class="module-access"><span class="module"><span class="identifier">Foo</span>.</span></span>getName = <span class="keyword">function</span> <span class="literal">()</span> &#123; </span><br><span class="line">	console.log (<span class="number">2</span>); </span><br><span class="line">&#125;;</span><br><span class="line"><span class="module-access"><span class="module"><span class="identifier">Foo</span>.</span></span>prototype.getName = <span class="keyword">function</span> <span class="literal">()</span> &#123; </span><br><span class="line">	console.log(&#x27;baidu&#x27;<span class="operator"> &amp;&amp; </span>&#x27;google&#x27;); </span><br><span class="line">&#125;;</span><br><span class="line">var getName = <span class="keyword">function</span> <span class="literal">()</span> &#123; </span><br><span class="line">	console.log (<span class="number">4</span>);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">function</span> get<span class="constructor">Name()</span> &#123; </span><br><span class="line">	console.log (<span class="number">5</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 请写出一下的输出结果</span></span><br><span class="line"><span class="module-access"><span class="module"><span class="identifier">Foo</span>.</span></span>get<span class="constructor">Name()</span>; </span><br><span class="line">get<span class="constructor">Name()</span>; </span><br><span class="line"><span class="constructor">Foo()</span>.get<span class="constructor">Name()</span>;  </span><br><span class="line">get<span class="constructor">Name()</span>;  </span><br><span class="line"><span class="keyword">new</span> <span class="module-access"><span class="module"><span class="identifier">Foo</span>.</span></span>get<span class="constructor">Name()</span>;  </span><br><span class="line"><span class="keyword">new</span> <span class="constructor">Foo()</span>.get<span class="constructor">Name()</span>;  </span><br><span class="line"><span class="keyword">new</span> <span class="keyword">new</span> <span class="constructor">Foo()</span>.get<span class="constructor">Name()</span>; </span><br></pre></td></tr></table></figure>
+
+<details>
+<summary>展开查看答案</summary>
+
+<blockquote>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="module-access"><span class="module"><span class="identifier">Foo</span>.</span></span>get<span class="constructor">Name()</span>;                                       <span class="comment">//  2</span></span><br><span class="line">get<span class="constructor">Name()</span>;                                          <span class="comment">//  4</span></span><br><span class="line"><span class="constructor">Foo()</span>.get<span class="constructor">Name()</span>;                                   <span class="comment">//  1</span></span><br><span class="line">get<span class="constructor">Name()</span>;                                        <span class="comment">//  1</span></span><br><span class="line"><span class="keyword">new</span> <span class="module-access"><span class="module"><span class="identifier">Foo</span>.</span></span>get<span class="constructor">Name()</span>;                               <span class="comment">//  2</span></span><br><span class="line"><span class="keyword">new</span> <span class="constructor">Foo()</span>.get<span class="constructor">Name()</span>;                            <span class="comment">// google</span></span><br><span class="line"><span class="keyword">new</span> <span class="keyword">new</span> <span class="constructor">Foo()</span>.get<span class="constructor">Name()</span>;                       <span class="comment">// google</span></span><br></pre></td></tr></table></figure>
+</blockquote>
+</details>
+
+<h3 id="ElementUI里面的栅格化，一行分成三列，中间列隐藏-没有数据-的时候，第三列往前挤，但是我希望布局不能动，有啥办法？"><a href="#ElementUI里面的栅格化，一行分成三列，中间列隐藏-没有数据-的时候，第三列往前挤，但是我希望布局不能动，有啥办法？" class="headerlink" title="ElementUI里面的栅格化，一行分成三列，中间列隐藏(没有数据)的时候，第三列往前挤，但是我希望布局不能动，有啥办法？"></a>ElementUI里面的栅格化，一行分成三列，中间列隐藏(没有数据)的时候，第三列往前挤，但是我希望布局不能动，有啥办法？</h3><details>
+
+<summary>展开查看答案</summary>
+
+<blockquote>
+<p>考察占位</p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//第一种给一个最小高度，让它占位</span><br><span class="line">.el-<span class="built_in">col</span>&#123;</span><br><span class="line">    <span class="built_in">min</span>-<span class="built_in">height</span>: 1px;</span><br><span class="line">&#125;</span><br><span class="line">//第二种给一个透明的边框，也是为了占位</span><br><span class="line">.el-<span class="built_in">col</span>&#123;</span><br><span class="line">    <span class="built_in">border</span>: 1px solid <span class="built_in">transparent</span>;</span><br><span class="line">&#125;</span><br><span class="line">//第三种占位符（&amp;nbsp;没有效果，需用v-html和转义字符结合）</span><br><span class="line">&lt;el-<span class="built_in">col</span> :span=<span class="string">&quot;10&quot;</span> v-html=<span class="string">&quot;&#x27;\u00a0&#x27;&quot;</span>/&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+</details>
+
+<h3 id="http状态码"><a href="#http状态码" class="headerlink" title="http状态码"></a>http状态码</h3><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/banana960531/article/details/85621865">https://blog.csdn.net/banana960531/article/details/85621865</a></p>
+<h3 id="用js实现一个无限极累加的函数，-形如"><a href="#用js实现一个无限极累加的函数，-形如" class="headerlink" title="用js实现一个无限极累加的函数， 形如:"></a>用js实现一个无限极累加的函数， 形如:</h3><blockquote>
+<p>add(1) //=&gt; 1;<br>add(1)(2) //=&gt; 2;<br>add(1)(2)(3) //=&gt; 6;<br>add(1)(2)(3)(4) //=&gt; 10;<br>以此类推…</p>
+</blockquote>
+<details>
+<summary>展开查看答案</summary>
+
+<blockquote>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="keyword">function</span> <span class="title">add</span>(a)&#123;</span><br><span class="line">   <span class="keyword">function</span> <span class="title">s</span>(b)&#123;</span><br><span class="line">       a = a + b;</span><br><span class="line">       <span class="keyword">return</span> <span class="type">s</span>;</span><br><span class="line">   &#125;</span><br><span class="line">   s.toString() = <span class="keyword">function</span>()&#123;</span><br><span class="line">       <span class="keyword">return</span> a;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> s;</span><br><span class="line">&gt;&#125;</span><br><span class="line">&gt;console.log(add(<span class="number">1</span>)(<span class="number">2</span>)(<span class="number">3</span>)(<span class="number">4</span>));</span><br></pre></td></tr></table></figure>
+<p>详细解释(<a target="_blank" rel="noopener external nofollow noreferrer" href="https://juejin.cn/post/6844903782472482830#comment">https://juejin.cn/post/6844903782472482830#comment</a>)</p>
+</blockquote>
+</details>
+
+<h3 id="http缓存"><a href="#http缓存" class="headerlink" title="http缓存"></a>http缓存</h3><p>强缓存(expires,cache-control)，协商缓存(last-modified,if-modified-since/etag,if-none-match)，304<br><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.jb51.net/article/146536.htm">https://www.jb51.net/article/146536.htm</a></p>
+<h3 id="call-apply-bind的区别"><a href="#call-apply-bind的区别" class="headerlink" title="call,apply,bind的区别"></a>call,apply,bind的区别</h3><details>
+<summary>展开查看答案</summary>
+
+<p>都是用来改变函数的this对象的指向的</p>
+<figure class="highlight sqf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">let a = &#123;</span><br><span class="line">    <span class="built_in">name</span>: <span class="string">&#x27;a&#x27;</span>,</span><br><span class="line">    age: <span class="number">12</span>,</span><br><span class="line">    <span class="built_in">say</span>: function()&#123;</span><br><span class="line">        return this.<span class="built_in">name</span> + this.age;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">let b = &#123;</span><br><span class="line">    <span class="built_in">name</span>: <span class="string">&#x27;b&#x27;</span>,</span><br><span class="line">    age: <span class="number">20</span></span><br><span class="line">&#125;</span><br><span class="line">a.<span class="built_in">say</span>.<span class="built_in">call</span>(b);</span><br><span class="line">a.<span class="built_in">say</span>.<span class="built_in">apply</span>(b);</span><br><span class="line">a.<span class="built_in">say</span>.bind(b)();</span><br><span class="line"></span><br><span class="line">a.<span class="built_in">say</span>.<span class="built_in">call</span>(b, <span class="string">&#x27;new b&#x27;</span>, <span class="number">10</span>);</span><br><span class="line">a.<span class="built_in">say</span>.<span class="built_in">apply</span>(b, [<span class="string">&#x27;new b&#x27;</span>, <span class="number">10</span>]);</span><br><span class="line">a.<span class="built_in">say</span>.bind(b, <span class="string">&#x27;new b&#x27;</span>, <span class="number">10</span>)();</span><br><span class="line">a.<span class="built_in">say</span>.bind(b)(<span class="string">&#x27;new b&#x27;</span>, <span class="number">10</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意一旦函数通过bind传递了有效的this对象，则该函数在运行期的this将指向这个对象，即使通过call或apply来试图改变this的指向也是徒劳的。</p>
+</blockquote>
+<p>原生js实现bind<br><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.cnblogs.com/goloving/p/9380076.html">https://www.cnblogs.com/goloving/p/9380076.html</a></p>
+</details>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021-04-14/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -995,189 +1310,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-04-07/node%E7%9F%A5%E8%AF%86%E7%82%B9/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/boy.jpg">
-      <meta itemprop="name" content="Austinkh">
-      <meta itemprop="description" content="Austinkh's blog">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Austinkh's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021-04-07/node%E7%9F%A5%E8%AF%86%E7%82%B9/" class="post-title-link" itemprop="url">node知识点</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-04-07 15:12:16 / 修改时间：15:37:28" itemprop="dateCreated datePublished" datetime="2021-04-07T15:12:16+08:00">2021-04-07</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/node/" itemprop="url" rel="index"><span itemprop="name">node</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-              <span>9k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-              <span>8 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="node知识点系列一"><a href="#node知识点系列一" class="headerlink" title="node知识点系列一"></a>node知识点系列一</h2><p>nodejs是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。npm和bower都是web包管理器。<br>nodejs 本身自带的框架有限，通过 bower 或者 npm 可以直接调用一些发布到网上的著名的开源模块包。<br>简而言之：nodejs已经集成了npm，通过npm包管理可以安装bower这些前端包管理工具。通过bower关联安装bootstrap这些前端框架。</p>
-<h3 id="node安装"><a href="#node安装" class="headerlink" title="node安装"></a>node安装</h3><p>配置npm全局模块的存放路径和cache的路径。<br>如果你希望将以上两个文件夹放在nodejs的主目录下，就在nodejs下建立“node_global”及“node_cache”两个文件夹。<br>然后我们就在cmd中分别键入两行命令，设置路径：<br>npm config set prefix “D:\nodejs\node_global”<br>npm config set cache “D:\nodejs\node_cache”</p>
-<p>C:\Users\Administrator\AppData\Roaming\npm\node_modules(未设置默认路径)</p>
-<p>在系统环境变量添加系统变量NODE_PATH，输入路径D:\nodejs\node_global\node_modules</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021-04-07/node%E7%9F%A5%E8%AF%86%E7%82%B9/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-04-07/mpvue%E7%9F%A5%E8%AF%86%E7%82%B9/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/boy.jpg">
-      <meta itemprop="name" content="Austinkh">
-      <meta itemprop="description" content="Austinkh's blog">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Austinkh's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021-04-07/mpvue%E7%9F%A5%E8%AF%86%E7%82%B9/" class="post-title-link" itemprop="url">mpvue知识点</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-04-07 14:49:16 / 修改时间：15:17:20" itemprop="dateCreated datePublished" datetime="2021-04-07T14:49:16+08:00">2021-04-07</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/mpvue-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" itemprop="url" rel="index"><span itemprop="name">mpvue 微信小程序</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-              <span>1.7k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="1-第一次进入时的生命周期执行顺序"><a href="#1-第一次进入时的生命周期执行顺序" class="headerlink" title="1.第一次进入时的生命周期执行顺序"></a>1.第一次进入时的生命周期执行顺序</h3><p>(1).created<br>(2).onload(option)，option作为页面路径中的参数，一个页面只会调用一次，接收页面参数，监听页面加载<br>(3).onshow<br>(4).onready，页面初次渲染完成，一个页面只会调用一次，代表页面已经准备妥当，可以和视图层进行交互<br>(5).mounted</p>
-<p>在所有 页面 的组件内可以通过 this.$root.$mp.query 进行获取小程序在 page onLoad 时候传递的 options。要注意：写到created报错。</p>
-<p>在所有的组件内可以通过 this.$root.$mp进行获取小程序在 app onLaunch/onShow 时候传递的 options。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021-04-07/mpvue%E7%9F%A5%E8%AF%86%E7%82%B9/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1249,20 +1381,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1299,6 +1431,10 @@
         
         
           <li>
+            <a href="/2021-04-14/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB/" title="前端面试题汇总" target="_blank">前端面试题汇总</a>
+          </li>
+        
+          <li>
             <a href="/2021-04-08/vue%E7%9F%A5%E8%AF%86%E7%82%B9/" title="vue知识点" target="_blank">vue知识点</a>
           </li>
         
@@ -1312,10 +1448,6 @@
         
           <li>
             <a href="/2021-04-07/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%20-%20%20%E8%AE%BE%E7%BD%AE%E6%80%BB%E7%BB%93/" title="hexo搭建个人博客系列（三） -  设置总结" target="_blank">hexo搭建个人博客系列（三） -  设置总结</a>
-          </li>
-        
-          <li>
-            <a href="/2021-04-07/vscode%E6%96%B0%E5%BB%BA%E5%BF%AB%E6%8D%B7%E7%89%87%E6%AE%B5/" title="vscode新建快捷片段" target="_blank">vscode新建快捷片段</a>
           </li>
         
       </ul>
@@ -1349,12 +1481,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">34k</span>
+    <span title="站点总字数">39k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">31 分钟</span>
+    <span title="站点阅读时长">35 分钟</span>
 </div>
 
         
