@@ -126,17 +126,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">12</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">20</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">10</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">12</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">17</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">23</span></a>
 
   </li>
         <li class="menu-item menu-item-网站导航">
@@ -212,6 +212,565 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-04-08/vue%E7%9F%A5%E8%AF%86%E7%82%B9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/boy.jpg">
+      <meta itemprop="name" content="Austinkh">
+      <meta itemprop="description" content="Austinkh's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Austinkh's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021-04-08/vue%E7%9F%A5%E8%AF%86%E7%82%B9/" class="post-title-link" itemprop="url">vue知识点</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-04-08 15:30:32 / 修改时间：15:35:17" itemprop="dateCreated datePublished" datetime="2021-04-08T15:30:32+08:00">2021-04-08</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/vue/" itemprop="url" rel="index"><span itemprop="name">vue</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>1.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="prop"><a href="#prop" class="headerlink" title="prop"></a>prop</h3><h4 id="传入一个对象的所有-property"><a href="#传入一个对象的所有-property" class="headerlink" title="传入一个对象的所有 property"></a>传入一个对象的所有 property</h4><p>如果你想要将一个对象的所有 property 都作为 prop 传入，你可以使用不带参数的 v-bind (取代 v-bind:prop-name)。例如，对于一个给定的对象 post：</p>
+<figure class="highlight dust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">post: </span><span class="template-variable">&#123;</span></span><br><span class="line"><span class="template-variable">  id: 1,</span></span><br><span class="line"><span class="template-variable">  title: &#x27;My Journey with Vue&#x27;</span></span><br><span class="line"><span class="template-variable">&#125;</span></span><br><span class="line"><span class="xml">下面的模板：</span></span><br><span class="line"></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">blog-post</span> <span class="attr">v-bind</span>=<span class="string">&quot;post&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">blog-post</span>&gt;</span></span></span><br><span class="line"><span class="xml">等价于：</span></span><br><span class="line"></span><br><span class="line"><span class="xml">&lt;blog-post</span></span><br><span class="line"><span class="xml">  v-bind:id=&quot;post.id&quot;</span></span><br><span class="line"><span class="xml">  v-bind:title=&quot;post.title&quot;</span></span><br><span class="line"><span class="xml">&gt;<span class="tag">&lt;/<span class="name">blog-post</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021-04-08/vue%E7%9F%A5%E8%AF%86%E7%82%B9/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-04-08/%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E8%AF%B7%E9%97%AEcomputed%E5%92%8Cwatch%E5%88%86%E5%88%AB%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%BD%BF%E7%94%A8%EF%BC%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/boy.jpg">
+      <meta itemprop="name" content="Austinkh">
+      <meta itemprop="description" content="Austinkh's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Austinkh's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021-04-08/%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E8%AF%B7%E9%97%AEcomputed%E5%92%8Cwatch%E5%88%86%E5%88%AB%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%BD%BF%E7%94%A8%EF%BC%9F/" class="post-title-link" itemprop="url">经典面试题：请问computed和watch分别什么场景使用？</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-08 14:11:06" itemprop="dateCreated datePublished" datetime="2021-04-08T14:11:06+08:00">2021-04-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-22 14:51:26" itemprop="dateModified" datetime="2021-04-22T14:51:26+08:00">2021-04-22</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">面试题</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>1.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>回答：当模板中的某个值需要通过一个或多个数据计算得到时，就可以使用计算属性；监听属性主要是监听某个值发生变化后，对新值去进行逻辑处理。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021-04-08/%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E8%AF%B7%E9%97%AEcomputed%E5%92%8Cwatch%E5%88%86%E5%88%AB%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%BD%BF%E7%94%A8%EF%BC%9F/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-04-08/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/boy.jpg">
+      <meta itemprop="name" content="Austinkh">
+      <meta itemprop="description" content="Austinkh's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Austinkh's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021-04-08/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">前端常用工具类方法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-08 13:50:19" itemprop="dateCreated datePublished" datetime="2021-04-08T13:50:19+08:00">2021-04-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-22 14:52:04" itemprop="dateModified" datetime="2021-04-22T14:52:04+08:00">2021-04-22</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>248</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="lodash常用方法"><a href="#lodash常用方法" class="headerlink" title="lodash常用方法"></a>lodash常用方法</h3><h4 id="capitalize-string-’’"><a href="#capitalize-string-’’" class="headerlink" title="_.capitalize([string=’’])"></a>_.capitalize([string=’’])</h4><p>转换字符串首字母为大写，剩下为小写。</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">_.capitalize(<span class="string">&#x27;FRED&#x27;</span>);</span><br><span class="line"><span class="regexp">//</span> =&gt; <span class="string">&#x27;Fred&#x27;</span></span><br></pre></td></tr></table></figure>
+<h4 id="debounce-func-wait-0-options"><a href="#debounce-func-wait-0-options" class="headerlink" title="_.debounce(func, [wait=0], [options=])"></a>_.debounce(func, [wait=0], [options=])</h4><p>创建一个 debounced（防抖动）函数，该函数会从上一次被调用后，延迟 wait 毫秒后调用 func 方法。 debounced（防抖动）函数提供一个 cancel 方法取消延迟的函数调用以及 flush 方法立即调用。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021-04-08/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E6%96%B9%E6%B3%95/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-04-07/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%20-%20%20%E8%AE%BE%E7%BD%AE%E6%80%BB%E7%BB%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/boy.jpg">
+      <meta itemprop="name" content="Austinkh">
+      <meta itemprop="description" content="Austinkh's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Austinkh's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021-04-07/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%20-%20%20%E8%AE%BE%E7%BD%AE%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">hexo搭建个人博客系列（三） -  设置总结</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-07 17:18:07" itemprop="dateCreated datePublished" datetime="2021-04-07T17:18:07+08:00">2021-04-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-22 14:53:20" itemprop="dateModified" datetime="2021-04-22T14:53:20+08:00">2021-04-22</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>223</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="修改默认文章的模板"><a href="#修改默认文章的模板" class="headerlink" title="修改默认文章的模板"></a>修改默认文章的模板</h3><p>每次使用<code>hexo new &quot;post-name&quot;</code>新建一篇文章时，只有title date tags，要手动增加categories。</p>
+<p>为了偷懒，修改了scaffolds中的post.md。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> &#123;&#123; <span class="string">title</span> &#125;&#125;</span><br><span class="line"><span class="attr">date:</span> &#123;&#123; <span class="string">date</span> &#125;&#125;</span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"></span><br><span class="line"><span class="string">&lt;!--more--&gt;</span></span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021-04-07/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%20-%20%20%E8%AE%BE%E7%BD%AE%E6%80%BB%E7%BB%93/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-04-07/vscode%E6%96%B0%E5%BB%BA%E5%BF%AB%E6%8D%B7%E7%89%87%E6%AE%B5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/boy.jpg">
+      <meta itemprop="name" content="Austinkh">
+      <meta itemprop="description" content="Austinkh's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Austinkh's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021-04-07/vscode%E6%96%B0%E5%BB%BA%E5%BF%AB%E6%8D%B7%E7%89%87%E6%AE%B5/" class="post-title-link" itemprop="url">vscode新建快捷片段</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-07 17:10:57" itemprop="dateCreated datePublished" datetime="2021-04-07T17:10:57+08:00">2021-04-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-22 14:54:05" itemprop="dateModified" datetime="2021-04-22T14:54:05+08:00">2021-04-22</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/vscode/" itemprop="url" rel="index"><span itemprop="name">vscode</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>1.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="vsocde-新建快捷片段-snippets"><a href="#vsocde-新建快捷片段-snippets" class="headerlink" title="vsocde 新建快捷片段 snippets"></a>vsocde 新建快捷片段 snippets</h3><p>打开文件–首选项–用户片段，添加快捷片段在 json 文件中</p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;console.log&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;scope&quot;</span>: <span class="string">&quot;javascript,typescript,vue&quot;</span>,</span><br><span class="line">    <span class="string">&quot;prefix&quot;</span>: <span class="string">&quot;log&quot;</span>,</span><br><span class="line">    <span class="string">&quot;body&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;console.log(&#x27;111&#x27;, $1);&quot;</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;description&quot;</span>: <span class="string">&quot;console.log&quot;</span></span><br><span class="line">&#125;,</span><br><span class="line"><span class="string">&quot;vue&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;scope&quot;</span>: <span class="string">&quot;vue&quot;</span>,</span><br><span class="line">    <span class="string">&quot;prefix&quot;</span>: <span class="string">&quot;vue&quot;</span>,</span><br><span class="line">    <span class="string">&quot;body&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;&lt;template&gt;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;	&lt;div class=\&quot;index\&quot;&gt;$1&lt;/div&gt;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;&lt;/template&gt;\n&quot;</span>,</span><br><span class="line">        <span class="string">&quot;&lt;script&gt;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;export default &#123;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;	name: &#x27;index&#x27;,&quot;</span>,</span><br><span class="line">        <span class="string">&quot;	data() &#123;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;		return &#123;&#125;;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;	&#125;,&quot;</span>,</span><br><span class="line">        <span class="string">&quot;	methods() &#123;&#125;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;&#125;;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;&lt;/script&gt;&quot;</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;description&quot;</span>: <span class="string">&quot;vue snippets代码片段&quot;</span></span><br><span class="line">&#125;,</span><br><span class="line"><span class="string">&quot;api&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;scope&quot;</span>: <span class="string">&quot;javascript,typescript,vue&quot;</span>,</span><br><span class="line">    <span class="string">&quot;prefix&quot;</span>: <span class="string">&quot;apii&quot;</span>,</span><br><span class="line">    <span class="string">&quot;body&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;let params = &#123;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;	date: this.date&quot;</span>,</span><br><span class="line">        <span class="string">&quot;&#125;;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;let res = await api.getListApi(params);&quot;</span>,</span><br><span class="line">        <span class="string">&quot;if (res.code == 0) &#123;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;	let res = res.data;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;&#125; else &#123;&quot;</span>,</span><br><span class="line">        <span class="string">&quot;	this.message.error(res.message);&quot;</span>,</span><br><span class="line">        <span class="string">&quot;&#125;&quot;</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;description&quot;</span>: <span class="string">&quot;api获取接口&quot;</span></span><br><span class="line">&#125;,</span><br><span class="line"><span class="string">&quot;note&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;scope&quot;</span>: <span class="string">&quot;javascript,typescript,vue&quot;</span>,</span><br><span class="line">    <span class="string">&quot;prefix&quot;</span>: <span class="string">&quot;note&quot;</span>,</span><br><span class="line">    <span class="string">&quot;body&quot;</span>: [</span><br><span class="line">        <span class="string">&quot;/**&quot;</span>,</span><br><span class="line">        <span class="string">&quot;* @description 表格行添加类&quot;</span>,</span><br><span class="line">        <span class="string">&quot;* @param &#123;Object&#125; row 行对象&quot;</span>,</span><br><span class="line">        <span class="string">&quot;* @param &#123;Number&#125; rowIndex 行序号&quot;</span>,</span><br><span class="line">        <span class="string">&quot;* @return &#123;String&#125;  类名&quot;</span>,</span><br><span class="line">        <span class="string">&quot;*/&quot;</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="string">&quot;description&quot;</span>: <span class="string">&quot;注释&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-04-07/mongodb%E7%9F%A5%E8%AF%86%E7%82%B9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/boy.jpg">
+      <meta itemprop="name" content="Austinkh">
+      <meta itemprop="description" content="Austinkh's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Austinkh's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021-04-07/mongodb%E7%9F%A5%E8%AF%86%E7%82%B9/" class="post-title-link" itemprop="url">mongodb知识点</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-04-07 15:14:16 / 修改时间：15:39:01" itemprop="dateCreated datePublished" datetime="2021-04-07T15:14:16+08:00">2021-04-07</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/mongodb/" itemprop="url" rel="index"><span itemprop="name">mongodb</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>2.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="一、安装："><a href="#一、安装：" class="headerlink" title="一、安装："></a>一、安装：</h3><p>官网下载mongoDB：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.mongodb.com/try/download/community?jmp=nav%EF%BC%8C%E9%80%89%E6%8B%A9%E2%80%9CCustom%E2%80%9D%E8%87%AA%E5%AE%9A%E4%B9%89">https://www.mongodb.com/try/download/community?jmp=nav，选择“Custom”自定义</a> 安装路径修改下：D:\mongodb</p>
+<h3 id="二、先创建数据库文件的存放位置"><a href="#二、先创建数据库文件的存放位置" class="headerlink" title="二、先创建数据库文件的存放位置"></a>二、先创建数据库文件的存放位置</h3><p>在MongoDB下创建data，在data下再创建db：D:\mongodb\data\db<br>因为启动mongodb服务之前需要必须创建数据库文件的存放文件夹，否则命令不会自动创建，而且不能启动成功。</p>
+<h3 id="三、启动MongoDB服务"><a href="#三、启动MongoDB服务" class="headerlink" title="三、启动MongoDB服务"></a>三、启动MongoDB服务</h3><p>1.打开cmd命令行<br>2.进入D:\mongodb\bin目录（注意：先输入d:进入d盘，然后输入cd mongodb\bin）<br>3.输入如下的命令启动mongodb服务：mongod –dbpath D:\mongodb\data\db<br>4.在浏览器输入<a target="_blank" rel="noopener external nofollow noreferrer" href="http://localhost:27017/">http://localhost:27017</a> （27017是mongodb的端口号）查看<br>但是在本地windows“服务”中，是没有配置上mongodb 服务的，可以打开“服务”看下<br>注：改为mongod –storageEngine=mmapv1 –dbpath D:\mongodb\data\db<br>原因是：wiredTiger是数据库引擎，当前版本默认的数据库引擎，它不支持32位系统，命令–storageEngine=mmapv1，<br>将wiredTiger引擎切换成mmapv1引擎</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021-04-07/mongodb%E7%9F%A5%E8%AF%86%E7%82%B9/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -331,17 +890,23 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-04-07 14:49:16 / 修改时间：15:17:20" itemprop="dateCreated datePublished" datetime="2021-04-07T14:49:16+08:00">2021-04-07</time>
+              <time title="创建时间：2021-04-07 14:49:16" itemprop="dateCreated datePublished" datetime="2021-04-07T14:49:16+08:00">2021-04-07</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-22 14:53:50" itemprop="dateModified" datetime="2021-04-22T14:53:50+08:00">2021-04-22</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/mpvue-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" itemprop="url" rel="index"><span itemprop="name">mpvue 微信小程序</span></a>
+                  <a href="/categories/mpvue/" itemprop="url" rel="index"><span itemprop="name">mpvue</span></a>
                 </span>
             </span>
 
@@ -422,10 +987,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-04-07 14:48:16 / 修改时间：15:08:04" itemprop="dateCreated datePublished" datetime="2021-04-07T14:48:16+08:00">2021-04-07</time>
+              <time title="创建时间：2021-04-07 14:48:16" itemprop="dateCreated datePublished" datetime="2021-04-07T14:48:16+08:00">2021-04-07</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-22 14:54:20" itemprop="dateModified" datetime="2021-04-22T14:54:20+08:00">2021-04-22</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -634,7 +1205,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-07 17:20:21" itemprop="dateModified" datetime="2021-04-07T17:20:21+08:00">2021-04-07</time>
+                <time title="修改时间：2021-04-22 14:53:37" itemprop="dateModified" datetime="2021-04-22T14:53:37+08:00">2021-04-22</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -702,304 +1273,10 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-03-03/%E7%A5%9E%E7%A7%98%E6%96%87%E7%AB%A0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/boy.jpg">
-      <meta itemprop="name" content="Austinkh">
-      <meta itemprop="description" content="Austinkh's blog">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Austinkh's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021-03-03/%E7%A5%9E%E7%A7%98%E6%96%87%E7%AB%A0/" class="post-title-link" itemprop="url">神秘文章</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-03-03 18:07:34" itemprop="dateCreated datePublished" datetime="2021-03-03T18:07:34+08:00">2021-03-03</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-07 14:16:13" itemprop="dateModified" datetime="2021-04-07T14:16:13+08:00">2021-04-07</time>
-              </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-              <span>74</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你非常好奇，请与我联系。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021-03-03/%E7%A5%9E%E7%A7%98%E6%96%87%E7%AB%A0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-03-03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%20-%20%20%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E5%92%8C%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%EF%BC%88next7.8%E7%89%88%E6%9C%AC%EF%BC%89/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/boy.jpg">
-      <meta itemprop="name" content="Austinkh">
-      <meta itemprop="description" content="Austinkh's blog">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Austinkh's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021-03-03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%20-%20%20%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E5%92%8C%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%EF%BC%88next7.8%E7%89%88%E6%9C%AC%EF%BC%89/" class="post-title-link" itemprop="url">hexo搭建个人博客系列（二） -  站点配置和主题配置（next7.8版本）</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-03-03 16:24:34" itemprop="dateCreated datePublished" datetime="2021-03-03T16:24:34+08:00">2021-03-03</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-07 17:20:17" itemprop="dateModified" datetime="2021-04-07T17:20:17+08:00">2021-04-07</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-              <span>7.8k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-              <span>7 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="一、站点配置"><a href="#一、站点配置" class="headerlink" title="一、站点配置"></a>一、站点配置</h2><h3 id="1、设置-hexo-的-next-主题"><a href="#1、设置-hexo-的-next-主题" class="headerlink" title="1、设置 hexo 的 next 主题"></a>1、设置 hexo 的 next 主题</h3><p>安装next主题，在个人博客目录下，<code>git clone https://github.com/theme-next/hexo-theme-next themes/next</code></p>
-<p>我们在站点的配置文件<code>_config.yml</code> 中找到 theme 后添加：</p>
-<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">theme:</span> <span class="keyword">next</span>  # 配置成刚下载的<span class="keyword">next</span>主题</span><br></pre></td></tr></table></figure>
-
-<h3 id="2、配置-hexo-网站相关信息"><a href="#2、配置-hexo-网站相关信息" class="headerlink" title="2、配置 hexo 网站相关信息"></a>2、配置 hexo 网站相关信息</h3><p>我们在站点的配置文件<code>_config.yml</code> 中，修改：</p>
-<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># Site</span></span><br><span class="line"><span class="symbol">title:</span>          <span class="meta"># 网站标题</span></span><br><span class="line"><span class="symbol">subtitle:</span>       <span class="meta"># 网站副标题</span></span><br><span class="line"><span class="symbol">description:</span>    <span class="meta"># 描述，介绍网站的，用于SEO</span></span><br><span class="line"><span class="symbol">keywords:</span>       <span class="meta"># 网站的关键字，用于SEO</span></span><br><span class="line"><span class="symbol">author:</span>         <span class="meta"># 博主姓名</span></span><br><span class="line"><span class="symbol">language:</span> <span class="built_in">zh</span>-CN <span class="meta"># 语言：zh-CN 是简体中文(next6+版本)</span></span><br><span class="line"><span class="symbol">timezone:</span> UTC   <span class="meta"># 时区</span></span><br></pre></td></tr></table></figure>
-
-<p>注意：博客框架默认的语言是英文，我们需要到 <code>/themes/next/languages</code> 目录下，查看当前 NexT 版本简体中文对照文件的名称是 <code>zh-Hans</code> 还是 <code>zh-CN</code>。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021-03-03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%20-%20%20%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E5%92%8C%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%EF%BC%88next7.8%E7%89%88%E6%9C%AC%EF%BC%89/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-03-02/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%20-%20%20%E7%BB%91%E5%AE%9A%E5%88%B0github%20pages/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/boy.jpg">
-      <meta itemprop="name" content="Austinkh">
-      <meta itemprop="description" content="Austinkh's blog">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Austinkh's blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021-03-02/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%20-%20%20%E7%BB%91%E5%AE%9A%E5%88%B0github%20pages/" class="post-title-link" itemprop="url">hexo搭建个人博客系列（一） -  绑定到github pages</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-03-02 16:24:34" itemprop="dateCreated datePublished" datetime="2021-03-02T16:24:34+08:00">2021-03-02</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-14 14:00:11" itemprop="dateModified" datetime="2021-04-14T14:00:11+08:00">2021-04-14</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
-                </span>
-            </span>
-
-          
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-              <span>1.4k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="Github-Pages"><a href="#Github-Pages" class="headerlink" title="Github Pages"></a>Github Pages</h3><blockquote>
-<p>Github Pages 是 Github 提供的博客服务。 我们在 Github 中创建一个特定格式的 Repository，Github Pages 就会将里面的信息生成一个网页，展示出来。</p>
-</blockquote>
-<p>具体操作：</p>
-<ul>
-<li>默认你已经注册了 Github 账号</li>
-<li>然后需要在 Github 中创建一个以 <code>用户名.github.io</code> 结尾的 Repository（每个github账号只有一个github pages）</li>
-<li>勾选 Initialize this repository with a README</li>
-<li>Create repository</li>
-<li>打开网页：<code>https://用户名.github.io/</code> 就可以看到 README.md 里的内容了。</li>
-</ul>
-<p>这个生成好的 Repository 就是用来存放博客内容的地方，也只有这个仓库里的内容，才会被 <code>https://用户名.github.io/</code> 这个网页显示出来。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021-03-02/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%20-%20%20%E7%BB%91%E5%AE%9A%E5%88%B0github%20pages/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1067,20 +1344,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">20</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1117,23 +1394,23 @@
         
         
           <li>
-            <a href="/2021-04-14/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB/" title="前端面试题汇总" target="_blank">前端面试题汇总</a>
+            <a href="/2021-04-28/JetBrains%20%E5%85%A8%E5%AE%B6%E6%A1%B6%E6%97%A0%E9%99%90%E8%AF%95%E7%94%A8%E6%8F%92%E4%BB%B6/" title="JetBrains 全家桶无限试用插件" target="_blank">JetBrains 全家桶无限试用插件</a>
           </li>
         
           <li>
-            <a href="/2021-04-08/vue%E7%9F%A5%E8%AF%86%E7%82%B9/" title="vue知识点" target="_blank">vue知识点</a>
+            <a href="/2021-04-27/2021%E6%9C%80%E6%96%B0%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/" title="2021最新前端面试总结" target="_blank">2021最新前端面试总结</a>
           </li>
         
           <li>
-            <a href="/2021-04-08/%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E8%AF%B7%E9%97%AEcomputed%E5%92%8Cwatch%E5%88%86%E5%88%AB%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%BD%BF%E7%94%A8%EF%BC%9F/" title="经典面试题：请问computed和watch分别什么场景使用？" target="_blank">经典面试题：请问computed和watch分别什么场景使用？</a>
+            <a href="/2021-04-26/%E5%9F%BA%E4%BA%8Evite%E6%90%AD%E5%BB%BA%E7%9A%84vue3%E9%A1%B9%E7%9B%AE/" title="基于vite搭建的vue3项目" target="_blank">基于vite搭建的vue3项目</a>
           </li>
         
           <li>
-            <a href="/2021-04-08/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E6%96%B9%E6%B3%95/" title="前端常用工具类方法" target="_blank">前端常用工具类方法</a>
+            <a href="/2021-04-25/electron%E5%B0%86vue%E6%89%93%E5%8C%85%E6%88%90exe%E5%88%9D%E4%BD%93%E9%AA%8C/" title="electron将vue打包成exe初体验" target="_blank">electron将vue打包成exe初体验</a>
           </li>
         
           <li>
-            <a href="/2021-04-07/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%20-%20%20%E8%AE%BE%E7%BD%AE%E6%80%BB%E7%BB%93/" title="hexo搭建个人博客系列（三） -  设置总结" target="_blank">hexo搭建个人博客系列（三） -  设置总结</a>
+            <a href="/2021-04-22/typescript%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/" title="typescript问题汇总" target="_blank">typescript问题汇总</a>
           </li>
         
       </ul>
@@ -1167,12 +1444,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">39k</span>
+    <span title="站点总字数">55k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">35 分钟</span>
+    <span title="站点阅读时长">50 分钟</span>
 </div>
 
         

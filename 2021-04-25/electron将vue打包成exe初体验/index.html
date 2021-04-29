@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.loli.net/css?family=Noto Serif SC:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"austinkh17.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Electron是一个基于Chromium和 Node.js，可以使用 HTML、CSS和JavaScript构建跨平台应用的技术框架，兼容 Mac、Windows 和 Linux。虽然B&#x2F;S是目前开发的主流，但是C&#x2F;S仍然有很大的市场需求。受限于浏览器的沙盒限制，网页应用无法满足某些场景下的使用需求，而桌面应用可以读写本地文件、调用更多系统资源，再加上Web开发的低成本、高效率的优势，这种方式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="electron将vue打包成exe初体验">
+<meta property="og:url" content="https://austinkh17.github.io/2021-04-25/electron%E5%B0%86vue%E6%89%93%E5%8C%85%E6%88%90exe%E5%88%9D%E4%BD%93%E9%AA%8C/index.html">
+<meta property="og:site_name" content="Austinkh&#39;s blog">
+<meta property="og:description" content="Electron是一个基于Chromium和 Node.js，可以使用 HTML、CSS和JavaScript构建跨平台应用的技术框架，兼容 Mac、Windows 和 Linux。虽然B&#x2F;S是目前开发的主流，但是C&#x2F;S仍然有很大的市场需求。受限于浏览器的沙盒限制，网页应用无法满足某些场景下的使用需求，而桌面应用可以读写本地文件、调用更多系统资源，再加上Web开发的低成本、高效率的优势，这种方式">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-04-25T10:18:05.000Z">
+<meta property="article:modified_time" content="2021-04-27T06:06:33.605Z">
+<meta property="article:author" content="Austinkh">
+<meta property="article:tag" content="electron">
+<meta property="article:tag" content="vue">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://austinkh17.github.io/2021-04-25/electron%E5%B0%86vue%E6%89%93%E5%8C%85%E6%88%90exe%E5%88%9D%E4%BD%93%E9%AA%8C/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>electron将vue打包成exe初体验 | Austinkh's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Austinkh's blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Austinkh's blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">人生没有四季，只有两季。努力就是旺季，不努力就是淡季。</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">20</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">12</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">23</span></a>
+
+  </li>
+        <li class="menu-item menu-item-网站导航">
+
+    <a href="/nav/" rel="section"><i class="fa fa-th fa-fw"></i>网站导航</a>
+
+  </li>
+        <li class="menu-item menu-item-实验室">
+
+    <a href="/item/" rel="section"><i class="fa fa-archive fa-fw"></i>实验室</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/austinkh17" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener external nofollow noreferrer" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://austinkh17.github.io/2021-04-25/electron%E5%B0%86vue%E6%89%93%E5%8C%85%E6%88%90exe%E5%88%9D%E4%BD%93%E9%AA%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/boy.jpg">
+      <meta itemprop="name" content="Austinkh">
+      <meta itemprop="description" content="Austinkh's blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Austinkh's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          electron将vue打包成exe初体验
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-25 18:18:05" itemprop="dateCreated datePublished" datetime="2021-04-25T18:18:05+08:00">2021-04-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-27 14:06:33" itemprop="dateModified" datetime="2021-04-27T14:06:33+08:00">2021-04-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/electron/" itemprop="url" rel="index"><span itemprop="name">electron</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+              <span>6.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <blockquote>
+<p>Electron是一个基于Chromium和 Node.js，可以使用 HTML、CSS和JavaScript构建跨平台应用的技术框架，兼容 Mac、Windows 和 Linux。虽然B/S是目前开发的主流，但是C/S仍然有很大的市场需求。受限于浏览器的沙盒限制，网页应用无法满足某些场景下的使用需求，而桌面应用可以读写本地文件、调用更多系统资源，再加上Web开发的低成本、高效率的优势，这种方式越来越受到开发者的喜爱。</p>
+</blockquote>
+<p>【注】<code>SimulatedGREG/electron-vue</code>已经很久没有更新了，而且其生成的工程结构并不是vue-cli3。所以不推荐使用。</p>
+<span id="more"></span>
+
+<h3 id="基于已有的vue项目融入electron来搭建桌面应用"><a href="#基于已有的vue项目融入electron来搭建桌面应用" class="headerlink" title="基于已有的vue项目融入electron来搭建桌面应用"></a>基于已有的vue项目融入electron来搭建桌面应用</h3><h4 id="手动安装Electron相关依赖"><a href="#手动安装Electron相关依赖" class="headerlink" title="手动安装Electron相关依赖"></a>手动安装Electron相关依赖</h4><p>修改package.json,添加以下7行,并执行<code>cnpm i</code>：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">  <span class="string">&quot;serve&quot;</span>: <span class="string">&quot;vue-cli-service serve&quot;</span>,</span><br><span class="line">  <span class="string">&quot;build&quot;</span>: <span class="string">&quot;vue-cli-service build&quot;</span>,</span><br><span class="line">  <span class="string">&quot;lint&quot;</span>: <span class="string">&quot;vue-cli-service lint&quot;</span>,</span><br><span class="line">  <span class="string">&quot;electron:build&quot;</span>: <span class="string">&quot;vue-cli-service electron:build&quot;</span>, <span class="regexp">//</span> add</span><br><span class="line">  <span class="string">&quot;electron:serve&quot;</span>: <span class="string">&quot;vue-cli-service electron:serve&quot;</span>, <span class="regexp">//</span> add</span><br><span class="line">  <span class="string">&quot;postinstall&quot;</span>: <span class="string">&quot;electron-builder install-app-deps&quot;</span>, <span class="regexp">//</span> add</span><br><span class="line">  <span class="string">&quot;postuninstall&quot;</span>: <span class="string">&quot;electron-builder install-app-deps&quot;</span> <span class="regexp">//</span> add</span><br><span class="line">&#125;,</span><br><span class="line"><span class="string">&quot;main&quot;</span>: <span class="string">&quot;background.js&quot;</span>,      <span class="regexp">//</span> add</span><br><span class="line"><span class="string">&quot;devDependencies&quot;</span>: &#123;</span><br><span class="line">  <span class="string">&quot;electron&quot;</span>: <span class="string">&quot;^12.0.2&quot;</span>,       <span class="regexp">//</span> add</span><br><span class="line">  <span class="string">&quot;electron-builder&quot;</span>: <span class="string">&quot;^22.10.5&quot;</span>,       <span class="regexp">//</span> add</span><br><span class="line">  <span class="string">&quot;vue-cli-plugin-electron-builder&quot;</span>: <span class="string">&quot;~2.0.0-rc.6&quot;</span>,       <span class="regexp">//</span> add</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<h4 id="新建src-background-js"><a href="#新建src-background-js" class="headerlink" title="新建src/background.js"></a>新建src/background.js</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&#x27;use strict&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> &#123; app, protocol, BrowserWindow &#125; <span class="keyword">from</span> <span class="string">&#x27;electron&#x27;</span></span><br><span class="line"><span class="keyword">import</span> &#123; createProtocol &#125; <span class="keyword">from</span> <span class="string">&#x27;vue-cli-plugin-electron-builder/lib&#x27;</span></span><br><span class="line"><span class="comment">// import installExtension, &#123; VUEJS_DEVTOOLS &#125; from &#x27;electron-devtools-installer&#x27;</span></span><br><span class="line"><span class="keyword">const</span> isDevelopment = process.env.NODE_ENV !== <span class="string">&#x27;production&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Keep a global reference of the window object, if you don&#x27;t, the window will</span></span><br><span class="line"><span class="comment">// be closed automatically when the JavaScript object is garbage collected.</span></span><br><span class="line"><span class="keyword">let</span> win</span><br><span class="line"></span><br><span class="line"><span class="comment">// Scheme must be registered before the app is ready</span></span><br><span class="line">protocol.registerSchemesAsPrivileged([</span><br><span class="line">  &#123; <span class="attr">scheme</span>: <span class="string">&#x27;app&#x27;</span>, <span class="attr">privileges</span>: &#123; <span class="attr">secure</span>: <span class="literal">true</span>, <span class="attr">standard</span>: <span class="literal">true</span> &#125; &#125;</span><br><span class="line">])</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createWindow</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// Create the browser window.</span></span><br><span class="line">  win = <span class="keyword">new</span> BrowserWindow(&#123;</span><br><span class="line">    width: <span class="number">1000</span>,</span><br><span class="line">    height: <span class="number">600</span>,</span><br><span class="line">    webPreferences: &#123;</span><br><span class="line">      <span class="comment">// Use pluginOptions.nodeIntegration, leave this alone</span></span><br><span class="line">      <span class="comment">// See nklayman.github.io/vue-cli-plugin-electron-builder/guide/security.html#node-integration</span></span><br><span class="line">      <span class="comment">// for more info</span></span><br><span class="line">      <span class="comment">// nodeIntegration: process.env.ELECTRON_NODE_INTEGRATION</span></span><br><span class="line">      webSecurity: <span class="literal">false</span>,</span><br><span class="line">      nodeIntegration: <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (process.env.WEBPACK_DEV_SERVER_URL) &#123;</span><br><span class="line">    <span class="comment">// Load the url of the dev server if in development mode</span></span><br><span class="line">    win.loadURL(process.env.WEBPACK_DEV_SERVER_URL)</span><br><span class="line">    <span class="keyword">if</span> (!process.env.IS_TEST) win.webContents.openDevTools()</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    createProtocol(<span class="string">&#x27;app&#x27;</span>)</span><br><span class="line">    <span class="comment">// Load the index.html when not in development</span></span><br><span class="line">    win.loadURL(<span class="string">&#x27;app://./index.html&#x27;</span>)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  win.on(<span class="string">&#x27;closed&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    win = <span class="literal">null</span></span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Quit when all windows are closed.</span></span><br><span class="line">app.on(<span class="string">&#x27;window-all-closed&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// On macOS it is common for applications and their menu bar</span></span><br><span class="line">  <span class="comment">// to stay active until the user quits explicitly with Cmd + Q</span></span><br><span class="line">  <span class="keyword">if</span> (process.platform !== <span class="string">&#x27;darwin&#x27;</span>) &#123;</span><br><span class="line">    app.quit()</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">app.on(<span class="string">&#x27;activate&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// On macOS it&#x27;s common to re-create a window in the app when the</span></span><br><span class="line">  <span class="comment">// dock icon is clicked and there are no other windows open.</span></span><br><span class="line">  <span class="keyword">if</span> (win === <span class="literal">null</span>) &#123;</span><br><span class="line">    createWindow()</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// This method will be called when Electron has finished</span></span><br><span class="line"><span class="comment">// initialization and is ready to create browser windows.</span></span><br><span class="line"><span class="comment">// Some APIs can only be used after this event occurs.</span></span><br><span class="line">app.on(<span class="string">&#x27;ready&#x27;</span>, <span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line"><span class="comment">//   if (isDevelopment &amp;&amp; !process.env.IS_TEST) &#123;</span></span><br><span class="line"><span class="comment">//     // Install Vue Devtools</span></span><br><span class="line"><span class="comment">//     try &#123;</span></span><br><span class="line"><span class="comment">//       await installExtension(VUEJS_DEVTOOLS)</span></span><br><span class="line"><span class="comment">//     &#125; catch (e) &#123;</span></span><br><span class="line"><span class="comment">//       console.error(&#x27;Vue Devtools failed to install:&#x27;, e.toString())</span></span><br><span class="line"><span class="comment">//     &#125;</span></span><br><span class="line"><span class="comment">//   &#125;</span></span><br><span class="line">  createWindow()</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Exit cleanly on request from parent process in development mode.</span></span><br><span class="line"><span class="keyword">if</span> (isDevelopment) &#123;</span><br><span class="line">  <span class="keyword">if</span> (process.platform === <span class="string">&#x27;win32&#x27;</span>) &#123;</span><br><span class="line">    process.on(<span class="string">&#x27;message&#x27;</span>, <span class="function">(<span class="params">data</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (data === <span class="string">&#x27;graceful-exit&#x27;</span>) &#123;</span><br><span class="line">        app.quit()</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    process.on(<span class="string">&#x27;SIGTERM&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">      app.quit()</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="vue-config-js添加打包配置"><a href="#vue-config-js添加打包配置" class="headerlink" title="vue.config.js添加打包配置"></a>vue.config.js添加打包配置</h4><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">pluginOptions:</span> &#123; <span class="comment">// 第三方插件配置</span></span><br><span class="line"><span class="symbol">    electronBuilder:</span> &#123;</span><br><span class="line"><span class="symbol">        builderOptions:</span> &#123;</span><br><span class="line"><span class="symbol">            appId:</span> <span class="string">&quot;cn.kk&quot;</span>,</span><br><span class="line"><span class="symbol">            productName:</span> <span class="string">&quot;k&quot;</span>,</span><br><span class="line"><span class="symbol">            icon:</span> <span class="string">&quot;./public/k.ico&quot;</span>,</span><br><span class="line"><span class="symbol">            directories:</span> &#123;</span><br><span class="line"><span class="symbol">                output:</span> <span class="string">&quot;./dist_electron&quot;</span><span class="comment">//输出文件路径</span></span><br><span class="line">            &#125;,</span><br><span class="line"><span class="symbol">            win:</span> &#123;</span><br><span class="line"><span class="symbol">                icon:</span> <span class="string">&quot;./public/k.ico&quot;</span>,</span><br><span class="line"><span class="symbol">                target:</span> [<span class="string">&quot;zip&quot;</span>, <span class="string">&quot;nsis&quot;</span>]</span><br><span class="line">            &#125;,</span><br><span class="line"><span class="symbol">            nsis:</span> &#123;</span><br><span class="line"><span class="symbol">                oneClick:</span> false,</span><br><span class="line"><span class="symbol">                allowElevation:</span> true,</span><br><span class="line"><span class="symbol">                allowToChangeInstallationDirectory:</span> true,</span><br><span class="line"><span class="symbol">                installerIcon:</span> <span class="string">&quot;./public/k.ico&quot;</span>,</span><br><span class="line"><span class="symbol">                uninstallerIcon:</span> <span class="string">&quot;./public/k.ico&quot;</span>,</span><br><span class="line"><span class="symbol">                installerHeaderIcon:</span> <span class="string">&quot;./public/k.ico&quot;</span>,</span><br><span class="line"><span class="symbol">                createDesktopShortcut:</span> true,</span><br><span class="line"><span class="symbol">                createStartMenuShortcut:</span> true</span><br><span class="line">                <span class="comment">// license: &quot;./LICENSE.txt&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="编译并启动APP"><a href="#编译并启动APP" class="headerlink" title="编译并启动APP"></a>编译并启动APP</h4><p>执行以下命令，开始编译APP，并启动开发环境APP：<br>$ npm run electron:serve</p>
+<p>首次启动可能会等待很久，加载完后会自动打开APP，等待即可。</p>
+<p>编译成功后，就会出现开发环境的APP了</p>
+<p>当回到控制台，发现控制台的信息：</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">INFO  Launching Electron...</span><br><span class="line">Failed <span class="keyword">to</span> fetch extension, trying <span class="number">4</span> more <span class="keyword">times</span></span><br><span class="line">Failed <span class="keyword">to</span> fetch extension, trying <span class="number">3</span> more <span class="keyword">times</span></span><br><span class="line">Failed <span class="keyword">to</span> fetch extension, trying <span class="number">2</span> more <span class="keyword">times</span></span><br><span class="line">Failed <span class="keyword">to</span> fetch extension, trying <span class="number">1</span> more <span class="keyword">times</span></span><br><span class="line">Failed <span class="keyword">to</span> fetch extension, trying <span class="number">0</span> more <span class="keyword">times</span></span><br><span class="line">Vue Devtools failed <span class="keyword">to</span> install: Error: net::ERR_CONNECTION_TIMED_OUT</span><br></pre></td></tr></table></figure>
+<p>这是因为在请求安装vuejs devtools插件。需要***才能安装成功。可以忽略上面的问题，耐心等待5次请求失败后会自动跳过，上面的成功界面即证实跳过依然编译成功。</p>
+<p>依然有解决方案：</p>
+<p>注释掉src/background.js中的以下代码就行了：</p>
+<p>/* if (isDevelopment &amp;&amp; !process.env.IS_TEST) { // Install Vue Devtools try { await installVueDevtools(); } catch (e) { console.error(“Vue Devtools failed to install:”, e.toString()); } } */</p>
+<h3 id="报错排查"><a href="#报错排查" class="headerlink" title="报错排查"></a>报错排查</h3><h4 id="1-使用electron-builder打包成安装包错误，下载不来winCodeSign"><a href="#1-使用electron-builder打包成安装包错误，下载不来winCodeSign" class="headerlink" title="1.使用electron-builder打包成安装包错误，下载不来winCodeSign"></a>1.使用electron-builder打包成安装包错误，下载不来winCodeSign</h4><p>electron-builder有一些依赖包如 【winCodeSign】、【nsis】、【nsis-resources】；在科学上网的情况下，直接执行命令就会自动处理相关依赖，但天朝基本不科学上网，所以会出现包安装超时等的一些情况，这个时候就需要手动安装：</p>
+<p>1.第一步：下载wincodesign、nsis、nsis-resources对应版本的包 链接: <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/electron-userland/electron-builder-binaries/releases">https://github.com/electron-userland/electron-builder-binaries/releases</a></p>
+<p>2.第二步：选择7z下载并解压</p>
+<p>3.第三步：在%LOCALAPPDATA%（C:\Users\Administrator\AppData\Local）目录下新建electron-builder\cache\</p>
+<p>4.第四步：将解压的文件放到第三步的目录下，根据错误提示的版本在对于的包下面新建对于的版本，并把文件移动到目录下，便可正常打包，路径如下：<br>cache\winCodeSign\winCodeSign-2.6.0<br>cache\nsis\nsis-3.0.4.1<br>cache\nsis\nsis-resources-3.4.1</p>
+<p>各系统缓存地址：<br>macOS: ~/Library/Caches/electron-builder<br>Linux: ~/.cache/electron-builder<br>windows: %LOCALAPPDATA%\electron-builder\cache</p>
+<h4 id="ico需要256x256大小的，推荐转换地址-https-convert-72wo-com-png-to-icns"><a href="#ico需要256x256大小的，推荐转换地址-https-convert-72wo-com-png-to-icns" class="headerlink" title="ico需要256x256大小的，推荐转换地址(https://convert.72wo.com/png-to-icns)"></a>ico需要256x256大小的，推荐转换地址(<a target="_blank" rel="noopener external nofollow noreferrer" href="https://convert.72wo.com/png-to-icns">https://convert.72wo.com/png-to-icns</a>)</h4>
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">相关文章推荐</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2021-04-26\基于vite搭建的vue3项目\" rel="bookmark">基于vite搭建的vue3项目</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2021-04-08\vue知识点\" rel="bookmark">vue知识点</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2021-04-08\经典面试题：请问computed和watch分别什么场景使用？\" rel="bookmark">经典面试题：请问computed和watch分别什么场景使用？</a></div>
+    </li>
+  </ul>
+
+        <div class="reward-container">
+  <div>您的支持，就是对我最大的鼓励(●′ω`●)</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.jpg" alt="Austinkh 微信支付">
+        <p>微信支付</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Austinkh
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://austinkh17.github.io/2021-04-25/electron%E5%B0%86vue%E6%89%93%E5%8C%85%E6%88%90exe%E5%88%9D%E4%BD%93%E9%AA%8C/" title="electron将vue打包成exe初体验">https://austinkh17.github.io/2021-04-25/electron将vue打包成exe初体验/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/electron/" rel="tag"><i class="fa fa-tag"></i> electron</a>
+              <a href="/tags/vue/" rel="tag"><i class="fa fa-tag"></i> vue</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021-04-22/typescript%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/" rel="prev" title="typescript问题汇总">
+      <i class="fa fa-chevron-left"></i> typescript问题汇总
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021-04-26/%E5%9F%BA%E4%BA%8Evite%E6%90%AD%E5%BB%BA%E7%9A%84vue3%E9%A1%B9%E7%9B%AE/" rel="next" title="基于vite搭建的vue3项目">
+      基于vite搭建的vue3项目 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8E%E5%B7%B2%E6%9C%89%E7%9A%84vue%E9%A1%B9%E7%9B%AE%E8%9E%8D%E5%85%A5electron%E6%9D%A5%E6%90%AD%E5%BB%BA%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text">基于已有的vue项目融入electron来搭建桌面应用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85Electron%E7%9B%B8%E5%85%B3%E4%BE%9D%E8%B5%96"><span class="nav-number">1.1.</span> <span class="nav-text">手动安装Electron相关依赖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%B0%E5%BB%BAsrc-background-js"><span class="nav-number">1.2.</span> <span class="nav-text">新建src&#x2F;background.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#vue-config-js%E6%B7%BB%E5%8A%A0%E6%89%93%E5%8C%85%E9%85%8D%E7%BD%AE"><span class="nav-number">1.3.</span> <span class="nav-text">vue.config.js添加打包配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BC%96%E8%AF%91%E5%B9%B6%E5%90%AF%E5%8A%A8APP"><span class="nav-number">1.4.</span> <span class="nav-text">编译并启动APP</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8A%A5%E9%94%99%E6%8E%92%E6%9F%A5"><span class="nav-number">2.</span> <span class="nav-text">报错排查</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E4%BD%BF%E7%94%A8electron-builder%E6%89%93%E5%8C%85%E6%88%90%E5%AE%89%E8%A3%85%E5%8C%85%E9%94%99%E8%AF%AF%EF%BC%8C%E4%B8%8B%E8%BD%BD%E4%B8%8D%E6%9D%A5winCodeSign"><span class="nav-number">2.1.</span> <span class="nav-text">1.使用electron-builder打包成安装包错误，下载不来winCodeSign</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ico%E9%9C%80%E8%A6%81256x256%E5%A4%A7%E5%B0%8F%E7%9A%84%EF%BC%8C%E6%8E%A8%E8%8D%90%E8%BD%AC%E6%8D%A2%E5%9C%B0%E5%9D%80-https-convert-72wo-com-png-to-icns"><span class="nav-number">2.2.</span> <span class="nav-text">ico需要256x256大小的，推荐转换地址(https:&#x2F;&#x2F;convert.72wo.com&#x2F;png-to-icns)</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Austinkh"
+      src="/images/boy.jpg">
+  <p class="site-author-name" itemprop="name">Austinkh</p>
+  <div class="site-description" itemprop="description">Austinkh's blog</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/austinkh17" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;austinkh17" rel="noopener external nofollow noreferrer" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:2512630806@qq.com" title="E-Mail → mailto:2512630806@qq.com" rel="noopener external nofollow noreferrer" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://github.com/austinkh17" title="https:&#x2F;&#x2F;github.com&#x2F;austinkh17" rel="noopener external nofollow noreferrer" target="_blank">个人github</a>
+        </li>
+    </ul>
+  </div>
+
+    <div class="links-of-blogroll motion-element links-of-blogroll-block">
+      <div class="links-of-blogroll-title">
+        <!-- modify icon to fire by szw -->
+        <i class="fa fa-history fa-" aria-hidden="true"></i>
+        近期文章
+      </div>
+      <ul class="links-of-blogroll-list">
+        
+        
+        
+          <li>
+            <a href="/2021-04-28/JetBrains%20%E5%85%A8%E5%AE%B6%E6%A1%B6%E6%97%A0%E9%99%90%E8%AF%95%E7%94%A8%E6%8F%92%E4%BB%B6/" title="JetBrains 全家桶无限试用插件" target="_blank">JetBrains 全家桶无限试用插件</a>
+          </li>
+        
+          <li>
+            <a href="/2021-04-27/2021%E6%9C%80%E6%96%B0%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/" title="2021最新前端面试总结" target="_blank">2021最新前端面试总结</a>
+          </li>
+        
+          <li>
+            <a href="/2021-04-26/%E5%9F%BA%E4%BA%8Evite%E6%90%AD%E5%BB%BA%E7%9A%84vue3%E9%A1%B9%E7%9B%AE/" title="基于vite搭建的vue3项目" target="_blank">基于vite搭建的vue3项目</a>
+          </li>
+        
+          <li>
+            <a href="/2021-04-25/electron%E5%B0%86vue%E6%89%93%E5%8C%85%E6%88%90exe%E5%88%9D%E4%BD%93%E9%AA%8C/" title="electron将vue打包成exe初体验" target="_blank">electron将vue打包成exe初体验</a>
+          </li>
+        
+          <li>
+            <a href="/2021-04-22/typescript%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/" title="typescript问题汇总" target="_blank">typescript问题汇总</a>
+          </li>
+        
+      </ul>
+    </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Austinkh</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">55k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">50 分钟</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+  <script async src="/js/cursor/fireworks.js"></script>
+
+
+
+
+  <script src="/js/activate-power-mode.min.js"></script>
+  <script>
+    POWERMODE.colorful = true;
+    POWERMODE.shake = true;
+    document.body.addEventListener('input', POWERMODE);
+  </script>
+
+</body>
+</html>

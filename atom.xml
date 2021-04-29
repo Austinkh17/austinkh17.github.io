@@ -6,7 +6,7 @@
   <link href="https://austinkh17.github.io/atom.xml" rel="self"/>
   
   <link href="https://austinkh17.github.io/"/>
-  <updated>2021-04-16T10:43:22.153Z</updated>
+  <updated>2021-04-28T02:17:41.954Z</updated>
   <id>https://austinkh17.github.io/</id>
   
   <author>
@@ -17,11 +17,219 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JetBrains 全家桶无限试用插件</title>
+    <link href="https://austinkh17.github.io/2021-04-28/JetBrains%20%E5%85%A8%E5%AE%B6%E6%A1%B6%E6%97%A0%E9%99%90%E8%AF%95%E7%94%A8%E6%8F%92%E4%BB%B6/"/>
+    <id>https://austinkh17.github.io/2021-04-28/JetBrains%20%E5%85%A8%E5%AE%B6%E6%A1%B6%E6%97%A0%E9%99%90%E8%AF%95%E7%94%A8%E6%8F%92%E4%BB%B6/</id>
+    <published>2021-04-28T02:09:30.000Z</published>
+    <updated>2021-04-28T02:17:41.954Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;一、IDE-Eval-Resetter-介绍&quot;&gt;&lt;a href=&quot;#一、IDE-Eval-Resetter-介绍&quot; class=&quot;headerlink&quot; title=&quot;一、IDE Eval Resetter 介绍&quot;&gt;&lt;/a&gt;一、IDE Eval Resetter 介绍&lt;/h3&gt;&lt;p&gt;项目地址：&lt;a href=&quot;https://gitee.com/pengzhile/ide-eval-resetter&quot;&gt;https://gitee.com/pengzhile/ide-eval-resetter&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;项目功能：JetBrains 所有产品都有 30 天试用，这个插件的作用就是重置这个试用时间，让你无限试用，也算是另类的 JetBrains 激活方式。&lt;/p&gt;
+&lt;h3 id=&quot;二、使用方法&quot;&gt;&lt;a href=&quot;#二、使用方法&quot; class=&quot;headerlink&quot; title=&quot;二、使用方法&quot;&gt;&lt;/a&gt;二、使用方法&lt;/h3&gt;&lt;h4 id=&quot;1、下载插件&quot;&gt;&lt;a href=&quot;#1、下载插件&quot; class=&quot;headerlink&quot; title=&quot;1、下载插件&quot;&gt;&lt;/a&gt;1、下载插件&lt;/h4&gt;&lt;p&gt;下载地址：&lt;a href=&quot;https://plugins.zhile.io/files/ide-eval-resetter-2.1.6.zip&quot;&gt;https://plugins.zhile.io/files/ide-eval-resetter-2.1.6.zip&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;2、安装插件&quot;&gt;&lt;a href=&quot;#2、安装插件&quot; class=&quot;headerlink&quot; title=&quot;2、安装插件&quot;&gt;&lt;/a&gt;2、安装插件&lt;/h4&gt;&lt;p&gt;直接下载插件 zip 包（macOS 可能会自动解压，然后把 zip 包丢进回收站）&lt;br&gt;通常可以直接把 zip 包拖进 IDE 的窗口来进行插件的安装。如果无法拖动安装，你可以在Settings/Preferences… -&amp;gt; Plugins 里手动安装插件（Install Plugin From Disk…）&lt;br&gt;插件会提示安装成功&lt;/p&gt;
+&lt;h4 id=&quot;3、使用插件&quot;&gt;&lt;a href=&quot;#3、使用插件&quot; class=&quot;headerlink&quot; title=&quot;3、使用插件&quot;&gt;&lt;/a&gt;3、使用插件&lt;/h4&gt;&lt;p&gt;如果 IDE 没有打开项目，在Welcome界面点击菜单：Get Help -&amp;gt; Eval Reset&lt;br&gt;如果 IDE 打开了项目，点击菜单：Help -&amp;gt; Eval Reset&lt;br&gt;唤出的插件主界面中包含了一些显示信息，2 个按钮，1 个勾选项：&lt;/p&gt;
+&lt;p&gt;按钮：Reload 用来刷新界面上的显示信息。&lt;br&gt;按钮：Reset 点击会询问是否重置试用信息并重启 IDE。选择 Yes 则执行重置操作并重启 IDE 生效，选择 No 则什么也不做。（此为手动重置方式）&lt;br&gt;勾选项：Auto reset before per restart 如果勾选了，则自勾选后每次重启/退出 IDE 时会自动重置试用信息，你无需做额外的事情。（此为自动重置方式）&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="工具" scheme="https://austinkh17.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="工具" scheme="https://austinkh17.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2021最新前端面试总结</title>
+    <link href="https://austinkh17.github.io/2021-04-27/2021%E6%9C%80%E6%96%B0%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/"/>
+    <id>https://austinkh17.github.io/2021-04-27/2021%E6%9C%80%E6%96%B0%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/</id>
+    <published>2021-04-27T02:29:46.000Z</published>
+    <updated>2021-04-27T06:05:48.332Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;JS&quot;&gt;&lt;a href=&quot;#JS&quot; class=&quot;headerlink&quot; title=&quot;JS&quot;&gt;&lt;/a&gt;JS&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;事件循环模型，同异步，阻塞非阻塞&lt;/li&gt;
+&lt;li&gt;闭包&lt;/li&gt;
+&lt;li&gt;作用域链和原型链，原型和继承…&lt;/li&gt;
+&lt;li&gt;调用栈&lt;/li&gt;
+&lt;li&gt;复习函数&lt;/li&gt;
+&lt;li&gt;Promise【new】&lt;/li&gt;
+&lt;li&gt;Proxy【new】&lt;/li&gt;
+&lt;li&gt;数据类型/引用类型&lt;/li&gt;
+&lt;li&gt;深拷贝和浅拷贝，实现方式的优缺点&lt;/li&gt;
+&lt;li&gt;柯里化&lt;/li&gt;
+&lt;li&gt;模块化&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="面试" scheme="https://austinkh17.github.io/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+    <category term="面试" scheme="https://austinkh17.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于vite搭建的vue3项目</title>
+    <link href="https://austinkh17.github.io/2021-04-26/%E5%9F%BA%E4%BA%8Evite%E6%90%AD%E5%BB%BA%E7%9A%84vue3%E9%A1%B9%E7%9B%AE/"/>
+    <id>https://austinkh17.github.io/2021-04-26/%E5%9F%BA%E4%BA%8Evite%E6%90%AD%E5%BB%BA%E7%9A%84vue3%E9%A1%B9%E7%9B%AE/</id>
+    <published>2021-04-26T01:38:18.000Z</published>
+    <updated>2021-04-27T06:06:02.789Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;vite的优缺点&quot;&gt;&lt;a href=&quot;#vite的优缺点&quot; class=&quot;headerlink&quot; title=&quot;vite的优缺点&quot;&gt;&lt;/a&gt;vite的优缺点&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;Vue CLI 优点&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Vue CLI 缺点&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;经历过战斗考验，可靠&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;开发服务器速度与依赖数量成反比&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;与Vue 2兼容&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;可以捆绑任何类型的依赖关系&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;插件生态系统&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;可以针对不同的目标进行构建&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;Vite 优点&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;Vite 缺点&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;开发服务器比Webpack快10-100倍&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;只能针对现代浏览器（ES2015+）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;将code-splitting作为优先事项&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;与CommonJS模块不完全兼容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;最小的脚手架不包括Vuex、路由器等&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;不同的开发服务器与构建工具&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    <category term="vue" scheme="https://austinkh17.github.io/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://austinkh17.github.io/tags/vue/"/>
+    
+    <category term="vite" scheme="https://austinkh17.github.io/tags/vite/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>electron将vue打包成exe初体验</title>
+    <link href="https://austinkh17.github.io/2021-04-25/electron%E5%B0%86vue%E6%89%93%E5%8C%85%E6%88%90exe%E5%88%9D%E4%BD%93%E9%AA%8C/"/>
+    <id>https://austinkh17.github.io/2021-04-25/electron%E5%B0%86vue%E6%89%93%E5%8C%85%E6%88%90exe%E5%88%9D%E4%BD%93%E9%AA%8C/</id>
+    <published>2021-04-25T10:18:05.000Z</published>
+    <updated>2021-04-27T06:06:33.605Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Electron是一个基于Chromium和 Node.js，可以使用 HTML、CSS和JavaScript构建跨平台应用的技术框架，兼容 Mac、Windows 和 Linux。虽然B/S是目前开发的主流，但是C/S仍然有很大的市场需求。受限于浏览器的沙盒限制，网页应用无法满足某些场景下的使用需求，而桌面应用可以读写本地文件、调用更多系统资源，再加上Web开发的低成本、高效率的优势，这种方式越来越受到开发者的喜爱。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;【注】&lt;code&gt;SimulatedGREG/electron-vue&lt;/code&gt;已经很久没有更新了，而且其生成的工程结构并不是vue-cli3。所以不推荐使用。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="electron" scheme="https://austinkh17.github.io/categories/electron/"/>
+    
+    
+    <category term="electron" scheme="https://austinkh17.github.io/tags/electron/"/>
+    
+    <category term="vue" scheme="https://austinkh17.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>typescript问题汇总</title>
+    <link href="https://austinkh17.github.io/2021-04-22/typescript%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    <id>https://austinkh17.github.io/2021-04-22/typescript%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/</id>
+    <published>2021-04-22T09:58:23.000Z</published>
+    <updated>2021-04-26T10:00:03.916Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1e88098e19b74b79b8a51b6e16254cf1~tplv-k3u1fbpfcp-watermark.image?imageslim&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;把 &lt;code&gt;&amp;quot;build&amp;quot;: &amp;quot;vue-tsc --noEmit &amp;amp;&amp;amp;vite build&amp;quot;&lt;/code&gt; 改成 &lt;code&gt;&amp;quot;build&amp;quot;: &amp;quot;vite build&amp;quot;&lt;/code&gt;, 就可以了,应该是 element-plus 没有将用到的@types 打包&lt;/p&gt;
+&lt;h3 id=&quot;TypeScript-错误-property-does-not-exist-on-type-Object&quot;&gt;&lt;a href=&quot;#TypeScript-错误-property-does-not-exist-on-type-Object&quot; class=&quot;headerlink&quot; title=&quot;TypeScript 错误 property does not exist on type Object&quot;&gt;&lt;/a&gt;TypeScript 错误 property does not exist on type Object&lt;/h3&gt;&lt;p&gt;在TypeScript中如果按JS的方式去获取对象属性，有时会提示形如Property ‘value’ does not exist on type ‘Object’的错误。具体代码如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight pgsql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var obj: &lt;span class=&quot;keyword&quot;&gt;Object&lt;/span&gt; = &lt;span class=&quot;keyword&quot;&gt;Object&lt;/span&gt;.&lt;span class=&quot;keyword&quot;&gt;create&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.&lt;span class=&quot;keyword&quot;&gt;value&lt;/span&gt; = &amp;quot;value&amp;quot;;//[ts] Property &lt;span class=&quot;string&quot;&gt;&amp;#x27;value&amp;#x27;&lt;/span&gt; does &lt;span class=&quot;keyword&quot;&gt;not&lt;/span&gt; exist &lt;span class=&quot;keyword&quot;&gt;on&lt;/span&gt; typ&lt;span class=&quot;string&quot;&gt;e&amp;#x27;Object&amp;#x27;&lt;/span&gt;.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这是因为Typescript在执行代码检查时在该对象没有定义相应属性，遇到该报错有以下几种解决方式：&lt;/p&gt;
+&lt;h4 id=&quot;1-将对象类型设置为any&quot;&gt;&lt;a href=&quot;#1-将对象类型设置为any&quot; class=&quot;headerlink&quot; title=&quot;1.将对象类型设置为any&quot;&gt;&lt;/a&gt;1.将对象类型设置为any&lt;/h4&gt;&lt;p&gt;这是是一种非常效率的解决办法，可以访问修改任何属性不会出现编译错误。具体代码如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight pgsql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var obj: &lt;span class=&quot;keyword&quot;&gt;any&lt;/span&gt; = &lt;span class=&quot;keyword&quot;&gt;Object&lt;/span&gt;.&lt;span class=&quot;keyword&quot;&gt;create&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.&lt;span class=&quot;keyword&quot;&gt;value&lt;/span&gt; = &amp;quot;value&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;2-通过字符方式获取对象属性&quot;&gt;&lt;a href=&quot;#2-通过字符方式获取对象属性&quot; class=&quot;headerlink&quot; title=&quot;2.通过字符方式获取对象属性&quot;&gt;&lt;/a&gt;2.通过字符方式获取对象属性&lt;/h4&gt;&lt;p&gt;这种方式有些hack的感觉，但是依然能解决编译错误的问题。具体代码如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight dart&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; obj: &lt;span class=&quot;built_in&quot;&gt;Object&lt;/span&gt; = &lt;span class=&quot;built_in&quot;&gt;Object&lt;/span&gt;.create(&lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj[&lt;span class=&quot;string&quot;&gt;&amp;quot;value&amp;quot;&lt;/span&gt;] = &lt;span class=&quot;string&quot;&gt;&amp;quot;value&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;3-通过接口定义对象所具有的属性&quot;&gt;&lt;a href=&quot;#3-通过接口定义对象所具有的属性&quot; class=&quot;headerlink&quot; title=&quot;3.通过接口定义对象所具有的属性&quot;&gt;&lt;/a&gt;3.通过接口定义对象所具有的属性&lt;/h4&gt;&lt;p&gt;虽然较为繁琐，但却是最提倡的一种解决方式。通过接口声明对象后，所具有的属性值一目了然。具体代码如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight php&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; obj: ValueObject = &lt;span class=&quot;keyword&quot;&gt;Object&lt;/span&gt;.create(&lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.value = &lt;span class=&quot;string&quot;&gt;&amp;quot;value&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;ValueObject&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  value?: &lt;span class=&quot;keyword&quot;&gt;string&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;4-使用断言强制执行&quot;&gt;&lt;a href=&quot;#4-使用断言强制执行&quot; class=&quot;headerlink&quot; title=&quot;4.使用断言强制执行&quot;&gt;&lt;/a&gt;4.使用断言强制执行&lt;/h4&gt;&lt;p&gt;声明断言后，编译器会按断言类型去执行。具体代码如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight pgsql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var obj: &lt;span class=&quot;keyword&quot;&gt;Object&lt;/span&gt; = &lt;span class=&quot;keyword&quot;&gt;Object&lt;/span&gt;.&lt;span class=&quot;keyword&quot;&gt;create&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;(obj &lt;span class=&quot;keyword&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;any&lt;/span&gt;).&lt;span class=&quot;keyword&quot;&gt;value&lt;/span&gt; = &amp;quot;value&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="typescript" scheme="https://austinkh17.github.io/categories/typescript/"/>
+    
+    
+    <category term="typescript" scheme="https://austinkh17.github.io/tags/typescript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用nvm管理node版本</title>
+    <link href="https://austinkh17.github.io/2021-04-20/%E4%BD%BF%E7%94%A8nvm%E7%AE%A1%E7%90%86node%E7%89%88%E6%9C%AC/"/>
+    <id>https://austinkh17.github.io/2021-04-20/%E4%BD%BF%E7%94%A8nvm%E7%AE%A1%E7%90%86node%E7%89%88%E6%9C%AC/</id>
+    <published>2021-04-20T07:55:47.000Z</published>
+    <updated>2021-04-22T06:49:51.692Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;1、nvm-是什么&quot;&gt;&lt;a href=&quot;#1、nvm-是什么&quot; class=&quot;headerlink&quot; title=&quot;1、nvm 是什么&quot;&gt;&lt;/a&gt;1、nvm 是什么&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;（1）nvm(Node.js version manager) 是一个命令行应用，可以协助您快速地 更新、安装、使用、卸载 本机的全局 node.js 版本。&lt;br&gt;（2）有时候，我们可能同时在进行多个项目开发，而多个项目所使用的node版本又是不一样的，或者是要用最新的node版本进行试验和学习。这种情况下，对于维护多个版本的node将会是一件非常麻烦的事情，而nvm就是为解决这个问题而产生的，他可以在同一台电脑上进行多个node版本之间的切换，而这正是nvm的价值所在。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="node" scheme="https://austinkh17.github.io/categories/node/"/>
+    
+    
+    <category term="nvm" scheme="https://austinkh17.github.io/tags/nvm/"/>
+    
+    <category term="node" scheme="https://austinkh17.github.io/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
     <title>前端面试题汇总</title>
     <link href="https://austinkh17.github.io/2021-04-14/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB/"/>
     <id>https://austinkh17.github.io/2021-04-14/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB/</id>
     <published>2021-04-14T08:31:51.000Z</published>
-    <updated>2021-04-16T10:43:22.153Z</updated>
+    <updated>2021-04-27T09:05:54.526Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;笔试题&quot;&gt;&lt;a href=&quot;#笔试题&quot; class=&quot;headerlink&quot; title=&quot;笔试题&quot;&gt;&lt;/a&gt;笔试题&lt;/h3&gt;&lt;h4 id=&quot;a为何值时下述表达式成立：&quot;&gt;&lt;a href=&quot;#a为何值时下述表达式成立：&quot; class=&quot;headerlink&quot; title=&quot;a为何值时下述表达式成立：&quot;&gt;&lt;/a&gt;a为何值时下述表达式成立：&lt;/h4&gt;&lt;figure class=&quot;highlight routeros&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var a = ?&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;attribute&quot;&gt;a&lt;/span&gt;==1 &amp;amp;&amp;amp; &lt;span class=&quot;attribute&quot;&gt;a&lt;/span&gt;==2 &amp;amp;&amp;amp; &lt;span class=&quot;attribute&quot;&gt;a&lt;/span&gt;==3) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    console.log(1)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;a + 0.9 &amp;lt; a&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -124,7 +332,51 @@
 &lt;p&gt;注意一旦函数通过bind传递了有效的this对象，则该函数在运行期的this将指向这个对象，即使通过call或apply来试图改变this的指向也是徒劳的。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;原生js实现bind&lt;br&gt;&lt;a href=&quot;https://www.cnblogs.com/goloving/p/9380076.html&quot;&gt;https://www.cnblogs.com/goloving/p/9380076.html&lt;/a&gt;&lt;/p&gt;
-&lt;/details&gt;</summary>
+&lt;/details&gt;
+
+&lt;p&gt;题目一  parseInt()和Number()有什么区别？&lt;br&gt;考查知识: JS数据类型、为什么会有隐式转换&lt;br&gt;主体思路：先答这两个API的作用是什么，再说具体哪不同（入参，过程，结果），再说为什么会出现这种原因；&lt;br&gt;示例答案：parseInt和Number都是两个用于将入参转为数字的方法。parseInt是将入参转化为指定进制的整数，而Number是将传入的参数转换成数字类型的值，两者在允许接收的参数个数上不同，同时在转换结果上也可能不同，这是第一点区别；第二点区别在于转换过程中，parseInt会尽可能的将传入的参数转为数字，直到遇到不能转换为数字的字符，而Number会在转换前对入参进行扫描，只要含有不能转换成数字的字符，全部返回NaN;第三点在于，对于特殊类型的处理，对于null和undefined,parseInt均会返回NaN, 而Number返回0和NaN;&lt;/p&gt;
+&lt;p&gt;题目二  var 和 const 有什么区别？&lt;br&gt;考查知识: JS数据类型、为什么会有隐式转换&lt;br&gt;主体思路：先答这两个API的作用是什么，再说具体哪不同，再说为什么会出现这种原因；&lt;br&gt;示例答案：var和const都是声明变量的方式，而他们之间的区别，主要在以下几个方面：&lt;br&gt;  1）兼容性和语法支持；var是JS最早声明变量的方式，只要支持JS，都支持var声明变量的方式，而const是ES6新加入的语法，在部分不支持的环境中需要使用工具转换成var的写法；&lt;/p&gt;
+&lt;p&gt;  2）变量提升的区别；var声明的变量会存在着变量提升的特性，也就意味着在变量正式被赋值之前都可以被读取，而const声明的变量不具备变量提升的作用；&lt;/p&gt;
+&lt;p&gt;  3）与全局对象的关系；在全局环境中，使用var申明的变量，既是一个全局的变量同时还是全局对象window的一个属性，而使用const声明的变量仅仅是一个变量；&lt;/p&gt;
+&lt;p&gt;  4）重复声明；使用var声明的变量，允许在相同的环境中再次声明一个同名变量，而使用const声明的变量，不允许再次声明同名变量；&lt;/p&gt;
+&lt;p&gt;  5）暂时性死区；const具有暂时性死区的特性，在变量被声明赋值之前，访问变量会出现报错的问题，这是ES6为严格语法规则加入的特性，保证了变量在声明之后才可读取；&lt;/p&gt;
+&lt;p&gt;  6）与块级作用域的关系；const和let的出现很大的一个原因是因为在ES6中除了以前的全局作用域和函数作用域，新增了块级作用域的概念，而const的有效范围其实就是块级作用域，再一次细分了作用域的维度大小；&lt;/p&gt;
+&lt;p&gt;  7）为什么会出现const呢？&lt;br&gt;  ES规范的出现是为了改变JS本身存在的问题，使其能够安全稳定的在较大的综合项目中稳定运行，因此对于一些影响因素重新添加新的语法规则得以改善，同时又保持原有语法正常支持；&lt;br&gt;复制代码&lt;/p&gt;
+&lt;p&gt;题目三： 如何实现一个函数连续相加函数add，使得：add(1)(4,5,6)(7,8)(10) 输出 41 ？&lt;br&gt;主体思路：根据题目信息，每一次add执行完成后还可以再次执行，意味着add执行完成后返回的是一个函数，而这个函数可以将所有传入的参数进行累加，所以，问题就变成了：&lt;br&gt;1）如何记录下每一次传入的参数；&lt;br&gt;2）如何在执行后依然返回一个函数，并且还能实现累加；&lt;br&gt;3）如果返回的是一个函数，如何能实现在访问执行结果的时候返回一个数字？&lt;br&gt;要解决参数记录，最容易想到的就是设置一个全局变量，将每次传入的参数都记下来，然后再求和；这是最容易想到的一个方法，但是这个方法有个弊端，那就是在同一个命名空间，分别执行两次相同参数的函数，得到的结果完全不一致，而且，后一次执行的结果是前一次结果的两倍，原因就在于虽然实现了记下每一次的参数，但是理想的状况是：当我重新执行的时候，我希望的结果是初始值，而不是被上次执行结果污染的；写成代码就是：&lt;br&gt;add(1)(4,5,6)   //  16&lt;br&gt;add(1)(4,5,6)  //   32&lt;br&gt;而我需要的是：&lt;br&gt;add(1)(4,5,6)  // 16&lt;br&gt;add(1)(4,5,6)  // 16&lt;br&gt;所以，使用全局变量去解决参数记录问题是存在问题，那么就得另外想办法；那能解决这个问题的另一个办法就是闭包，闭包能够实现我们在外部访问函数内部的变量，理论上保存变量的问题是解决了；那么第二个问题是执行结果是一个函数，在闭包里这也不是问题，因为闭包在大多数情况下最明显的特征就是返回一个被外部占用的变量，这点也满足要求。&lt;br&gt;所以根据上述思路，伪代码可以写成这样:&lt;/p&gt;
+&lt;p&gt;function add(arg){&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;arg = oldArg + arg;  // 参数合并，并且首次执行参数是初始值
+
+return function(arg)&amp;#123;  // 返回一个函数，将合并后参数继续传入
+ // ……
+ 
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;p&gt;复制代码&lt;br&gt;现在还存在最后一个问题，如何在访问的时候能够返回一个数字？根据前面的思路，函数执行后会返回一个函数，而函数是个引用类型的值，对于引用类型的值，当访问值时，实际上访问的是引用类型中[Symbol.toPrimittive]、valueOf、toString去获取引用类型的原始值，所以我们只需要选取其中一个重写其方法就可以了。现在问题基本都理清了，按照思路，直接写出答案：&lt;br&gt;function add(…arg){&lt;/p&gt;
+&lt;p&gt;  function proxy(…innerArg){&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;arg = [...arg,...innerArg];
+
+return proxy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;  }&lt;/p&gt;
+&lt;p&gt;  proxy.toString = function(){&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;return arg.reduce(function(total, item)&amp;#123;return total + item&amp;#125;, 0)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;  }&lt;/p&gt;
+&lt;p&gt;  return proxy&lt;br&gt;}&lt;br&gt;复制代码&lt;br&gt;需要注意的是，这里的proxy并不是那个Proxy函数，如果觉得绕的话，可以换成其他名字都行。&lt;/p&gt;
+&lt;p&gt;题目四： 说说ES6里面对数字类型的增强特性有哪些？&lt;br&gt;主体思路:&lt;br&gt;限定很明确，是对数字类型，因此尽可能的详尽一点概括总结新特性，既考察你对ES6的了解程度，又考察总结临时概括能力。&lt;br&gt;参考答案：&lt;br&gt;ES6对数字类型能力支持主要出于两方面的考虑，一个是改善既有的缺陷，再有就是提供能力增强；&lt;br&gt;先说缺陷弥补：&lt;br&gt;   1）增加Object.is()方法弥补等价判断缺陷；&lt;br&gt;       在以往 +0 === -0 结果是true, 但是有时候我们希望的是只要是完全一样，结果就返回true,但凡有差异，结果就返回false, 但事实并非如,江湖上一直流传着以下代码：&lt;br&gt;复制代码&lt;br&gt;  +0 === -0  // true&lt;/p&gt;
+&lt;p&gt;  null === null  // false&lt;br&gt;复制代码&lt;br&gt;这种情况让人很是头疼，在特定业务下，不得不自己写工具函数去判断是否真的一致，ES6为了弥补这一问题，新增了Object.is(a,b)方法，目的就是要解决这种判断不一致问题，再来看看弥补之后的结果：&lt;br&gt;Object.is(+0, -0) // false&lt;/p&gt;
+&lt;p&gt;Object.is(null,null)  // true&lt;br&gt;复制代码&lt;br&gt;这才是符合我们认知的等价。&lt;br&gt;2）增加Number.EPSILON,可以用来判断两数相等&lt;br&gt;JS对数字的表示不区分整型和浮点型，通通都用双精度64位浮点型表示，这就导致在转换一些数字时，没办法完全准确的用二进制表示，所以才会出现经典的0.1 + 0.2 !== 0.3  问题，在设计交易金额时，处理精度非常的老火，要么自己写处理函数做先放大后缩小，要么采用第三方工具，总之就是战战兢兢；ES6新增Number.EPSILON，他的值时2的-52次方，我们可以借用该值极小的特性，认为只要两个数之间的差值小于该值，就可以认为两数相等，虽然依然无法一步到位省去比较过程，但是可以简化我们的比较逻辑，封装之后挂载全局还是很好用的&lt;br&gt;再说能力增强：&lt;br&gt;1）bigInt&lt;br&gt;bigInt要解决的问题是超出最大安全数和小于最小安全数之后，数据会失真的问题，虽然我们可以使用字符串的形式表示，却无法依靠字符串做数字运算，还得实时防着后端给的数字会超出范围，在计算的时候也需要借助后端能力，bigInt能够实现数据不失真表示，还能进行运算，可谓是一大福音；&lt;br&gt;2）最大安全数和最小安全数&lt;br&gt;准确的说叫最大安全整数和最小安全整数，表示为：Number.MAX_SAFE_INTEGER  和Number.MIN_SAFE_INTEGER，对应数值分别为2^53  和 2^(-53),超出该范围的值会失真，实际项目中，可以借此做安全性判断，结合bigInt综合应用；&lt;/p&gt;
+&lt;h3 id=&quot;arr-reduce的用法&quot;&gt;&lt;a href=&quot;#arr-reduce的用法&quot; class=&quot;headerlink&quot; title=&quot;arr.reduce的用法&quot;&gt;&lt;/a&gt;arr.reduce的用法&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/e375ba1cfc47&quot;&gt;https://www.jianshu.com/p/e375ba1cfc47&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;promise-generate和async区别&quot;&gt;&lt;a href=&quot;#promise-generate和async区别&quot; class=&quot;headerlink&quot; title=&quot;promise,generate和async区别&quot;&gt;&lt;/a&gt;promise,generate和async区别&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/134691646&quot;&gt;https://zhuanlan.zhihu.com/p/134691646&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;前端重复请求&quot;&gt;&lt;a href=&quot;#前端重复请求&quot; class=&quot;headerlink&quot; title=&quot;前端重复请求&quot;&gt;&lt;/a&gt;前端重复请求&lt;/h3&gt;&lt;h4 id=&quot;1-ui层面&quot;&gt;&lt;a href=&quot;#1-ui层面&quot; class=&quot;headerlink&quot; title=&quot;1.ui层面&quot;&gt;&lt;/a&gt;1.ui层面&lt;/h4&gt;&lt;p&gt;用户点击完成按钮后，给按钮添加禁用状态，开启等待动画，直到请求结束&lt;/p&gt;
+&lt;h4 id=&quot;2-暴力连续点击&quot;&gt;&lt;a href=&quot;#2-暴力连续点击&quot; class=&quot;headerlink&quot; title=&quot;2.暴力连续点击&quot;&gt;&lt;/a&gt;2.暴力连续点击&lt;/h4&gt;&lt;p&gt;防抖函数&lt;/p&gt;
+&lt;h4 id=&quot;3-频繁切换tab&quot;&gt;&lt;a href=&quot;#3-频繁切换tab&quot; class=&quot;headerlink&quot; title=&quot;3.频繁切换tab&quot;&gt;&lt;/a&gt;3.频繁切换tab&lt;/h4&gt;&lt;p&gt;&lt;a href=&quot;https://juejin.cn/post/6955610207036801031#heading-1&quot;&gt;axios取消上一次请求&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;4-缓存一个耗时长但返回数据长时间不变的接口&quot;&gt;&lt;a href=&quot;#4-缓存一个耗时长但返回数据长时间不变的接口&quot; class=&quot;headerlink&quot; title=&quot;4.缓存一个耗时长但返回数据长时间不变的接口&quot;&gt;&lt;/a&gt;4.缓存一个耗时长但返回数据长时间不变的接口&lt;/h4&gt;&lt;p&gt;首先声明一个store.js文件&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; Vue &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&amp;#x27;vue&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; Store = Vue.observable(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  AllVideo: &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Map&lt;/span&gt;(), &lt;span class=&quot;comment&quot;&gt;// 所有视频，性能优化, 存在数据情况这里取数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  AllDrama: &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Map&lt;/span&gt;(), &lt;span class=&quot;comment&quot;&gt;// 所有剧本，性能优化&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; Mutations = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;// 重置数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;restData&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Store.AllDrama = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Map&lt;/span&gt;()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Store.AllDrama = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Map&lt;/span&gt;()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &amp;#123; Store, Mutations &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在级联组件中导入函数&lt;/p&gt;
+&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;import &amp;#123; Store &amp;#125; from &amp;#x27;store&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; &amp;#123; Store &amp;#125; &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&amp;#x27;../store&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;default&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;  &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;data&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &amp;#123;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  methods: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 获取所有视频&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;getAllVideo&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;      &lt;span class=&quot;keyword&quot;&gt;try&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; materialType = &lt;span class=&quot;built_in&quot;&gt;this&lt;/span&gt;.materialType&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;        materialType = materialType === &lt;span class=&quot;number&quot;&gt;3&lt;/span&gt; ? &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; : &lt;span class=&quot;built_in&quot;&gt;this&lt;/span&gt;.materialType&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// 如果内存中存在数据则直接返回，不走接口请求数据&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; typeData = Store.AllVideo.get(materialType)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (typeData) &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Promise&lt;/span&gt;.resolve(typeData)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// 请求接口&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; result = &lt;span class=&quot;keyword&quot;&gt;await&lt;/span&gt; Service.VideoServer.videoList(&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          data: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;            corpId: &lt;span class=&quot;built_in&quot;&gt;this&lt;/span&gt;.$store.state.userInfo.corpid,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            filterStatus: [1],&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            page: 1,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            size: 2000,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; records = result.data.records ?? []&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//第一次请求的情况下同时把数据存入到js文件的变量中&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Store.AllVideo.set(materialType, videoList)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Promise&lt;/span&gt;.resolve(videoList)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;      &amp;#125; &lt;span class=&quot;keyword&quot;&gt;catch&lt;/span&gt; (e) &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;javascript&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Promise&lt;/span&gt;.reject(e)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;【注意事项】主要就是这个属于你自己额外开辟的存储，属于内存存储，随着刷新就丢失。但是在不刷新页面的情况下存储会一直驻留在页面的内存中。注意使用，别引发内存泄露问题。&lt;/p&gt;</summary>
     
     
     
@@ -160,17 +412,19 @@
     <link href="https://austinkh17.github.io/2021-04-08/%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E8%AF%B7%E9%97%AEcomputed%E5%92%8Cwatch%E5%88%86%E5%88%AB%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%BD%BF%E7%94%A8%EF%BC%9F/"/>
     <id>https://austinkh17.github.io/2021-04-08/%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E8%AF%B7%E9%97%AEcomputed%E5%92%8Cwatch%E5%88%86%E5%88%AB%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%BD%BF%E7%94%A8%EF%BC%9F/</id>
     <published>2021-04-08T06:11:06.000Z</published>
-    <updated>2021-04-08T06:33:22.853Z</updated>
+    <updated>2021-04-22T06:51:26.931Z</updated>
     
     
     <summary type="html">&lt;p&gt;回答：当模板中的某个值需要通过一个或多个数据计算得到时，就可以使用计算属性；监听属性主要是监听某个值发生变化后，对新值去进行逻辑处理。&lt;/p&gt;</summary>
     
     
     
-    <category term="vue" scheme="https://austinkh17.github.io/categories/vue/"/>
+    <category term="面试题" scheme="https://austinkh17.github.io/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
     <category term="vue" scheme="https://austinkh17.github.io/tags/vue/"/>
+    
+    <category term="面试题" scheme="https://austinkh17.github.io/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
   </entry>
   
@@ -179,7 +433,7 @@
     <link href="https://austinkh17.github.io/2021-04-08/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E6%96%B9%E6%B3%95/"/>
     <id>https://austinkh17.github.io/2021-04-08/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E6%96%B9%E6%B3%95/</id>
     <published>2021-04-08T05:50:19.000Z</published>
-    <updated>2021-04-08T05:59:40.914Z</updated>
+    <updated>2021-04-22T06:52:04.983Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;lodash常用方法&quot;&gt;&lt;a href=&quot;#lodash常用方法&quot; class=&quot;headerlink&quot; title=&quot;lodash常用方法&quot;&gt;&lt;/a&gt;lodash常用方法&lt;/h3&gt;&lt;h4 id=&quot;capitalize-string-’’&quot;&gt;&lt;a href=&quot;#capitalize-string-’’&quot; class=&quot;headerlink&quot; title=&quot;_.capitalize([string=’’])&quot;&gt;&lt;/a&gt;_.capitalize([string=’’])&lt;/h4&gt;&lt;p&gt;转换字符串首字母为大写，剩下为小写。&lt;/p&gt;
@@ -188,10 +442,14 @@
     
     
     
-    <category term="lodash moment" scheme="https://austinkh17.github.io/categories/lodash-moment/"/>
+    <category term="工具" scheme="https://austinkh17.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="lodash moment" scheme="https://austinkh17.github.io/tags/lodash-moment/"/>
+    <category term="工具" scheme="https://austinkh17.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="lodash" scheme="https://austinkh17.github.io/tags/lodash/"/>
+    
+    <category term="moment" scheme="https://austinkh17.github.io/tags/moment/"/>
     
   </entry>
   
@@ -200,7 +458,7 @@
     <link href="https://austinkh17.github.io/2021-04-07/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%20-%20%20%E8%AE%BE%E7%BD%AE%E6%80%BB%E7%BB%93/"/>
     <id>https://austinkh17.github.io/2021-04-07/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%20-%20%20%E8%AE%BE%E7%BD%AE%E6%80%BB%E7%BB%93/</id>
     <published>2021-04-07T09:18:07.000Z</published>
-    <updated>2021-04-07T09:23:23.524Z</updated>
+    <updated>2021-04-22T06:53:20.293Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;修改默认文章的模板&quot;&gt;&lt;a href=&quot;#修改默认文章的模板&quot; class=&quot;headerlink&quot; title=&quot;修改默认文章的模板&quot;&gt;&lt;/a&gt;修改默认文章的模板&lt;/h3&gt;&lt;p&gt;每次使用&lt;code&gt;hexo new &amp;quot;post-name&amp;quot;&lt;/code&gt;新建一篇文章时，只有title date tags，要手动增加categories。&lt;/p&gt;
@@ -209,6 +467,14 @@
     
     
     
+    <category term="hexo" scheme="https://austinkh17.github.io/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://austinkh17.github.io/tags/hexo/"/>
+    
+    <category term="next主题" scheme="https://austinkh17.github.io/tags/next%E4%B8%BB%E9%A2%98/"/>
+    
+    <category term="个人博客" scheme="https://austinkh17.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
@@ -217,7 +483,7 @@
     <link href="https://austinkh17.github.io/2021-04-07/vscode%E6%96%B0%E5%BB%BA%E5%BF%AB%E6%8D%B7%E7%89%87%E6%AE%B5/"/>
     <id>https://austinkh17.github.io/2021-04-07/vscode%E6%96%B0%E5%BB%BA%E5%BF%AB%E6%8D%B7%E7%89%87%E6%AE%B5/</id>
     <published>2021-04-07T09:10:57.000Z</published>
-    <updated>2021-04-07T09:14:18.272Z</updated>
+    <updated>2021-04-22T06:54:05.951Z</updated>
     
     
       
@@ -230,7 +496,7 @@
     
     
     
-    <category term="vscode 工具" scheme="https://austinkh17.github.io/categories/vscode-%E5%B7%A5%E5%85%B7/"/>
+    <category term="vscode" scheme="https://austinkh17.github.io/categories/vscode/"/>
     
     
     <category term="vscode 工具" scheme="https://austinkh17.github.io/tags/vscode-%E5%B7%A5%E5%85%B7/"/>
@@ -285,7 +551,7 @@
     <link href="https://austinkh17.github.io/2021-04-07/mpvue%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     <id>https://austinkh17.github.io/2021-04-07/mpvue%E7%9F%A5%E8%AF%86%E7%82%B9/</id>
     <published>2021-04-07T06:49:16.000Z</published>
-    <updated>2021-04-07T07:17:20.899Z</updated>
+    <updated>2021-04-22T06:53:50.150Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;1-第一次进入时的生命周期执行顺序&quot;&gt;&lt;a href=&quot;#1-第一次进入时的生命周期执行顺序&quot; class=&quot;headerlink&quot; title=&quot;1.第一次进入时的生命周期执行顺序&quot;&gt;&lt;/a&gt;1.第一次进入时的生命周期执行顺序&lt;/h3&gt;&lt;p&gt;(1).created&lt;br&gt;(2).onload(option)，option作为页面路径中的参数，一个页面只会调用一次，接收页面参数，监听页面加载&lt;br&gt;(3).onshow&lt;br&gt;(4).onready，页面初次渲染完成，一个页面只会调用一次，代表页面已经准备妥当，可以和视图层进行交互&lt;br&gt;(5).mounted&lt;/p&gt;
@@ -294,7 +560,7 @@
     
     
     
-    <category term="mpvue 微信小程序" scheme="https://austinkh17.github.io/categories/mpvue-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    <category term="mpvue" scheme="https://austinkh17.github.io/categories/mpvue/"/>
     
     
     <category term="mpvue 微信小程序" scheme="https://austinkh17.github.io/tags/mpvue-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
@@ -306,7 +572,7 @@
     <link href="https://austinkh17.github.io/2021-04-07/webstorm%E5%B8%B8%E7%94%A8/"/>
     <id>https://austinkh17.github.io/2021-04-07/webstorm%E5%B8%B8%E7%94%A8/</id>
     <published>2021-04-07T06:48:16.000Z</published>
-    <updated>2021-04-07T07:08:04.932Z</updated>
+    <updated>2021-04-22T06:54:20.186Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;webstorm-快捷键&quot;&gt;&lt;a href=&quot;#webstorm-快捷键&quot; class=&quot;headerlink&quot; title=&quot;webstorm 快捷键&quot;&gt;&lt;/a&gt;webstorm 快捷键&lt;/h2&gt;&lt;table&gt;
@@ -433,6 +699,8 @@
     
     <category term="工具" scheme="https://austinkh17.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
+    <category term="webstorm" scheme="https://austinkh17.github.io/tags/webstorm/"/>
+    
   </entry>
   
   <entry>
@@ -440,7 +708,7 @@
     <link href="https://austinkh17.github.io/2021-04-07/%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     <id>https://austinkh17.github.io/2021-04-07/%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</id>
     <published>2021-04-07T06:08:16.000Z</published>
-    <updated>2021-04-07T07:27:22.106Z</updated>
+    <updated>2021-04-29T11:19:17.446Z</updated>
     
     
       
@@ -458,6 +726,8 @@
     
     <category term="工具" scheme="https://austinkh17.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
+    <category term="快捷键" scheme="https://austinkh17.github.io/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
   </entry>
   
   <entry>
@@ -465,7 +735,7 @@
     <link href="https://austinkh17.github.io/2021-03-22/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%20-%20%20%E6%8F%92%E4%BB%B6%E6%80%BB%E7%BB%93/"/>
     <id>https://austinkh17.github.io/2021-03-22/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%20-%20%20%E6%8F%92%E4%BB%B6%E6%80%BB%E7%BB%93/</id>
     <published>2021-03-22T10:24:34.000Z</published>
-    <updated>2021-04-07T09:20:21.168Z</updated>
+    <updated>2021-04-22T06:53:37.405Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;一、文章加密&quot;&gt;&lt;a href=&quot;#一、文章加密&quot; class=&quot;headerlink&quot; title=&quot;一、文章加密&quot;&gt;&lt;/a&gt;一、文章加密&lt;/h2&gt;&lt;h3 id=&quot;1、安装插件&quot;&gt;&lt;a href=&quot;#1、安装插件&quot; class=&quot;headerlink&quot; title=&quot;1、安装插件&quot;&gt;&lt;/a&gt;1、安装插件&lt;/h3&gt;&lt;figure class=&quot;highlight livecodeserver&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-blog-&lt;span class=&quot;built_in&quot;&gt;encrypt&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;--save&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -553,85 +823,6 @@
     
     
     <category term="github" scheme="https://austinkh17.github.io/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>神秘文章</title>
-    <link href="https://austinkh17.github.io/2021-03-03/%E7%A5%9E%E7%A7%98%E6%96%87%E7%AB%A0/"/>
-    <id>https://austinkh17.github.io/2021-03-03/%E7%A5%9E%E7%A7%98%E6%96%87%E7%AB%A0/</id>
-    <published>2021-03-03T10:07:34.000Z</published>
-    <updated>2021-04-07T06:16:13.956Z</updated>
-    
-    
-    <summary type="html">这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你非常好奇，请与我联系。</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hexo搭建个人博客系列（二） -  站点配置和主题配置（next7.8版本）</title>
-    <link href="https://austinkh17.github.io/2021-03-03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%20-%20%20%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E5%92%8C%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%EF%BC%88next7.8%E7%89%88%E6%9C%AC%EF%BC%89/"/>
-    <id>https://austinkh17.github.io/2021-03-03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89%20-%20%20%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E5%92%8C%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%EF%BC%88next7.8%E7%89%88%E6%9C%AC%EF%BC%89/</id>
-    <published>2021-03-03T08:24:34.000Z</published>
-    <updated>2021-04-07T09:20:17.419Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;一、站点配置&quot;&gt;&lt;a href=&quot;#一、站点配置&quot; class=&quot;headerlink&quot; title=&quot;一、站点配置&quot;&gt;&lt;/a&gt;一、站点配置&lt;/h2&gt;&lt;h3 id=&quot;1、设置-hexo-的-next-主题&quot;&gt;&lt;a href=&quot;#1、设置-hexo-的-next-主题&quot; class=&quot;headerlink&quot; title=&quot;1、设置 hexo 的 next 主题&quot;&gt;&lt;/a&gt;1、设置 hexo 的 next 主题&lt;/h3&gt;&lt;p&gt;安装next主题，在个人博客目录下，&lt;code&gt;git clone https://github.com/theme-next/hexo-theme-next themes/next&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;我们在站点的配置文件&lt;code&gt;_config.yml&lt;/code&gt; 中找到 theme 后添加：&lt;/p&gt;
-&lt;figure class=&quot;highlight vbnet&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;theme:&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;next&lt;/span&gt;  # 配置成刚下载的&lt;span class=&quot;keyword&quot;&gt;next&lt;/span&gt;主题&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;2、配置-hexo-网站相关信息&quot;&gt;&lt;a href=&quot;#2、配置-hexo-网站相关信息&quot; class=&quot;headerlink&quot; title=&quot;2、配置 hexo 网站相关信息&quot;&gt;&lt;/a&gt;2、配置 hexo 网站相关信息&lt;/h3&gt;&lt;p&gt;我们在站点的配置文件&lt;code&gt;_config.yml&lt;/code&gt; 中，修改：&lt;/p&gt;
-&lt;figure class=&quot;highlight avrasm&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;# Site&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;title:&lt;/span&gt;          &lt;span class=&quot;meta&quot;&gt;# 网站标题&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;subtitle:&lt;/span&gt;       &lt;span class=&quot;meta&quot;&gt;# 网站副标题&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;description:&lt;/span&gt;    &lt;span class=&quot;meta&quot;&gt;# 描述，介绍网站的，用于SEO&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;keywords:&lt;/span&gt;       &lt;span class=&quot;meta&quot;&gt;# 网站的关键字，用于SEO&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;author:&lt;/span&gt;         &lt;span class=&quot;meta&quot;&gt;# 博主姓名&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;language:&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;zh&lt;/span&gt;-CN &lt;span class=&quot;meta&quot;&gt;# 语言：zh-CN 是简体中文(next6+版本)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;timezone:&lt;/span&gt; UTC   &lt;span class=&quot;meta&quot;&gt;# 时区&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;注意：博客框架默认的语言是英文，我们需要到 &lt;code&gt;/themes/next/languages&lt;/code&gt; 目录下，查看当前 NexT 版本简体中文对照文件的名称是 &lt;code&gt;zh-Hans&lt;/code&gt; 还是 &lt;code&gt;zh-CN&lt;/code&gt;。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="hexo" scheme="https://austinkh17.github.io/categories/hexo/"/>
-    
-    
-    <category term="hexo" scheme="https://austinkh17.github.io/tags/hexo/"/>
-    
-    <category term="next主题" scheme="https://austinkh17.github.io/tags/next%E4%B8%BB%E9%A2%98/"/>
-    
-    <category term="个人博客" scheme="https://austinkh17.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo搭建个人博客系列（一） -  绑定到github pages</title>
-    <link href="https://austinkh17.github.io/2021-03-02/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%20-%20%20%E7%BB%91%E5%AE%9A%E5%88%B0github%20pages/"/>
-    <id>https://austinkh17.github.io/2021-03-02/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89%20-%20%20%E7%BB%91%E5%AE%9A%E5%88%B0github%20pages/</id>
-    <published>2021-03-02T08:24:34.000Z</published>
-    <updated>2021-04-14T06:00:11.398Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;Github-Pages&quot;&gt;&lt;a href=&quot;#Github-Pages&quot; class=&quot;headerlink&quot; title=&quot;Github Pages&quot;&gt;&lt;/a&gt;Github Pages&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Github Pages 是 Github 提供的博客服务。 我们在 Github 中创建一个特定格式的 Repository，Github Pages 就会将里面的信息生成一个网页，展示出来。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;具体操作：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;默认你已经注册了 Github 账号&lt;/li&gt;
-&lt;li&gt;然后需要在 Github 中创建一个以 &lt;code&gt;用户名.github.io&lt;/code&gt; 结尾的 Repository（每个github账号只有一个github pages）&lt;/li&gt;
-&lt;li&gt;勾选 Initialize this repository with a README&lt;/li&gt;
-&lt;li&gt;Create repository&lt;/li&gt;
-&lt;li&gt;打开网页：&lt;code&gt;https://用户名.github.io/&lt;/code&gt; 就可以看到 README.md 里的内容了。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这个生成好的 Repository 就是用来存放博客内容的地方，也只有这个仓库里的内容，才会被 &lt;code&gt;https://用户名.github.io/&lt;/code&gt; 这个网页显示出来。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="hexo" scheme="https://austinkh17.github.io/categories/hexo/"/>
-    
-    
-    <category term="hexo" scheme="https://austinkh17.github.io/tags/hexo/"/>
-    
-    <category term="next主题" scheme="https://austinkh17.github.io/tags/next%E4%B8%BB%E9%A2%98/"/>
-    
-    <category term="个人博客" scheme="https://austinkh17.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   

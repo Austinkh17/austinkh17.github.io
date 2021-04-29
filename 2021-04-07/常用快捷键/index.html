@@ -28,9 +28,10 @@
 <meta property="og:description" content="一、git 常用命令1.git 将本地项目添加至 github 步骤git init (初始化此目录为 git 相关的目录，此时把你需要上传的代码都复制到此目录下)git add . (命令将文件内容添加到索引，上传代码添加到缓存区)git commit -m &quot;init&quot; (新建提交命令，将更新的代码提交到本地的版本库，引号内的内容为自己填，相当于此次操作的内容备注)git">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-04-07T06:08:16.000Z">
-<meta property="article:modified_time" content="2021-04-07T07:27:22.106Z">
+<meta property="article:modified_time" content="2021-04-29T11:19:17.446Z">
 <meta property="article:author" content="Austinkh">
 <meta property="article:tag" content="工具">
+<meta property="article:tag" content="快捷键">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://austinkh17.github.io/2021-04-07/%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/">
@@ -128,17 +129,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">12</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">20</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">10</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">12</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">17</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">23</span></a>
 
   </li>
         <li class="menu-item menu-item-网站导航">
@@ -241,10 +242,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-04-07 14:08:16 / 修改时间：15:27:22" itemprop="dateCreated datePublished" datetime="2021-04-07T14:08:16+08:00">2021-04-07</time>
+              <time title="创建时间：2021-04-07 14:08:16" itemprop="dateCreated datePublished" datetime="2021-04-07T14:08:16+08:00">2021-04-07</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-04-29 19:19:17" itemprop="dateModified" datetime="2021-04-29T19:19:17+08:00">2021-04-29</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -294,6 +301,7 @@
 <h4 id="2-git-修改-remote-地址"><a href="#2-git-修改-remote-地址" class="headerlink" title="2.git 修改 remote 地址"></a>2.git 修改 remote 地址</h4><h5 id="方式-1、直接修改："><a href="#方式-1、直接修改：" class="headerlink" title="方式 1、直接修改："></a>方式 1、直接修改：</h5><p><code>git remote set-url origin xxxxx.git</code></p>
 <h5 id="方式-2、先删后加-："><a href="#方式-2、先删后加-：" class="headerlink" title="方式 2、先删后加 ："></a>方式 2、先删后加 ：</h5><p><code>git remote rm origin</code><br><code>git remote add origin xxxxx.git</code></p>
 <h5 id="修改默认-pull-和-push-分支："><a href="#修改默认-pull-和-push-分支：" class="headerlink" title="修改默认 pull 和 push 分支："></a>修改默认 pull 和 push 分支：</h5><p><code>git branch --set-upstream-to=origin/develop develop</code><br><code>origin/develop develop 为要设置的默认分支</code></p>
+<h4 id="git修改未提交的commit"><a href="#git修改未提交的commit" class="headerlink" title="git修改未提交的commit"></a>git修改未提交的commit</h4><p><code>git commit --amend</code>进入vi,i/o/a进入编辑模式，esc退出编辑模式，:wq保存并退出</p>
 <h3 id="二、vscode-快捷键"><a href="#二、vscode-快捷键" class="headerlink" title="二、vscode 快捷键"></a>二、vscode 快捷键</h3><ul>
 <li>ctrl+shift+p 打开命令面板</li>
 <li>alt+左/右箭头 前进/后退一步</li>
@@ -353,6 +361,12 @@
   <div class="popular-posts-header">相关文章推荐</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2021-04-28\JetBrains 全家桶无限试用插件\" rel="bookmark">JetBrains 全家桶无限试用插件</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2021-04-08\前端常用工具类方法\" rel="bookmark">前端常用工具类方法</a></div>
+    </li>
+    <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="\2021-04-07\webstorm常用\" rel="bookmark">webstorm常用</a></div>
     </li>
   </ul>
@@ -394,6 +408,7 @@
           
           <div class="post-tags">
               <a href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag"><i class="fa fa-tag"></i> 工具</a>
+              <a href="/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/" rel="tag"><i class="fa fa-tag"></i> 快捷键</a>
           </div>
 
         
@@ -467,7 +482,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">一、git 常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-git-%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E6%B7%BB%E5%8A%A0%E8%87%B3-github-%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.1.</span> <span class="nav-text">1.git 将本地项目添加至 github 步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-git-%E4%BF%AE%E6%94%B9-remote-%E5%9C%B0%E5%9D%80"><span class="nav-number">1.2.</span> <span class="nav-text">2.git 修改 remote 地址</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%96%B9%E5%BC%8F-1%E3%80%81%E7%9B%B4%E6%8E%A5%E4%BF%AE%E6%94%B9%EF%BC%9A"><span class="nav-number">1.2.1.</span> <span class="nav-text">方式 1、直接修改：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%96%B9%E5%BC%8F-2%E3%80%81%E5%85%88%E5%88%A0%E5%90%8E%E5%8A%A0-%EF%BC%9A"><span class="nav-number">1.2.2.</span> <span class="nav-text">方式 2、先删后加 ：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4-pull-%E5%92%8C-push-%E5%88%86%E6%94%AF%EF%BC%9A"><span class="nav-number">1.2.3.</span> <span class="nav-text">修改默认 pull 和 push 分支：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81vscode-%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">2.</span> <span class="nav-text">二、vscode 快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81webstorm-%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">3.</span> <span class="nav-text">三、webstorm 快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%B8%B8%E7%94%A8%E7%9A%84%E7%94%B5%E8%84%91%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">4.</span> <span class="nav-text">四、常用的电脑快捷键</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">一、git 常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-git-%E5%B0%86%E6%9C%AC%E5%9C%B0%E9%A1%B9%E7%9B%AE%E6%B7%BB%E5%8A%A0%E8%87%B3-github-%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.1.</span> <span class="nav-text">1.git 将本地项目添加至 github 步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-git-%E4%BF%AE%E6%94%B9-remote-%E5%9C%B0%E5%9D%80"><span class="nav-number">1.2.</span> <span class="nav-text">2.git 修改 remote 地址</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%96%B9%E5%BC%8F-1%E3%80%81%E7%9B%B4%E6%8E%A5%E4%BF%AE%E6%94%B9%EF%BC%9A"><span class="nav-number">1.2.1.</span> <span class="nav-text">方式 1、直接修改：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%96%B9%E5%BC%8F-2%E3%80%81%E5%85%88%E5%88%A0%E5%90%8E%E5%8A%A0-%EF%BC%9A"><span class="nav-number">1.2.2.</span> <span class="nav-text">方式 2、先删后加 ：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4-pull-%E5%92%8C-push-%E5%88%86%E6%94%AF%EF%BC%9A"><span class="nav-number">1.2.3.</span> <span class="nav-text">修改默认 pull 和 push 分支：</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#git%E4%BF%AE%E6%94%B9%E6%9C%AA%E6%8F%90%E4%BA%A4%E7%9A%84commit"><span class="nav-number">1.3.</span> <span class="nav-text">git修改未提交的commit</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81vscode-%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">2.</span> <span class="nav-text">二、vscode 快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81webstorm-%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">3.</span> <span class="nav-text">三、webstorm 快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%B8%B8%E7%94%A8%E7%9A%84%E7%94%B5%E8%84%91%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">4.</span> <span class="nav-text">四、常用的电脑快捷键</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -483,20 +498,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-count">23</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">20</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -533,23 +548,23 @@
         
         
           <li>
-            <a href="/2021-04-14/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB/" title="前端面试题汇总" target="_blank">前端面试题汇总</a>
+            <a href="/2021-04-28/JetBrains%20%E5%85%A8%E5%AE%B6%E6%A1%B6%E6%97%A0%E9%99%90%E8%AF%95%E7%94%A8%E6%8F%92%E4%BB%B6/" title="JetBrains 全家桶无限试用插件" target="_blank">JetBrains 全家桶无限试用插件</a>
           </li>
         
           <li>
-            <a href="/2021-04-08/vue%E7%9F%A5%E8%AF%86%E7%82%B9/" title="vue知识点" target="_blank">vue知识点</a>
+            <a href="/2021-04-27/2021%E6%9C%80%E6%96%B0%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/" title="2021最新前端面试总结" target="_blank">2021最新前端面试总结</a>
           </li>
         
           <li>
-            <a href="/2021-04-08/%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98%EF%BC%9A%E8%AF%B7%E9%97%AEcomputed%E5%92%8Cwatch%E5%88%86%E5%88%AB%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%BD%BF%E7%94%A8%EF%BC%9F/" title="经典面试题：请问computed和watch分别什么场景使用？" target="_blank">经典面试题：请问computed和watch分别什么场景使用？</a>
+            <a href="/2021-04-26/%E5%9F%BA%E4%BA%8Evite%E6%90%AD%E5%BB%BA%E7%9A%84vue3%E9%A1%B9%E7%9B%AE/" title="基于vite搭建的vue3项目" target="_blank">基于vite搭建的vue3项目</a>
           </li>
         
           <li>
-            <a href="/2021-04-08/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E7%B1%BB%E6%96%B9%E6%B3%95/" title="前端常用工具类方法" target="_blank">前端常用工具类方法</a>
+            <a href="/2021-04-25/electron%E5%B0%86vue%E6%89%93%E5%8C%85%E6%88%90exe%E5%88%9D%E4%BD%93%E9%AA%8C/" title="electron将vue打包成exe初体验" target="_blank">electron将vue打包成exe初体验</a>
           </li>
         
           <li>
-            <a href="/2021-04-07/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%20-%20%20%E8%AE%BE%E7%BD%AE%E6%80%BB%E7%BB%93/" title="hexo搭建个人博客系列（三） -  设置总结" target="_blank">hexo搭建个人博客系列（三） -  设置总结</a>
+            <a href="/2021-04-22/typescript%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/" title="typescript问题汇总" target="_blank">typescript问题汇总</a>
           </li>
         
       </ul>
@@ -583,12 +598,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">39k</span>
+    <span title="站点总字数">55k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">35 分钟</span>
+    <span title="站点阅读时长">50 分钟</span>
 </div>
 
         
