@@ -2,7 +2,7 @@
 title: mpvue知识点
 date: 2021-04-07 14:49:16
 tags: mpvue 微信小程序
-categories: mpvue 微信小程序
+categories: mpvue
 ---
 
 ### 1.第一次进入时的生命周期执行顺序

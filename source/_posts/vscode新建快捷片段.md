@@ -2,7 +2,7 @@
 title: vscode新建快捷片段
 date: 2021-04-07 17:10:57
 tags: vscode 工具
-categories: vscode 工具
+categories: vscode
 ---
 
 ### vsocde 新建快捷片段 snippets

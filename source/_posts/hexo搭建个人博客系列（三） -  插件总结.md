@@ -5,8 +5,7 @@ tags:
   - hexo
   - next主题
   - 个人博客
-categories:
-  - hexo
+categories: hexo
 ---
 
 ## 一、文章加密

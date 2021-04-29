@@ -2,7 +2,10 @@
 title: hexo搭建个人博客系列（三） -  设置总结
 date: 2021-04-07 17:18:07
 tags:
-categories:
+- hexo 
+- next主题 
+- 个人博客
+categories: hexo
 ---
 
 ### 修改默认文章的模板
