@@ -86,3 +86,62 @@ table && table.setAttribute('height', '300px');
 ```
 console.log('打印2', (dom as HTMLElement)?.innerText);
 ```
+
+### 如何使用ref获取dom节点
+```
+<template>
+  <div ref="divRef" />
+</template>
+
+<script lang="ts">
+import { defineComponent, ref } from 'vue';
+
+export default defineComponent({
+  setup() {
+    const divRef = ref<HTMLElement>();
+    return {
+      divRef
+    };
+  },
+});
+</script>
+```
+
+### 如果使用Element-Plus的form组件，使用resetFields或者validate方法时，提示没有该属性
+```
+<template>
+    <el-form
+        :model="dialog.data"
+        :rules="dialogRules"
+        ref="formRef"
+        label-width="120px"
+    ></el-form>
+</template>
+
+<script lang="ts">
+import { ElForm } from 'element-plus';
+import { defineComponent, ref } from 'vue';
+
+export default defineComponent({
+  setup() {
+    const formRef = ref<InstanceType<typeof ElForm>>();
+
+    const resetForm = () => {
+      formRef.value?.resetFields();
+    };
+    const confirm = () => {
+      formRef.value?.validate((valid) => {
+        if (valid) {
+          // do
+        }
+      });
+    };
+    return {
+      resetForm,
+      confirm,
+      formRef
+    };
+  },
+});
+</script>
+```
