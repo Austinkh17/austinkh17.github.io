@@ -57,3 +57,84 @@ export default defineComponent({
 });
 </script>
 ```
+### vue3实现Modal组件
+https://segmentfault.com/a/1190000038928664
+https://github.com/febobo/web-interview/issues/50  对比vue2实现
+
+```
+实现 API 形式
+那么组件如何实现API形式调用Modal组件呢？
+
+在Vue2中，我们可以借助Vue实例以及Vue.extend的方式获得组件实例，然后挂载到body上
+
+import Modal from './Modal.vue';
+const ComponentClass = Vue.extend(Modal);
+const instance = new ComponentClass({ el: document.createElement("div") });
+document.body.appendChild(instance.$el);
+虽然Vue3移除了Vue.extend方法，但可以通过createVNode实现
+
+import Modal from './Modal.vue';
+const container = document.createElement('div');
+const vnode = createVNode(Modal);
+render(vnode, container);
+const instance = vnode.component;
+document.body.appendChild(container);
+在Vue2中，可以通过this的形式调用全局 API
+
+export default {
+    install(vue) {
+       vue.prototype.$create = create
+    }
+}
+而在 Vue3 的 setup 中已经没有 this 概念了，需要调用app.config.globalProperties挂载到全局
+
+export default {
+    install(app) {
+        app.config.globalProperties.$create = create
+    }
+}
+```
+
+```
+// index.ts
+import { App, createVNode, render } from 'vue';
+import Modal from './Modal.vue';
+import config from './config';
+
+// 新增 Modal 的 install 方法，为了可以被 `app.use(Modal)`（Vue使用插件的的规则）
+Modal.install = (app: App, options) => {
+  // 可覆盖默认的全局配置
+  Object.assign(config.props, options.props || {});
+
+  // 注册全局组件 Modal
+  app.component(Modal.name, Modal);
+  
+  // 注册全局 API
+  app.config.globalProperties.$modal = {
+    show({
+      title = '',
+      content = '',
+      close = config.props!.close
+    }) {
+      const container = document.createElement('div');
+      const vnode = createVNode(Modal);
+      render(vnode, container);
+      const instance = vnode.component;
+      document.body.appendChild(container);
+        
+      // 获取实例的 props ，进行传递 props
+      const { props } = instance;
+
+      Object.assign(props, {
+        isTeleport: false,
+        // 在父组件上我们用 v-model 来控制显示，语法糖对应的 prop 为 modelValue
+        modelValue: true,
+        title,
+        content,
+        close
+      });
+    }
+  };
+};
+export default Modal;
+```
