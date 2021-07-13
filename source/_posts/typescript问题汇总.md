@@ -5,6 +5,8 @@ tags: typescript
 categories: typescript
 ---
 
+[一份不可多得的 TS 学习指南（1.8W字）](https://juejin.cn/post/6872111128135073806)
+
 ### 1.vue3打包报错提示nullable
 
 ![img](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1e88098e19b74b79b8a51b6e16254cf1~tplv-k3u1fbpfcp-watermark.image?imageslim)
@@ -82,12 +84,12 @@ const table = document.querySelector('.main-table');
 table && table.setAttribute('height', '300px');
 ```
 
-### Property 'innerText' does not exist on type 'Element'.Vetur(2339)
+### 4.Property 'innerText' does not exist on type 'Element'.Vetur(2339)
 ```
 console.log('打印2', (dom as HTMLElement)?.innerText);
 ```
 
-### 如何使用ref获取dom节点
+### 5.如何使用ref获取dom节点
 ```
 <template>
   <div ref="divRef" />
@@ -107,7 +109,7 @@ export default defineComponent({
 </script>
 ```
 
-### 如果使用Element-Plus的form组件，使用resetFields或者validate方法时，提示没有该属性
+### 6.如果使用Element-Plus的form组件，使用resetFields或者validate方法时，提示没有该属性
 ```
 <template>
     <el-form
@@ -144,4 +146,48 @@ export default defineComponent({
   },
 });
 </script>
+```
+
+### 7.类型保护
+#### 1.in关键字
+```
+interface Admin {
+  name: string;
+  privileges: string[];
+}
+
+interface Employee {
+  name: string;
+  startDate: Date;
+}
+
+type UnknownEmployee = Employee | Admin;
+
+function printEmployeeInformation(emp: UnknownEmployee) {
+  console.log("Name: " + emp.name);
+  if ("privileges" in emp) {
+    console.log("Privileges: " + emp.privileges);
+  }
+  if ("startDate" in emp) {
+    console.log("Start Date: " + emp.startDate);
+  }
+}
+```
+
+### 8.在父组件中使用子组件(antd表单组件)，子组件名ts验证被划波浪线：
+父组件中的调用，Request 是自己封装的子组件：
+```
+<Request onCancel={this.cancelFirForm}/>
+```
+（1）定位到子组件内部，在Props中定义父组件中使用的属性：
+```
+interface Props extends FormComponentProps {
+	onCancel?:Function;
+}
+```
+（2）在Form.create()的圆括号前面添加`<Props>`
+```
+export default Form.create<Props>()(
+  connect()(Comp)
+);
 ```
