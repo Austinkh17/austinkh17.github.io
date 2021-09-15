@@ -24,6 +24,8 @@ categories: react
 [Redux 入门教程（一）：基本用法](https://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html)
 [Redux 入门教程（二）：中间件与异步操作](https://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_two_async_operations.html)
 [Redux 入门教程（三）：React-Redux 的用法](https://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html)
+[react-redux的connect用法详解](https://blog.csdn.net/yoonerloop/article/details/112058929)
+[React的FC与Component](https://zhuanlan.zhihu.com/p/368421741)
 
 <!--more-->
 
@@ -178,8 +180,15 @@ export default function counter(state = 0, action) {
   }
 }
 ```
+take函数可以理解为监听未来的action
+put函数是用来发送action的 effect
+call函数你可以把它简单的理解为就是可以调用其他函数的函数
+fork 函数和 call 函数很像，都是用来调用其他函数的，但是fork函数是非阻塞函数
+select 函数是用来指示 middleware调用提供的选择器获取Store上的state数据
+takeEvery就是take+fork，允许多个 fetchData 实例同时启动
+在任何时刻 takeLatest 只允许执行一个 fetchData 任务，并且这个任务是最后被启动的那个，如果之前已经有一个任务在执行，那之前的这个任务会自动被取消
 
-### 3.
+### 3.reselect和helmet
 - reselect是配合 redux 使用的一款轻量型的状态选择库，目的在于当 store 中的 state 重新改变之后，使得局部未改变的状态不会因为整体的 state 变化而全部重新渲染，功能有点类似于组件中的生命周期函数 shouldComponentDidUpdate ，但是它们并不是一个东西。
 - React Helmet 是一个为React 打造的 head 管理工具。 它可以动态更新渲染在服务端的 meta 标签，就像在客户端上一样轻松愉快。 可以说是做SEO、社交平台优化的最佳选择。
 
@@ -212,7 +221,7 @@ export default () => {
 可作用于修改antd等ui组建的样式
 
 ### 访问类型
-public 允许我在类的内外被调用
+public 允许在类的内外被调用
 private 允许在类内被调用
 protected 允许在类内及继承的子类中使用
 如果不写的话,默认是public
@@ -236,3 +245,34 @@ public componentDidUpdate (prevProps, prevState) {
     }
 }
 ```
+
+### dva
+定位：dva 首先是一个基于 redux 和 redux-saga 的数据流方案，然后为了简化开发体验，dva 还额外内置了 react-router 和 fetch，所以也可以理解为一个轻量级的应用框架。dva = React-Router + Redux + Redux-saga；
+
+核心：
+
+State：一个对象，保存整个应用状态；
+View：React 组件构成的视图层；
+Action：一个对象，描述事件
+connect 方法：一个函数，绑定 State 到 View
+dispatch 方法：一个函数，发送 Action 到 State
+model：dva 提供 app.model 这个对象，所有的应用逻辑都定义在它上面。
+
+model内容：
+
+namespace：model的命名空间；整个应用的 State，由多个小的 Model 的 State 以 namespace 为 key 合成；
+state：该命名空间下的数据池；
+effects：副作用处理函数；
+reducers：等同于 redux 里的 reducer，接收 action，同步更新 state；
+subscriptions：订阅信息；
+
+### 子组件用了使用了connect, 相当于把forwardRef隔离了,导致父组件拿不到想要的方法, 所以需要把forwardRef 透传给使用了connect 的子组件  
+https://blog.csdn.net/qq_48336579/article/details/120086172?spm=1001.2014.3001.5501
+[react forwardRef的使用](https://www.jianshu.com/p/fac884647720)
+[React Hooks系列之useImperativeHandle](https://blog.csdn.net/weixin_43720095/article/details/104967478)
+
+### immer.js优化reducer
+https://segmentfault.com/a/1190000017270785
+
+### redux之compose
+https://segmentfault.com/a/1190000015801987
